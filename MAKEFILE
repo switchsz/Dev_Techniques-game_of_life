@@ -1,0 +1,14 @@
+all:
+	gcc -c cell.o celllist.o board.o -o file
+
+cell.o:	cell.c
+	gcc -c cell.c
+
+celllist.o:	celllist.c
+	gcc -c celllist.c
+
+board.o: board.c
+	gcc -c board.c
+
+test.o: test.c
+	gcc -c test.c
