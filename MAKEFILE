@@ -1,14 +1,19 @@
-all:
-	gcc -c cell.o celllist.o board.o -o file
+all: file	
 
-cell.o:	cell.c
-	gcc -c cell.c
+file: cell.o celllist.o board.o main.o
+	gcc $^ -o $@
 
-celllist.o:	celllist.c
-	gcc -c celllist.c
+%.o: %.c
+	gcc -c $<
 
-board.o: board.c
-	gcc -c board.c
+#cell.o:	cell.c
+#	gcc -c cell.c
+# celllist.o:	celllist.c
+# 	gcc -c celllist.c
+# board.o: board.c
+# 	gcc -c board.c
+# test.o: test.c
+# 	gcc -c test.c
 
-test.o: test.c
-	gcc -c test.c
+clean:
+	rm -f *.o file
