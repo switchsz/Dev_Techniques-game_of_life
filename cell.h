@@ -5,14 +5,14 @@ struct Cell {
     int life;
     int x;
     int y;
-    Cell *upLeft;
-    Cell *up;
-    Cell *upRight;
-    Cell *left;
-    Cell *right;
-    Cell *downLeft;
-    Cell *down;
-    Cell *downRight;
+    struct Cell *upLeft;
+    struct Cell *up;
+    struct Cell *upRight;
+    struct Cell *left;
+    struct Cell *right;
+    struct Cell *downLeft;
+    struct Cell *down;
+    struct Cell *downRight;
 
 } typedef Cell;
 
@@ -20,7 +20,8 @@ struct Cell {
 
 
 Cell *bearCell(int x, int y);
-Cell *killCell(Cell *cell);
+void killCell(Cell *pCell);
+Cell *newCell();
 
 
 

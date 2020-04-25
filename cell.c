@@ -1,20 +1,29 @@
-#include "cell.h"
-
+#include"cell.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 Cell *bearCell(int x, int y) {
-    Cell *new = (Cell *) malloc(sizeof(Cell));
+    Cell *pCell = (Cell *) malloc(sizeof(Cell));
 
-    new->x = x;
-    new->y = y;
-    new->life = 1;
+    pCell->x = x;
+    pCell->y = y;
+    pCell->life = 1;
 
-    return new;
+    return pCell;
+}
+
+Cell *newCell() {
+
+    Cell *pCell = (Cell *) malloc(sizeof(Cell));
+    pCell->life=0;
+    return pCell;
 }
 
 
-Cell *killCell(Cell *cell) {
-    if ( cell != NULL ){
-        cell->life = 0;
+void killCell(Cell *pCell) {
+
+    if ( pCell != NULL ) {
+        pCell->life = 0;
     } 
-    else { return NULL; }
+    
 }
