@@ -12,3 +12,5 @@ struct Cell {
     Cell *downright;
 
 } typedef Cell;
+
+
