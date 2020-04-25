@@ -1,9 +1,11 @@
-#include<stdlib.h>
-#include<stdio.h>
-#include"cell.h"
+#include "cell.h"
 
 
+Cell *newCell(int x, int y) {
+    Cell *new = (Cell *) malloc(sizeof(Cell));
 
-int main () {
-    return 0;
+    new->x = x;
+    new->y = y;
+    
+    return new;
 }

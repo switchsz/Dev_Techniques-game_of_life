@@ -1,14 +1,21 @@
+#include <stdlib.h>
+#include <stdio.h>
+
 struct Cell {
     int life;
     int x;
     int y;
-    Cell *upleft;
+    Cell *upLeft;
     Cell *up;
-    Cell *upright;
+    Cell *upRight;
     Cell *left;
     Cell *right;
-    Cell *downleft;
+    Cell *downLeft;
     Cell *down;
-    Cell *downright;
+    Cell *downRight;
 
 } typedef Cell;
+
+
+
+Cell *newCell(int x, int y);
