@@ -18,4 +18,5 @@ struct Cell {
 
 
 
-Cell *newCell(int x, int y);
+Cell *bearCell(int x, int y);
+Cell *killCell(Cell *cell);
