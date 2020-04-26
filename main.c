@@ -6,9 +6,9 @@
 int main () {
 
     CellList *pCellList = newCellList(10,10);
-    // Update funtion
-    // Draw 
-
+    // //Update funtion
+    // TODO Draw 
+    // TODO updateLoop
 
 
     return 0;
