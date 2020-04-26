@@ -16,3 +16,18 @@ CellList* newCellList(int nbRows, int nbCols) {
     return pCellList;
 
 }
+
+
+CellList* updateCellList(CellList* pCellList) {
+    if ( pCellList != NULL ) {
+        CellList *pNew = newCellList(pCellList->nbRows,pCellList->nbCols);
+        
+
+
+
+
+    }
+    else {
+        return NULL;
+    }
+}

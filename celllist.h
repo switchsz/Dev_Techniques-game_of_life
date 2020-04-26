@@ -10,3 +10,4 @@ struct CellList {
 } typedef CellList;
 
 CellList* newCellList(int nbRows, int nbCols);
+CellList* updateCellList(CellList* pCellList);
