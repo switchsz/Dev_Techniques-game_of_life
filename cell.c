@@ -6,10 +6,13 @@ void bearCell(Cell *pCell) {
     pCell->life = 1;
 }
 
-Cell *newCell() {
-
+Cell *newCell(int x, int y) {
     Cell *pCell = (Cell *) malloc(sizeof(Cell));
-    pCell->life=0;
+    
+    pCell->x = x;
+    pCell->y = y;
+    pCell->life = 0;
+
     return pCell;
 }
 

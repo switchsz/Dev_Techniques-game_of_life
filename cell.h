@@ -19,7 +19,7 @@ struct Cell {
 
 
 
-void bearCell(int x, int y);
+void bearCell(Cell *pCell);
 void killCell(Cell *pCell);
 Cell *newCell();
 
