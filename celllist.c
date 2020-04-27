@@ -1,5 +1,6 @@
 #include<stdlib.h>
 #include<stdio.h>
+#include<time.h>
 #include"celllist.h"
 
 
@@ -59,3 +60,32 @@ CellList* updateCellList(CellList* pCellList) {
         return NULL;
     }
 }
+
+
+CellList* generateCellList(int nbRows, int nbCols) {
+    srand(time(NULL));
+    CellList* pCellList = newCellList(nbRows, nbCols);
+    for (int i = 0 ; i < nbRows ; i++) {
+        for ( int j = 0; j < nbCols ; j++) {
+            pCellList->board[i][j].life = rand() % 2; // 1 or 0
+        }
+    }
+
+    return pCellList;
+
+}
+
+void printCellList (CellList *pCellList) {
+
+    for (int i = 0 ; i < pCellList->nbRows ; i++) {
+        for ( int j = 0 ; j < pCellList->nbCols ; j++) {
+            if (pCellList->board[i][j].life == 1) 
+                printf("* ");
+            else
+                printf(". ");
+        }
+        printf("\n");
+    }
+}
+
+
