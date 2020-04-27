@@ -11,3 +11,4 @@ struct CellList {
 
 CellList* newCellList(int nbRows, int nbCols);
 CellList* updateCellList(CellList* pCellList);
+int nNeighbours(CellList *pCellList, Cell *pCell);

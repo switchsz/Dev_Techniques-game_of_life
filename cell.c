@@ -2,20 +2,17 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-Cell *bearCell(int x, int y) {
-    Cell *pCell = (Cell *) malloc(sizeof(Cell));
-
-    pCell->x = x;
-    pCell->y = y;
+void bearCell(Cell *pCell) {
     pCell->life = 1;
-
-    return pCell;
 }
 
-Cell *newCell() {
-
+Cell *newCell(int x, int y) {
     Cell *pCell = (Cell *) malloc(sizeof(Cell));
-    pCell->life=0;
+    
+    pCell->x = x;
+    pCell->y = y;
+    pCell->life = 0;
+
     return pCell;
 }
 
