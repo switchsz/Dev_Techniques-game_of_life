@@ -136,17 +136,17 @@ CellList* generateCellList(int nbRows, int nbCols) {
 
 }
 
-void printCellList (CellList *pCellList) {
-
-    for (int i = 0 ; i < pCellList->nbRows ; i++) {
-        for ( int j = 0 ; j < pCellList->nbCols ; j++) {
-            if (pCellList->board[i][j].life == 1) 
-                printf("* ");
-            else
-                printf(". ");
+int nAlives(CellList *pCellList) {
+    int nAlives=0;
+    for ( int i = 0 ; i < pCellList->nbRows; i++) {
+        for (int j = 0; j < pCellList->nbCols; j++) {
+            if(pCellList->board[i][j].life==1) 
+                nAlives++;
         }
-        printf("\n");
     }
+
+    return nAlives;
 }
+
 
 
