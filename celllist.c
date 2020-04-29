@@ -1,9 +1,4 @@
-#include<stdlib.h>
-#include<stdio.h>
-#include<time.h>
-#include"celllist.h"
-#include<unistd.h>
-
+#include "celllist.h"
 
 
 CellList* newCellList(int nbRows, int nbCols) {

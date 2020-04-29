@@ -1,6 +1,5 @@
-#include"cell.h"
-#include <stdlib.h>
-#include <stdio.h>
+#include "cell.h"
+
 
 void bearCell(Cell *pCell) {
     pCell->life = 1;

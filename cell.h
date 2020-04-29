@@ -1,5 +1,11 @@
+#ifndef __CELL_H__
+#define __CELL_H__
+
 #include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
+#include <unistd.h>
+
 
 struct Cell {
     int life;
@@ -9,12 +15,10 @@ struct Cell {
 
 
 
-
 void bearCell(Cell *pCell);
 void killCell(Cell *pCell);
 Cell *newCell();
 
 
 
-
-
+#endif
