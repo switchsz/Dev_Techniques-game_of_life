@@ -2,6 +2,8 @@
 #include<stdio.h>
 #include<time.h>
 #include"celllist.h"
+#include<unistd.h>
+
 
 
 CellList* newCellList(int nbRows, int nbCols) {
@@ -35,7 +37,7 @@ int nNeighbours(CellList *pCellList, Cell *pCell) {
             for ( int j = pCell->x-1 ; j <= pCell->x+1 ; j++ ) {
            //  printf(" j now is %d  \n", j);
 
-                if( j < 0 || j > pCellList->nbCols) {
+                if( j < 0 || j > pCellList->nbCols-1) {
                  continue;
                 }
                 if ( pCellList->board[i][j].life == 1 ) {
@@ -44,6 +46,44 @@ int nNeighbours(CellList *pCellList, Cell *pCell) {
             }
         }
 
+        if ( pCell->life == 1) 
+        n--;
+        return n;
+    } 
+    else {
+        return -1;
+    }
+}
+
+int nNeighboursCircular(CellList *pCellList, Cell *pCell) {
+    int tempi, tempj;
+    int n = 0;
+   //  printf("for cell with x %d and y %d which is %d \n", pCell->x, pCell->y, pCell->life);
+    if ( pCellList != NULL && pCell != NULL ) {
+        for ( int i = pCell->y-1 ; i <= pCell->y+1 ; i++ ) {
+            tempi=i;
+            if (i < 0 ) {
+                i = pCellList->nbRows-1;
+            }
+            else if ( i > pCellList->nbRows-1) {
+                i = 0;
+            }
+
+            for ( int j = pCell->x-1 ; j <= pCell->x+1 ; j++ ) {
+                tempj=j;
+                if( j < 0 ) {
+                    j = pCellList->nbCols-1;
+                }
+                else if(  j > pCellList->nbCols-1) {
+                    j = 0;
+                }
+                if ( pCellList->board[i][j].life == 1 ) {
+                    n++;
+                }
+                j = tempj;
+            }
+            i = tempi;
+        }
         if ( pCell->life == 1) 
         n--;
         return n;
@@ -103,7 +143,7 @@ void printCellList (CellList *pCellList) {
             if (pCellList->board[i][j].life == 1) 
                 printf("* ");
             else
-                printf("  ");
+                printf(". ");
         }
         printf("\n");
     }

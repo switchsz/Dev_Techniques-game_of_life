@@ -14,3 +14,4 @@ CellList* updateCellList(CellList* pCellList);
 CellList* generateCellList(int nbRows, int nbCols);
 void printCellList (CellList *pCellList);
 int nNeighbours(CellList *pCellList, Cell *pCell);
+int nNeighboursCircular(CellList *pCellList, Cell *pCell);

@@ -14,8 +14,8 @@ int main () {
     CellList *pCellList = generateCellList(10,10);
     printCellList(pCellList);
 
-printf("\n\n\n\n");
-    for ( int i = 0; i < 30 ; i ++ ) {
+    printf("\n\n\n\n");
+    for ( int i = 0; i < 15 ; i ++ ) {
 
         pCellList = updateCellList(pCellList);
         printCellList(pCellList);
