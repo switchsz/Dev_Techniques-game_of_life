@@ -20,8 +20,6 @@ int nNeighbours(CellList *pCellList, Cell *pCell);
 int nNeighboursCircular(CellList *pCellList, Cell *pCell);
 int nAlives(CellList *pCellList);
 int sameCellList(CellList *pCellList1, CellList *pCellList2);
-char* CompressCellList(CellList *pCellList);
-
 CellList* copyCellList(CellList *pCellList);
 
 
