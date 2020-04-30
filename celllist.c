@@ -9,9 +9,6 @@ CellList* newCellList(int nbRows, int nbCols) {
     for (int i = 0; i < nbRows; i++) {
         for ( int j = 0; j < nbCols; j++) {
             pCellList->board[i][j] = *(newCell(j,i));
-            // pCellList->board[i][j].y = i;
-            // pCellList->board[i][j].x = j;
-            // pCellList->board[i][j].life = 0;
         }
     }
     return pCellList;
@@ -22,16 +19,12 @@ CellList* newCellList(int nbRows, int nbCols) {
 
 int nNeighbours(CellList *pCellList, Cell *pCell) {
     int n = 0;
-   //  printf("for cell with x %d and y %d which is %d \n", pCell->x, pCell->y, pCell->life);
     if ( pCellList != NULL && pCell != NULL ) {
         for ( int i = pCell->y-1 ; i <= pCell->y+1 ; i++ ) {
-           //  printf(" i now is %d  ", i);
             if (i < 0 || i > pCellList->nbRows-1) {
                 continue; 
             }
             for ( int j = pCell->x-1 ; j <= pCell->x+1 ; j++ ) {
-           //  printf(" j now is %d  \n", j);
-
                 if( j < 0 || j > pCellList->nbCols-1) {
                  continue;
                 }
@@ -53,7 +46,6 @@ int nNeighbours(CellList *pCellList, Cell *pCell) {
 int nNeighboursCircular(CellList *pCellList, Cell *pCell) {
     int tempi, tempj;
     int n = 0;
-   //  printf("for cell with x %d and y %d which is %d \n", pCell->x, pCell->y, pCell->life);
     if ( pCellList != NULL && pCell != NULL ) {
         for ( int i = pCell->y-1 ; i <= pCell->y+1 ; i++ ) {
             tempi=i;
@@ -63,7 +55,6 @@ int nNeighboursCircular(CellList *pCellList, Cell *pCell) {
             else if ( i > pCellList->nbRows-1) {
                 i = 0;
             }
-
             for ( int j = pCell->x-1 ; j <= pCell->x+1 ; j++ ) {
                 tempj=j;
                 if( j < 0 ) {
@@ -96,7 +87,6 @@ CellList* updateCellList(CellList* pCellList) {
             for ( int j = 0 ; j < pNew->nbCols ; j++ ) {
 
                 nNeighb = nNeighbours(pCellList,&(pCellList->board[i][j]));
-                // printf(" %d have %d\n", i*10+j, nNeighb);
                 if (  nNeighb == 3 ) {
                     pNew->board[i][j].life = 1;
                 }
@@ -105,12 +95,9 @@ CellList* updateCellList(CellList* pCellList) {
                         pNew->board[i][j].life = 1;
                     }
                 }
-
             }
         }
-
     return pNew;
-
     }
     else {
         return NULL;
