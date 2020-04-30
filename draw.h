@@ -10,5 +10,8 @@ void print(CellList *pCellList);
 void hide_cursor();
 void show_cursor();
 void clear_screen();
+void get_console_size(int* w, int* h);
+
+
 
 #endif

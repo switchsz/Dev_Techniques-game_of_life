@@ -19,5 +19,8 @@ CellList* generateCellList(int nbRows, int nbCols);
 int nNeighbours(CellList *pCellList, Cell *pCell);
 int nNeighboursCircular(CellList *pCellList, Cell *pCell);
 int nAlives(CellList *pCellList);
+int sameCellList(CellList *pCellList1, CellList *pCellList2);
+CellList* copyCellList(CellList *pCellList);
+
 
 #endif

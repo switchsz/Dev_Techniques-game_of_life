@@ -47,3 +47,11 @@ void print(CellList *pCellList) {
         printf("\n");
     }
 }
+
+void get_console_size(int* w, int* h) {
+	printf("\033[2J"); // clears screen 
+	puts("Press enter to start");
+	printf("\033[30m\033[999;999H"); // write with black 
+	printf("\033[6n");
+	scanf("\033[%d;%dR",h,w);
+}
