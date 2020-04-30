@@ -130,5 +130,28 @@ int nAlives(CellList *pCellList) {
     return nAlives;
 }
 
+int sameCellList(CellList *pCellList1, CellList *pCellList2) {
+    if ( pCellList1 == NULL || pCellList2 == NULL) {
+        return 0;
+    }
+    for ( int i = 0; i < pCellList1->nbRows; i++) {
+        for ( int j = 0; j < pCellList1->nbCols; j++) {
+            if(pCellList1->board[i][j].life != pCellList2->board[i][j].life)
+                return 0;
+        }
+    }
 
+    return 1;
+}
+
+CellList* copyCellList(CellList *pCellList) {
+    CellList* pCopy = newCellList(pCellList->nbRows, pCellList -> nbCols);
+    for (int i = 0; i < pCellList->nbRows; i++) {
+        for ( int j = 0; j < pCellList->nbCols; j++) {
+            pCopy->board[i][j].life = pCellList->board[i][j].life;
+        }
+    }
+
+    return pCopy;
+}
 
