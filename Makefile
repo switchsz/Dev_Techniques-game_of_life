@@ -1,6 +1,6 @@
 all: file	
 
-file: cell.o celllist.o board.o main.o
+file: cell.o celllist.o draw.o main.o
 	gcc $^ -o $@
 
 %.o: %.c

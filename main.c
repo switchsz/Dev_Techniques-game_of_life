@@ -1,10 +1,6 @@
-#include<stdlib.h>
-#include<stdio.h>
-#include<unistd.h>
-#include"draw.h"
+#include "draw.h"
 
-void get_console_size(int* w, int* h)
-{
+void get_console_size(int* w, int* h) {
 	printf("\033[2J"); // clears screen 
 	puts("Press enter to start");
 

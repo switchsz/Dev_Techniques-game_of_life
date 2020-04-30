@@ -1,4 +1,8 @@
-#include"cell.h"
+#ifndef __CELLLIST_H__
+#define __CELLLIST_H__
+
+#include "cell.h"
+
 #define MAX_SIZE 100
 
 struct CellList {
@@ -16,3 +20,4 @@ int nNeighbours(CellList *pCellList, Cell *pCell);
 int nNeighboursCircular(CellList *pCellList, Cell *pCell);
 int nAlives(CellList *pCellList);
 
+#endif

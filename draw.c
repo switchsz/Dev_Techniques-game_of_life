@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include"draw.h"
+#include "draw.h"
 
 void hide_cursor() {
      printf("\033[?25l"); 
