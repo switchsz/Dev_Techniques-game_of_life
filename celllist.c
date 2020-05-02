@@ -155,3 +155,12 @@ CellList* copyCellList(CellList *pCellList) {
     return pCopy;
 }
 
+void emptyCellList(CellList* pCellList) {
+
+    for ( int i = 0 ; i < pCellList->nbRows; i++) {
+        for ( int j = 0 ; j < pCellList->nbCols; j++) {
+            pCellList->board[i][j].life = 0;
+        }
+    }
+
+}

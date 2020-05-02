@@ -23,6 +23,9 @@ int main () {
             pCellList = copyCellList(pNewCellList);
         }
     }
+    emptyCellList(pNewCellList);
+    drawAnsi(pNewCellList);
+
     return 0;
 
 }

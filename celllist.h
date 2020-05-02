@@ -21,6 +21,8 @@ int nNeighboursCircular(CellList *pCellList, Cell *pCell);
 int nAlives(CellList *pCellList);
 int sameCellList(CellList *pCellList1, CellList *pCellList2);
 CellList* copyCellList(CellList *pCellList);
+void emptyCellList(CellList* pCellList);
+
 
 
 #endif
