@@ -1,0 +1,3 @@
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/rebuild_cache.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/edit_cache.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/game.dir

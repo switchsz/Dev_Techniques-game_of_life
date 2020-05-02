@@ -68,10 +68,10 @@ RM = /usr/local/Cellar/cmake/3.17.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life
+CMAKE_SOURCE_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life
+CMAKE_BINARY_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/CMakeFiles /Users/saykasz/Desktop/Dev_Techniques_game-of-life/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -131,44 +131,71 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named mygame
+# Target rules for targets named game
 
 # Build rule for target.
-mygame: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mygame
-.PHONY : mygame
+game: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game
+.PHONY : game
 
 # fast build rule for target.
-mygame/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/build
-.PHONY : mygame/fast
+game/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/build
+.PHONY : game/fast
 
-main.o: main.c.o
+cell.o: cell.c.o
 
-.PHONY : main.o
+.PHONY : cell.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/main.c.o
-.PHONY : main.c.o
+cell.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/cell.c.o
+.PHONY : cell.c.o
 
-main.i: main.c.i
+cell.i: cell.c.i
 
-.PHONY : main.i
+.PHONY : cell.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/main.c.i
-.PHONY : main.c.i
+cell.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/cell.c.i
+.PHONY : cell.c.i
 
-main.s: main.c.s
+cell.s: cell.c.s
 
-.PHONY : main.s
+.PHONY : cell.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/main.c.s
-.PHONY : main.c.s
+cell.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/cell.c.s
+.PHONY : cell.c.s
+
+celllist.o: celllist.c.o
+
+.PHONY : celllist.o
+
+# target to build an object file
+celllist.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/celllist.c.o
+.PHONY : celllist.c.o
+
+celllist.i: celllist.c.i
+
+.PHONY : celllist.i
+
+# target to preprocess a source file
+celllist.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/celllist.c.i
+.PHONY : celllist.c.i
+
+celllist.s: celllist.c.s
+
+.PHONY : celllist.s
+
+# target to generate assembly for a file
+celllist.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/celllist.c.s
+.PHONY : celllist.c.s
 
 # Help Target
 help:
@@ -178,10 +205,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... mygame"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... game"
+	@echo "... cell.o"
+	@echo "... cell.i"
+	@echo "... cell.s"
+	@echo "... celllist.o"
+	@echo "... celllist.i"
+	@echo "... celllist.s"
 .PHONY : help
 
 

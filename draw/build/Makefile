@@ -68,10 +68,10 @@ RM = /usr/local/Cellar/cmake/3.17.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life
+CMAKE_SOURCE_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life
+CMAKE_BINARY_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/CMakeFiles /Users/saykasz/Desktop/Dev_Techniques_game-of-life/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -131,44 +131,71 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named mygame
+# Target rules for targets named draw
 
 # Build rule for target.
-mygame: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mygame
-.PHONY : mygame
+draw: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 draw
+.PHONY : draw
 
 # fast build rule for target.
-mygame/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/build
-.PHONY : mygame/fast
+draw/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/draw.dir/build.make CMakeFiles/draw.dir/build
+.PHONY : draw/fast
 
-main.o: main.c.o
+ansi.o: ansi.c.o
 
-.PHONY : main.o
+.PHONY : ansi.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/main.c.o
-.PHONY : main.c.o
+ansi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/draw.dir/build.make CMakeFiles/draw.dir/ansi.c.o
+.PHONY : ansi.c.o
 
-main.i: main.c.i
+ansi.i: ansi.c.i
 
-.PHONY : main.i
+.PHONY : ansi.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/main.c.i
-.PHONY : main.c.i
+ansi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/draw.dir/build.make CMakeFiles/draw.dir/ansi.c.i
+.PHONY : ansi.c.i
 
-main.s: main.c.s
+ansi.s: ansi.c.s
 
-.PHONY : main.s
+.PHONY : ansi.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/main.c.s
-.PHONY : main.c.s
+ansi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/draw.dir/build.make CMakeFiles/draw.dir/ansi.c.s
+.PHONY : ansi.c.s
+
+sdl.o: sdl.c.o
+
+.PHONY : sdl.o
+
+# target to build an object file
+sdl.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/draw.dir/build.make CMakeFiles/draw.dir/sdl.c.o
+.PHONY : sdl.c.o
+
+sdl.i: sdl.c.i
+
+.PHONY : sdl.i
+
+# target to preprocess a source file
+sdl.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/draw.dir/build.make CMakeFiles/draw.dir/sdl.c.i
+.PHONY : sdl.c.i
+
+sdl.s: sdl.c.s
+
+.PHONY : sdl.s
+
+# target to generate assembly for a file
+sdl.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/draw.dir/build.make CMakeFiles/draw.dir/sdl.c.s
+.PHONY : sdl.c.s
 
 # Help Target
 help:
@@ -178,10 +205,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... mygame"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... draw"
+	@echo "... ansi.o"
+	@echo "... ansi.i"
+	@echo "... ansi.s"
+	@echo "... sdl.o"
+	@echo "... sdl.i"
+	@echo "... sdl.s"
 .PHONY : help
 
 
