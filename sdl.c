@@ -4,6 +4,7 @@
 
 void draw(SDL_Renderer* renderer, CellList* pCellList)
 {
+	int x,y;
 	SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
 	SDL_RenderClear(renderer);
 
@@ -21,18 +22,25 @@ void draw(SDL_Renderer* renderer, CellList* pCellList)
 				SDL_SetRenderDrawColor(renderer, 0 ,255 ,0,255);
 			else
 				SDL_SetRenderDrawColor(renderer, 255 , 0 ,0,255);
-			SDL_RenderDrawPoint(renderer,j,i);
+			y = i*10;
+			x = j*10;
+			for (int i = 0; i < 10 ; i++) {
+				for (int j = 0; j < 10; j++) {
+					SDL_RenderDrawPoint(renderer, x+i , y+j);
+				}
+			}
+		
 			
 		}
 	}
 
 	// MOUSE INTERACTION
-	int x,y;
-	if ( SDL_GetMouseState(&x,&y) & SDL_BUTTON(SDL_BUTTON_LEFT) ) // one & it is for bits AND
+	int xm,ym;
+	if ( SDL_GetMouseState(&xm,&ym) & SDL_BUTTON(SDL_BUTTON_LEFT) ) // one & it is for bits AND
 	{
 		// USE COLOR
 		SDL_SetRenderDrawColor(renderer, 255,0,0,0);
-		SDL_RenderDrawPoint(renderer,x,y);
+		SDL_RenderDrawPoint(renderer,xm,ym);
 	}
 }
 

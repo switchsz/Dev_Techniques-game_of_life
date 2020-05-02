@@ -2,7 +2,7 @@
 #include "sdl.h"
 
 
-int main(int argc, char** argv)
+int main()
 {
     CellList *pCellList = generateCellList(50,50);
     CellList *pNewCellList;
@@ -34,7 +34,6 @@ int main(int argc, char** argv)
 			}
 		}
         while (nAlives(pCellList) > 0) {
-        // sleep(1);
         pNewCellList = updateCellList(pCellList);
         if(sameCellList(pCellList, pNewCellList) == 1 || sameCellList(pOldCellList, pNewCellList) == 1)
             break;

@@ -17,7 +17,7 @@ CellList* newCellList(int nbRows, int nbCols) {
 
 
 
-int nNeighbours(CellList *pCellList, Cell *pCell) {
+int nNeighboursClipped(CellList *pCellList, Cell *pCell) {
     int n = 0;
     if ( pCellList != NULL && pCell != NULL ) {
         for ( int i = pCell->y-1 ; i <= pCell->y+1 ; i++ ) {
@@ -86,7 +86,7 @@ CellList* updateCellList(CellList* pCellList) {
         for ( int i = 0 ; i < pNew->nbRows ; i++ ) {
             for ( int j = 0 ; j < pNew->nbCols ; j++ ) {
 
-                nNeighb = nNeighbours(pCellList,&(pCellList->board[i][j]));
+                nNeighb = nNeighboursClipped(pCellList,&(pCellList->board[i][j]));
                 if (  nNeighb == 3 ) {
                     pNew->board[i][j].life = 1;
                 }
