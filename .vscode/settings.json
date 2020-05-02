@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "cell.h": "c",
-        "celllist.h": "c"
+        "celllist.h": "c",
+        "stdbool.h": "c"
     }
 }
