@@ -18,7 +18,6 @@ target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})#-
 target_link_libraries( ${PROJECT_NAME} PUBLIC game)
 
 
-#target_link_libraries(${PROJECT_NAME} INTERFACE sdl2-2.0.0) #-lm
 target_link_libraries(${PROJECT_NAME} PUBLIC SDL2::SDL2 SDL2::SDL2main)
 
 

@@ -15,7 +15,4 @@ target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}) #
 #target_compile_definitions(${PROJECT_NAME} PUBLIC USING_LIB=${VALUE}) #-D USING_LIB=1
 
 
-# install(TARGETS ${PROJECT_NAME})
-# nstall(FILES f1.h DESTINATION include)
-
 
