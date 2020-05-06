@@ -76,6 +76,17 @@ CMAKE_BINARY_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/local/Cellar/cmake/3.17.2/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -131,6 +142,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_pract1
+
+# Build rule for target.
+test_pract1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_pract1
+.PHONY : test_pract1
+
+# fast build rule for target.
+test_pract1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract1.dir/build.make CMakeFiles/test_pract1.dir/build
+.PHONY : test_pract1/fast
+
+#=============================================================================
 # Target rules for targets named game
 
 # Build rule for target.
@@ -149,6 +173,7 @@ cell.o: cell.c.o
 
 # target to build an object file
 cell.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract1.dir/build.make CMakeFiles/test_pract1.dir/cell.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/cell.c.o
 .PHONY : cell.c.o
 
@@ -158,6 +183,7 @@ cell.i: cell.c.i
 
 # target to preprocess a source file
 cell.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract1.dir/build.make CMakeFiles/test_pract1.dir/cell.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/cell.c.i
 .PHONY : cell.c.i
 
@@ -167,6 +193,7 @@ cell.s: cell.c.s
 
 # target to generate assembly for a file
 cell.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract1.dir/build.make CMakeFiles/test_pract1.dir/cell.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/cell.c.s
 .PHONY : cell.c.s
 
@@ -176,6 +203,7 @@ celllist.o: celllist.c.o
 
 # target to build an object file
 celllist.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract1.dir/build.make CMakeFiles/test_pract1.dir/celllist.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/celllist.c.o
 .PHONY : celllist.c.o
 
@@ -185,6 +213,7 @@ celllist.i: celllist.c.i
 
 # target to preprocess a source file
 celllist.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract1.dir/build.make CMakeFiles/test_pract1.dir/celllist.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/celllist.c.i
 .PHONY : celllist.c.i
 
@@ -194,8 +223,36 @@ celllist.s: celllist.c.s
 
 # target to generate assembly for a file
 celllist.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract1.dir/build.make CMakeFiles/test_pract1.dir/celllist.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/celllist.c.s
 .PHONY : celllist.c.s
+
+cunit_tests.o: cunit_tests.c.o
+
+.PHONY : cunit_tests.o
+
+# target to build an object file
+cunit_tests.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract1.dir/build.make CMakeFiles/test_pract1.dir/cunit_tests.c.o
+.PHONY : cunit_tests.c.o
+
+cunit_tests.i: cunit_tests.c.i
+
+.PHONY : cunit_tests.i
+
+# target to preprocess a source file
+cunit_tests.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract1.dir/build.make CMakeFiles/test_pract1.dir/cunit_tests.c.i
+.PHONY : cunit_tests.c.i
+
+cunit_tests.s: cunit_tests.c.s
+
+.PHONY : cunit_tests.s
+
+# target to generate assembly for a file
+cunit_tests.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract1.dir/build.make CMakeFiles/test_pract1.dir/cunit_tests.c.s
+.PHONY : cunit_tests.c.s
 
 # Help Target
 help:
@@ -205,13 +262,18 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... game"
+	@echo "... test_pract1"
 	@echo "... cell.o"
 	@echo "... cell.i"
 	@echo "... cell.s"
 	@echo "... celllist.o"
 	@echo "... celllist.i"
 	@echo "... celllist.s"
+	@echo "... cunit_tests.o"
+	@echo "... cunit_tests.i"
+	@echo "... cunit_tests.s"
 .PHONY : help
 
 
