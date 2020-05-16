@@ -11,10 +11,4 @@ game/CMakeFiles/test_pract1.dir/celllist.c.o: ../game/celllist.h
 game/CMakeFiles/test_pract1.dir/cunit_tests.c.o: ../game/cell.h
 game/CMakeFiles/test_pract1.dir/cunit_tests.c.o: ../game/celllist.h
 game/CMakeFiles/test_pract1.dir/cunit_tests.c.o: ../game/cunit_tests.c
-game/CMakeFiles/test_pract1.dir/cunit_tests.c.o: /usr/local/include/CUnit/Basic.h
-game/CMakeFiles/test_pract1.dir/cunit_tests.c.o: /usr/local/include/CUnit/CUError.h
-game/CMakeFiles/test_pract1.dir/cunit_tests.c.o: /usr/local/include/CUnit/CUnit.h
-game/CMakeFiles/test_pract1.dir/cunit_tests.c.o: /usr/local/include/CUnit/Console.h
-game/CMakeFiles/test_pract1.dir/cunit_tests.c.o: /usr/local/include/CUnit/TestDB.h
-game/CMakeFiles/test_pract1.dir/cunit_tests.c.o: /usr/local/include/CUnit/TestRun.h
 

@@ -59,38 +59,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.17.2/bin/cmake
+CMAKE_COMMAND = /snap/cmake/340/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.17.2/bin/cmake -E rm -f
+RM = /snap/cmake/340/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game
+CMAKE_SOURCE_DIR = /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build
+CMAKE_BINARY_DIR = /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/local/Cellar/cmake/3.17.2/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/Cellar/cmake/3.17.2/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/cmake/340/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -98,10 +87,21 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/snap/cmake/340/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/Cellar/cmake/3.17.2/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/cmake/340/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -111,9 +111,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,19 +142,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test_pract1
-
-# Build rule for target.
-test_pract1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_pract1
-.PHONY : test_pract1
-
-# fast build rule for target.
-test_pract1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract1.dir/build.make CMakeFiles/test_pract1.dir/build
-.PHONY : test_pract1/fast
-
-#=============================================================================
 # Target rules for targets named game
 
 # Build rule for target.
@@ -167,14 +154,27 @@ game/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/build
 .PHONY : game/fast
 
+#=============================================================================
+# Target rules for targets named test_pract1
+
+# Build rule for target.
+test_pract1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_pract1
+.PHONY : test_pract1
+
+# fast build rule for target.
+test_pract1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract1.dir/build.make CMakeFiles/test_pract1.dir/build
+.PHONY : test_pract1/fast
+
 cell.o: cell.c.o
 
 .PHONY : cell.o
 
 # target to build an object file
 cell.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract1.dir/build.make CMakeFiles/test_pract1.dir/cell.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/cell.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract1.dir/build.make CMakeFiles/test_pract1.dir/cell.c.o
 .PHONY : cell.c.o
 
 cell.i: cell.c.i
@@ -183,8 +183,8 @@ cell.i: cell.c.i
 
 # target to preprocess a source file
 cell.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract1.dir/build.make CMakeFiles/test_pract1.dir/cell.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/cell.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract1.dir/build.make CMakeFiles/test_pract1.dir/cell.c.i
 .PHONY : cell.c.i
 
 cell.s: cell.c.s
@@ -193,8 +193,8 @@ cell.s: cell.c.s
 
 # target to generate assembly for a file
 cell.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract1.dir/build.make CMakeFiles/test_pract1.dir/cell.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/cell.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract1.dir/build.make CMakeFiles/test_pract1.dir/cell.c.s
 .PHONY : cell.c.s
 
 celllist.o: celllist.c.o
@@ -203,8 +203,8 @@ celllist.o: celllist.c.o
 
 # target to build an object file
 celllist.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract1.dir/build.make CMakeFiles/test_pract1.dir/celllist.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/celllist.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract1.dir/build.make CMakeFiles/test_pract1.dir/celllist.c.o
 .PHONY : celllist.c.o
 
 celllist.i: celllist.c.i
@@ -213,8 +213,8 @@ celllist.i: celllist.c.i
 
 # target to preprocess a source file
 celllist.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract1.dir/build.make CMakeFiles/test_pract1.dir/celllist.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/celllist.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract1.dir/build.make CMakeFiles/test_pract1.dir/celllist.c.i
 .PHONY : celllist.c.i
 
 celllist.s: celllist.c.s
@@ -223,8 +223,8 @@ celllist.s: celllist.c.s
 
 # target to generate assembly for a file
 celllist.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract1.dir/build.make CMakeFiles/test_pract1.dir/celllist.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/celllist.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract1.dir/build.make CMakeFiles/test_pract1.dir/celllist.c.s
 .PHONY : celllist.c.s
 
 cunit_tests.o: cunit_tests.c.o

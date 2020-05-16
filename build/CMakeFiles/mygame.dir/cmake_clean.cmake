@@ -3,7 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/mygame.dir/draw/sdl.c.o"
   "CMakeFiles/mygame.dir/game/cell.c.o"
   "CMakeFiles/mygame.dir/game/celllist.c.o"
-  "CMakeFiles/mygame.dir/mainsdl.c.o"
+  "CMakeFiles/mygame.dir/main.c.o"
   "mygame"
   "mygame.pdb"
 )
