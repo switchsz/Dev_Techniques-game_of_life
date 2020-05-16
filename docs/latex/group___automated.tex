@@ -1,0 +1,56 @@
+\doxysection{Automated}
+\label{group___automated}\index{Automated@{Automated}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT void \textbf{ C\+U\+\_\+automated\+\_\+run\+\_\+tests} (void)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+\+Error\+Code} \textbf{ C\+U\+\_\+list\+\_\+tests\+\_\+to\+\_\+file} (void)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT void \textbf{ C\+U\+\_\+set\+\_\+output\+\_\+filename} (const char $\ast$sz\+Filename\+Root)
+\item 
+\mbox{\label{group___automated_ga9ada6a91db404d9efad5c643ef0f3af4}} 
+void {\bfseries C\+U\+\_\+automated\+\_\+enable\+\_\+junit\+\_\+xml} (\textbf{ C\+U\+\_\+\+B\+O\+OL} b\+Flag)
+\item 
+\mbox{\label{group___automated_ga52bf0b54f7888ad48f6d38e166dc603d}} 
+void {\bfseries C\+U\+\_\+automated\+\_\+package\+\_\+name\+\_\+set} (const char $\ast$p\+Name)
+\item 
+\mbox{\label{group___automated_gaca6ffe13c6f3ea0a4ee3d34060f5c1d8}} 
+const char $\ast$ {\bfseries C\+U\+\_\+automated\+\_\+package\+\_\+name\+\_\+get} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{group___automated_ga4204c6d187aa6c366a8f4e0ba50645b4}} 
+\index{Automated@{Automated}!CU\_automated\_run\_tests@{CU\_automated\_run\_tests}}
+\index{CU\_automated\_run\_tests@{CU\_automated\_run\_tests}!Automated@{Automated}}
+\doxysubsubsection{CU\_automated\_run\_tests()}
+{\footnotesize\ttfamily C\+U\+\_\+\+E\+X\+P\+O\+RT void C\+U\+\_\+automated\+\_\+run\+\_\+tests (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Runs C\+Unit tests using the automated interface. This function sets appropriate callback functions, initializes the test output files, and calls the appropriate functions to list the tests and run them. If an output file name root has not been specified using \doxyref{C\+U\+\_\+set\+\_\+output\+\_\+filename()}{p.}{group___automated_ga60583b154146b787f03267fc320f86e5}, a generic root will be applied. It is an error to call this function before the C\+Unit test registry has been initialized (check by assertion). \mbox{\label{group___automated_ga4bf1c3a0b54cb2a12d634e7e022edf30}} 
+\index{Automated@{Automated}!CU\_list\_tests\_to\_file@{CU\_list\_tests\_to\_file}}
+\index{CU\_list\_tests\_to\_file@{CU\_list\_tests\_to\_file}!Automated@{Automated}}
+\doxysubsubsection{CU\_list\_tests\_to\_file()}
+{\footnotesize\ttfamily C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+\+Error\+Code} C\+U\+\_\+list\+\_\+tests\+\_\+to\+\_\+file (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Generates an xml file containing a list of all tests in all suites in the active registry. The output file will be named according to the most recent call to \doxyref{C\+U\+\_\+set\+\_\+output\+\_\+filename()}{p.}{group___automated_ga60583b154146b787f03267fc320f86e5}, or a default if not previously set.
+
+\begin{DoxyReturn}{Returns}
+An error code indicating the error status. 
+\end{DoxyReturn}
+\mbox{\label{group___automated_ga60583b154146b787f03267fc320f86e5}} 
+\index{Automated@{Automated}!CU\_set\_output\_filename@{CU\_set\_output\_filename}}
+\index{CU\_set\_output\_filename@{CU\_set\_output\_filename}!Automated@{Automated}}
+\doxysubsubsection{CU\_set\_output\_filename()}
+{\footnotesize\ttfamily C\+U\+\_\+\+E\+X\+P\+O\+RT void C\+U\+\_\+set\+\_\+output\+\_\+filename (\begin{DoxyParamCaption}\item[{const char $\ast$}]{sz\+Filename\+Root }\end{DoxyParamCaption})}
+
+Sets the root file name for automated test output files. The strings \char`\"{}-\/\+Listing.\+xml\char`\"{} and \char`\"{}-\/\+Results.\+xml\char`\"{} are appended to the specified root to generate the filenames. If sz\+Filename\+Root is empty, the default root (\char`\"{}\+C\+Unit\+Automated\char`\"{}) is used.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sz\+Filename\+Root} & String containing root to use for file names. \\
+\hline
+\end{DoxyParams}

@@ -52,5 +52,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/mygame.dir/DependInfo.cmake"
   "draw/CMakeFiles/draw.dir/DependInfo.cmake"
+  "game/CMakeFiles/test_pract1.dir/DependInfo.cmake"
   "game/CMakeFiles/game.dir/DependInfo.cmake"
   )

@@ -14,9 +14,11 @@ set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "/usr/local/include"
   "../draw/include"
   "../draw"
   "../game"
+  "/usr/local/lib"
   "/usr/local/Cellar/sdl2/2.0.12_1/include/SDL2"
   )
 

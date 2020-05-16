@@ -1,0 +1,60 @@
+\doxysection{/\+Users/saykasz/\+Desktop/\+Dev\+\_\+\+Techniques\+\_\+game-\/of-\/life/include/\+C\+Unit/\+C\+U\+Error.h File Reference}
+\label{_c_u_error_8h}\index{/Users/saykasz/Desktop/Dev\_Techniques\_game-\/of-\/life/include/CUnit/CUError.h@{/Users/saykasz/Desktop/Dev\_Techniques\_game-\/of-\/life/include/CUnit/CUError.h}}
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}C\+Unit.\+h\char`\"{}}\newline
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \textbf{ C\+U\+\_\+\+Error\+Action} \textbf{ C\+U\+\_\+\+Error\+Action}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \textbf{ C\+U\+\_\+\+Error\+Code} \{ \newline
+\textbf{ C\+U\+E\+\_\+\+S\+U\+C\+C\+E\+SS} = 0, 
+\textbf{ C\+U\+E\+\_\+\+N\+O\+M\+E\+M\+O\+RY} = 1, 
+\textbf{ C\+U\+E\+\_\+\+N\+O\+R\+E\+G\+I\+S\+T\+RY} = 10, 
+\textbf{ C\+U\+E\+\_\+\+R\+E\+G\+I\+S\+T\+R\+Y\+\_\+\+E\+X\+I\+S\+TS} = 11, 
+\newline
+\textbf{ C\+U\+E\+\_\+\+N\+O\+S\+U\+I\+TE} = 20, 
+\textbf{ C\+U\+E\+\_\+\+N\+O\+\_\+\+S\+U\+I\+T\+E\+N\+A\+ME} = 21, 
+\textbf{ C\+U\+E\+\_\+\+S\+I\+N\+I\+T\+\_\+\+F\+A\+I\+L\+ED} = 22, 
+\textbf{ C\+U\+E\+\_\+\+S\+C\+L\+E\+A\+N\+\_\+\+F\+A\+I\+L\+ED} = 23, 
+\newline
+\textbf{ C\+U\+E\+\_\+\+D\+U\+P\+\_\+\+S\+U\+I\+TE} = 24, 
+\textbf{ C\+U\+E\+\_\+\+S\+U\+I\+T\+E\+\_\+\+I\+N\+A\+C\+T\+I\+VE} = 25, 
+\textbf{ C\+U\+E\+\_\+\+N\+O\+T\+E\+ST} = 30, 
+\textbf{ C\+U\+E\+\_\+\+N\+O\+\_\+\+T\+E\+S\+T\+N\+A\+ME} = 31, 
+\newline
+\textbf{ C\+U\+E\+\_\+\+D\+U\+P\+\_\+\+T\+E\+ST} = 32, 
+\textbf{ C\+U\+E\+\_\+\+T\+E\+S\+T\+\_\+\+N\+O\+T\+\_\+\+I\+N\+\_\+\+S\+U\+I\+TE} = 33, 
+\textbf{ C\+U\+E\+\_\+\+T\+E\+S\+T\+\_\+\+I\+N\+A\+C\+T\+I\+VE} = 34, 
+\textbf{ C\+U\+E\+\_\+\+F\+O\+P\+E\+N\+\_\+\+F\+A\+I\+L\+ED} = 40, 
+\newline
+\textbf{ C\+U\+E\+\_\+\+F\+C\+L\+O\+S\+E\+\_\+\+F\+A\+I\+L\+ED} = 41, 
+\textbf{ C\+U\+E\+\_\+\+B\+A\+D\+\_\+\+F\+I\+L\+E\+N\+A\+ME} = 42, 
+\textbf{ C\+U\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+E\+R\+R\+OR} = 43
+ \}
+\item 
+enum \textbf{ C\+U\+\_\+\+Error\+Action} \{ \textbf{ C\+U\+E\+A\+\_\+\+I\+G\+N\+O\+RE}, 
+\textbf{ C\+U\+E\+A\+\_\+\+F\+A\+IL}, 
+\textbf{ C\+U\+E\+A\+\_\+\+A\+B\+O\+RT}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+\+Error\+Code} \textbf{ C\+U\+\_\+get\+\_\+error} (void)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT const char $\ast$ \textbf{ C\+U\+\_\+get\+\_\+error\+\_\+msg} (void)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT void \textbf{ C\+U\+\_\+set\+\_\+error\+\_\+action} (\textbf{ C\+U\+\_\+\+Error\+Action} action)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+\+Error\+Action} \textbf{ C\+U\+\_\+get\+\_\+error\+\_\+action} (void)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT void \textbf{ C\+U\+\_\+set\+\_\+error} (\textbf{ C\+U\+\_\+\+Error\+Code} error)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Error handling functions (user interface). C\+Unit uses a simple (and conventional) error handling strategy. Functions that can generate errors set (and usually return) an error code to indicate the run status. The error code can be inspected using the \doxyref{C\+U\+\_\+get\+\_\+error()}{p.}{group___framework_ga0bf3f9733e5fa0c0ed6ca0a37a2d995e} function. A descriptive error message can be retrieved using \doxyref{C\+U\+\_\+get\+\_\+error\+\_\+msg()}{p.}{group___framework_gaee27bf496da77437288bc9fe2a0b20ed}. 

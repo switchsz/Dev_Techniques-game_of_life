@@ -2,7 +2,10 @@
     "files.associations": {
         "cell.h": "c",
         "celllist.h": "c",
-        "stdbool.h": "c"
+        "stdbool.h": "c",
+        "stdio.h": "c",
+        "cunit.h": "c"
     },
-    "C_Cpp.default.configurationProvider": "go2sh.cmake-integration"
+    "C_Cpp.default.configurationProvider": "go2sh.cmake-integration",
+    "C_Cpp.errorSquiggles": "Disabled"
 }

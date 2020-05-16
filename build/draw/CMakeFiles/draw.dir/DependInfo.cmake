@@ -16,6 +16,8 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../draw/include"
   "../draw"
   "../game"
+  "/usr/local/include"
+  "/usr/local/lib"
   "/usr/local/Cellar/sdl2/2.0.12_1/include/SDL2"
   )
 
