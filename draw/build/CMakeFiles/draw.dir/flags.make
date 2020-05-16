@@ -6,5 +6,5 @@ C_FLAGS =  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw 
+C_INCLUDES = -I/Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/include -I/Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw -isystem /usr/local/Cellar/sdl2/2.0.12_1/include/SDL2 
 

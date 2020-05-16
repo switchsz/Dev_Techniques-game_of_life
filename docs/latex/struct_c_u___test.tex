@@ -1,0 +1,83 @@
+\doxysection{C\+U\+\_\+\+Test Struct Reference}
+\label{struct_c_u___test}\index{CU\_Test@{CU\_Test}}
+
+
+{\ttfamily \#include $<$Test\+D\+B.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \textbf{ p\+Name}
+\item 
+\textbf{ C\+U\+\_\+\+B\+O\+OL} \textbf{ f\+Active}
+\item 
+\textbf{ C\+U\+\_\+\+Test\+Func} \textbf{ p\+Test\+Func}
+\item 
+jmp\+\_\+buf $\ast$ \textbf{ p\+Jump\+Buf}
+\item 
+struct \textbf{ C\+U\+\_\+\+Test} $\ast$ \textbf{ p\+Next}
+\item 
+struct \textbf{ C\+U\+\_\+\+Test} $\ast$ \textbf{ p\+Prev}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+C\+Unit test case data type. \doxyref{C\+U\+\_\+\+Test}{p.}{struct_c_u___test} is a double linked list of unit tests. Each test has a name, a callable test function, and a flag for whether the test is active and thus executed during a test run. A test also holds links to the next and previous tests in the list, as well as a jmp\+\_\+buf reference for use in implementing fatal assertions.~\newline
+~\newline
+
+
+Generally, the linked list includes tests which are associated with each other in a \doxyref{C\+U\+\_\+\+Suite}{p.}{struct_c_u___suite}. As a result, tests are run in the order in which they are added to a suite (see \doxyref{C\+U\+\_\+add\+\_\+test()}{p.}{group___framework_gad9f198a8a5fa8cc6870c3c8be873869f}). ~\newline
+~\newline
+
+
+It is recommended that the name of each \doxyref{C\+U\+\_\+\+Test}{p.}{struct_c_u___test} in a suite have a unique name. Otherwise, only the first-\/registered test having a given name will be accessible by that name. There are no restrictions on the test function. This means that the same function could, in principle, be called more than once from different tests.
+
+\begin{DoxySeeAlso}{See also}
+\doxyref{C\+U\+\_\+\+Suite}{p.}{struct_c_u___suite} 
+
+\doxyref{C\+U\+\_\+\+Test\+Registry}{p.}{struct_c_u___test_registry} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\label{struct_c_u___test_a5b0b964d67479b833c68393f6df0d4c3}} 
+\index{CU\_Test@{CU\_Test}!fActive@{fActive}}
+\index{fActive@{fActive}!CU\_Test@{CU\_Test}}
+\doxysubsubsection{fActive}
+{\footnotesize\ttfamily \textbf{ C\+U\+\_\+\+B\+O\+OL} f\+Active}
+
+Flag for whether test is executed during a run. \mbox{\label{struct_c_u___test_ae2a81547a6be795d2012217ea8eb5289}} 
+\index{CU\_Test@{CU\_Test}!pJumpBuf@{pJumpBuf}}
+\index{pJumpBuf@{pJumpBuf}!CU\_Test@{CU\_Test}}
+\doxysubsubsection{pJumpBuf}
+{\footnotesize\ttfamily jmp\+\_\+buf$\ast$ p\+Jump\+Buf}
+
+Jump buffer for setjmp/longjmp test abort mechanism. \mbox{\label{struct_c_u___test_a01e963d20177999b62d50558b0ac5631}} 
+\index{CU\_Test@{CU\_Test}!pName@{pName}}
+\index{pName@{pName}!CU\_Test@{CU\_Test}}
+\doxysubsubsection{pName}
+{\footnotesize\ttfamily char$\ast$ p\+Name}
+
+Test name. \mbox{\label{struct_c_u___test_a1e91b51b12cf37ac16dc198cba9c3513}} 
+\index{CU\_Test@{CU\_Test}!pNext@{pNext}}
+\index{pNext@{pNext}!CU\_Test@{CU\_Test}}
+\doxysubsubsection{pNext}
+{\footnotesize\ttfamily struct \textbf{ C\+U\+\_\+\+Test}$\ast$ p\+Next}
+
+Pointer to the next test in linked list. \mbox{\label{struct_c_u___test_a730350596bc838b8f7612be546182b35}} 
+\index{CU\_Test@{CU\_Test}!pPrev@{pPrev}}
+\index{pPrev@{pPrev}!CU\_Test@{CU\_Test}}
+\doxysubsubsection{pPrev}
+{\footnotesize\ttfamily struct \textbf{ C\+U\+\_\+\+Test}$\ast$ p\+Prev}
+
+Pointer to the previous test in linked list. \mbox{\label{struct_c_u___test_a0bce15b9ba8eb73d0ff2618b0f8942cf}} 
+\index{CU\_Test@{CU\_Test}!pTestFunc@{pTestFunc}}
+\index{pTestFunc@{pTestFunc}!CU\_Test@{CU\_Test}}
+\doxysubsubsection{pTestFunc}
+{\footnotesize\ttfamily \textbf{ C\+U\+\_\+\+Test\+Func} p\+Test\+Func}
+
+Pointer to the test function. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/saykasz/\+Desktop/\+Dev\+\_\+\+Techniques\+\_\+game-\/of-\/life/include/\+C\+Unit/\textbf{ Test\+D\+B.\+h}\end{DoxyCompactItemize}

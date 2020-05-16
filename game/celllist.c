@@ -1,6 +1,8 @@
 #include "celllist.h"
 
 
+// +
+
 CellList* newCellList(int nbRows, int nbCols) {
     CellList* pCellList = (CellList*) malloc(sizeof(CellList));
     pCellList->nbRows = nbRows;
@@ -15,7 +17,7 @@ CellList* newCellList(int nbRows, int nbCols) {
 
 }
 
-
+// +
 
 int nNeighboursClipped(CellList *pCellList, Cell *pCell) {
     int n = 0;
@@ -42,6 +44,8 @@ int nNeighboursClipped(CellList *pCellList, Cell *pCell) {
         return -1;
     }
 }
+
+// +
 
 int nNeighboursCircular(CellList *pCellList, Cell *pCell) {
     int tempi, tempj;
@@ -79,6 +83,8 @@ int nNeighboursCircular(CellList *pCellList, Cell *pCell) {
     }
 }
 
+// + 
+
 CellList* updateCellList(CellList* pCellList) {
     if ( pCellList != NULL ) {
         int nNeighb = 0;
@@ -104,6 +110,7 @@ CellList* updateCellList(CellList* pCellList) {
     }
 }
 
+// + 
 
 CellList* generateCellList(int nbRows, int nbCols) {
     srand(time(NULL));
@@ -118,6 +125,8 @@ CellList* generateCellList(int nbRows, int nbCols) {
 
 }
 
+// -
+
 int nAlives(CellList *pCellList) {
     int nAlives=0;
     for ( int i = 0 ; i < pCellList->nbRows; i++) {
@@ -130,8 +139,13 @@ int nAlives(CellList *pCellList) {
     return nAlives;
 }
 
+
+// +
 int sameCellList(CellList *pCellList1, CellList *pCellList2) {
     if ( pCellList1 == NULL || pCellList2 == NULL) {
+        return 0;
+    }
+    if ((pCellList1->nbCols != pCellList2->nbCols) || (pCellList1->nbRows != pCellList2->nbRows)) {
         return 0;
     }
     for ( int i = 0; i < pCellList1->nbRows; i++) {
@@ -144,6 +158,8 @@ int sameCellList(CellList *pCellList1, CellList *pCellList2) {
     return 1;
 }
 
+// +
+
 CellList* copyCellList(CellList *pCellList) {
     CellList* pCopy = newCellList(pCellList->nbRows, pCellList -> nbCols);
     for (int i = 0; i < pCellList->nbRows; i++) {
@@ -155,6 +171,7 @@ CellList* copyCellList(CellList *pCellList) {
     return pCopy;
 }
 
+// + 
 void emptyCellList(CellList* pCellList) {
 
     for ( int i = 0 ; i < pCellList->nbRows; i++) {

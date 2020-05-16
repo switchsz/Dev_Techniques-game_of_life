@@ -157,6 +157,19 @@ draw/fast:
 .PHONY : draw/fast
 
 #=============================================================================
+# Target rules for targets named test_pract1
+
+# Build rule for target.
+test_pract1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_pract1
+.PHONY : test_pract1
+
+# fast build rule for target.
+test_pract1/fast:
+	$(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/build
+.PHONY : test_pract1/fast
+
+#=============================================================================
 # Target rules for targets named game
 
 # Build rule for target.
@@ -315,6 +328,7 @@ help:
 	@echo "... draw"
 	@echo "... game"
 	@echo "... mygame"
+	@echo "... test_pract1"
 	@echo "... draw/ansi.o"
 	@echo "... draw/ansi.i"
 	@echo "... draw/ansi.s"

@@ -131,6 +131,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+game/CMakeFiles/test_pract1.dir/rule:
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game/CMakeFiles/test_pract1.dir/rule
+.PHONY : game/CMakeFiles/test_pract1.dir/rule
+
+# Convenience name for target.
+test_pract1: game/CMakeFiles/test_pract1.dir/rule
+
+.PHONY : test_pract1
+
+# fast build rule for target.
+test_pract1/fast:
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/build
+.PHONY : test_pract1/fast
+
+# Convenience name for target.
 game/CMakeFiles/game.dir/rule:
 	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game/CMakeFiles/game.dir/rule
 .PHONY : game/CMakeFiles/game.dir/rule
@@ -151,6 +166,7 @@ cell.o: cell.c.o
 
 # target to build an object file
 cell.c.o:
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/cell.c.o
 	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/cell.c.o
 .PHONY : cell.c.o
 
@@ -160,6 +176,7 @@ cell.i: cell.c.i
 
 # target to preprocess a source file
 cell.c.i:
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/cell.c.i
 	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/cell.c.i
 .PHONY : cell.c.i
 
@@ -169,6 +186,7 @@ cell.s: cell.c.s
 
 # target to generate assembly for a file
 cell.c.s:
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/cell.c.s
 	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/cell.c.s
 .PHONY : cell.c.s
 
@@ -178,6 +196,7 @@ celllist.o: celllist.c.o
 
 # target to build an object file
 celllist.c.o:
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/celllist.c.o
 	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/celllist.c.o
 .PHONY : celllist.c.o
 
@@ -187,6 +206,7 @@ celllist.i: celllist.c.i
 
 # target to preprocess a source file
 celllist.c.i:
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/celllist.c.i
 	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/celllist.c.i
 .PHONY : celllist.c.i
 
@@ -196,8 +216,36 @@ celllist.s: celllist.c.s
 
 # target to generate assembly for a file
 celllist.c.s:
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/celllist.c.s
 	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/celllist.c.s
 .PHONY : celllist.c.s
+
+cunit_tests.o: cunit_tests.c.o
+
+.PHONY : cunit_tests.o
+
+# target to build an object file
+cunit_tests.c.o:
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/cunit_tests.c.o
+.PHONY : cunit_tests.c.o
+
+cunit_tests.i: cunit_tests.c.i
+
+.PHONY : cunit_tests.i
+
+# target to preprocess a source file
+cunit_tests.c.i:
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/cunit_tests.c.i
+.PHONY : cunit_tests.c.i
+
+cunit_tests.s: cunit_tests.c.s
+
+.PHONY : cunit_tests.s
+
+# target to generate assembly for a file
+cunit_tests.c.s:
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/cunit_tests.c.s
+.PHONY : cunit_tests.c.s
 
 # Help Target
 help:
@@ -208,12 +256,16 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... game"
+	@echo "... test_pract1"
 	@echo "... cell.o"
 	@echo "... cell.i"
 	@echo "... cell.s"
 	@echo "... celllist.o"
 	@echo "... celllist.i"
 	@echo "... celllist.s"
+	@echo "... cunit_tests.o"
+	@echo "... cunit_tests.i"
+	@echo "... cunit_tests.s"
 .PHONY : help
 
 

@@ -1,0 +1,129 @@
+\doxysection{/\+Users/saykasz/\+Desktop/\+Dev\+\_\+\+Techniques\+\_\+game-\/of-\/life/include/\+C\+Unit/\+Test\+DB.h File Reference}
+\label{_test_d_b_8h}\index{/Users/saykasz/Desktop/Dev\_Techniques\_game-\/of-\/life/include/CUnit/TestDB.h@{/Users/saykasz/Desktop/Dev\_Techniques\_game-\/of-\/life/include/CUnit/TestDB.h}}
+{\ttfamily \#include $<$setjmp.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}C\+Unit.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}C\+U\+Error.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ C\+U\+\_\+\+Test}
+\item 
+struct \textbf{ C\+U\+\_\+\+Suite}
+\item 
+struct \textbf{ C\+U\+\_\+\+Test\+Registry}
+\item 
+struct \textbf{ C\+U\+\_\+\+Test\+Info}
+\item 
+struct \textbf{ C\+U\+\_\+\+Suite\+Info}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+D\+D\+\_\+\+T\+E\+ST}(suite,  test)~(\textbf{ C\+U\+\_\+add\+\_\+test}(suite, \#test, (\textbf{ C\+U\+\_\+\+Test\+Func})test))
+\item 
+\#define \textbf{ C\+U\+\_\+\+T\+E\+S\+T\+\_\+\+I\+N\+F\+O\+\_\+\+N\+U\+LL}~\{ N\+U\+LL, N\+U\+LL \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+S\+U\+I\+T\+E\+\_\+\+I\+N\+F\+O\+\_\+\+N\+U\+LL}~\{ N\+U\+LL, N\+U\+LL, N\+U\+LL, N\+U\+LL, N\+U\+LL, N\+U\+LL \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int($\ast$ \textbf{ C\+U\+\_\+\+Initialize\+Func}) (void)
+\item 
+typedef int($\ast$ \textbf{ C\+U\+\_\+\+Cleanup\+Func}) (void)
+\item 
+typedef void($\ast$ \textbf{ C\+U\+\_\+\+Test\+Func}) (void)
+\item 
+typedef void($\ast$ \textbf{ C\+U\+\_\+\+Set\+Up\+Func}) (void)
+\item 
+typedef void($\ast$ \textbf{ C\+U\+\_\+\+Tear\+Down\+Func}) (void)
+\item 
+typedef struct \textbf{ C\+U\+\_\+\+Test} \textbf{ C\+U\+\_\+\+Test}
+\item 
+typedef \textbf{ C\+U\+\_\+\+Test} $\ast$ \textbf{ C\+U\+\_\+p\+Test}
+\item 
+typedef struct \textbf{ C\+U\+\_\+\+Suite} \textbf{ C\+U\+\_\+\+Suite}
+\item 
+typedef \textbf{ C\+U\+\_\+\+Suite} $\ast$ \textbf{ C\+U\+\_\+p\+Suite}
+\item 
+typedef struct \textbf{ C\+U\+\_\+\+Test\+Registry} \textbf{ C\+U\+\_\+\+Test\+Registry}
+\item 
+typedef \textbf{ C\+U\+\_\+\+Test\+Registry} $\ast$ \textbf{ C\+U\+\_\+p\+Test\+Registry}
+\item 
+typedef struct \textbf{ C\+U\+\_\+\+Test\+Info} \textbf{ C\+U\+\_\+\+Test\+Info}
+\item 
+typedef \textbf{ C\+U\+\_\+\+Test\+Info} $\ast$ \textbf{ C\+U\+\_\+p\+Test\+Info}
+\item 
+typedef struct \textbf{ C\+U\+\_\+\+Suite\+Info} \textbf{ C\+U\+\_\+\+Suite\+Info}
+\item 
+typedef \textbf{ C\+U\+\_\+\+Suite\+Info} $\ast$ \textbf{ C\+U\+\_\+p\+Suite\+Info}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+\+Error\+Code} \textbf{ C\+U\+\_\+initialize\+\_\+registry} (void)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT void \textbf{ C\+U\+\_\+cleanup\+\_\+registry} (void)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+\+B\+O\+OL} \textbf{ C\+U\+\_\+registry\+\_\+initialized} (void)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+p\+Suite} \textbf{ C\+U\+\_\+add\+\_\+suite} (const char $\ast$str\+Name, \textbf{ C\+U\+\_\+\+Initialize\+Func} p\+Init, \textbf{ C\+U\+\_\+\+Cleanup\+Func} p\+Clean)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+p\+Suite} \textbf{ C\+U\+\_\+add\+\_\+suite\+\_\+with\+\_\+setup\+\_\+and\+\_\+teardown} (const char $\ast$str\+Name, \textbf{ C\+U\+\_\+\+Initialize\+Func} p\+Init, \textbf{ C\+U\+\_\+\+Cleanup\+Func} p\+Clean, \textbf{ C\+U\+\_\+\+Set\+Up\+Func} p\+Setup, \textbf{ C\+U\+\_\+\+Tear\+Down\+Func} p\+Tear)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+\+Error\+Code} \textbf{ C\+U\+\_\+set\+\_\+suite\+\_\+active} (\textbf{ C\+U\+\_\+p\+Suite} p\+Suite, \textbf{ C\+U\+\_\+\+B\+O\+OL} f\+New\+Active)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+\+Error\+Code} \textbf{ C\+U\+\_\+set\+\_\+suite\+\_\+name} (\textbf{ C\+U\+\_\+p\+Suite} p\+Suite, const char $\ast$str\+New\+Name)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+\+Error\+Code} \textbf{ C\+U\+\_\+set\+\_\+suite\+\_\+initfunc} (\textbf{ C\+U\+\_\+p\+Suite} p\+Suite, \textbf{ C\+U\+\_\+\+Initialize\+Func} p\+New\+Init)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+\+Error\+Code} \textbf{ C\+U\+\_\+set\+\_\+suite\+\_\+cleanupfunc} (\textbf{ C\+U\+\_\+p\+Suite} p\+Suite, \textbf{ C\+U\+\_\+\+Cleanup\+Func} p\+New\+Clean)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+p\+Suite} \textbf{ C\+U\+\_\+get\+\_\+suite} (const char $\ast$str\+Name)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+p\+Suite} \textbf{ C\+U\+\_\+get\+\_\+suite\+\_\+at\+\_\+pos} (unsigned int pos)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT unsigned int \textbf{ C\+U\+\_\+get\+\_\+suite\+\_\+pos} (\textbf{ C\+U\+\_\+p\+Suite} p\+Suite)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT unsigned int \textbf{ C\+U\+\_\+get\+\_\+suite\+\_\+pos\+\_\+by\+\_\+name} (const char $\ast$str\+Name)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+p\+Test} \textbf{ C\+U\+\_\+add\+\_\+test} (\textbf{ C\+U\+\_\+p\+Suite} p\+Suite, const char $\ast$str\+Name, \textbf{ C\+U\+\_\+\+Test\+Func} p\+Test\+Func)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+\+Error\+Code} \textbf{ C\+U\+\_\+set\+\_\+test\+\_\+active} (\textbf{ C\+U\+\_\+p\+Test} p\+Test, \textbf{ C\+U\+\_\+\+B\+O\+OL} f\+New\+Active)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+\+Error\+Code} \textbf{ C\+U\+\_\+set\+\_\+test\+\_\+name} (\textbf{ C\+U\+\_\+p\+Test} p\+Test, const char $\ast$str\+New\+Name)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+\+Error\+Code} \textbf{ C\+U\+\_\+set\+\_\+test\+\_\+func} (\textbf{ C\+U\+\_\+p\+Test} p\+Test, \textbf{ C\+U\+\_\+\+Test\+Func} p\+New\+Func)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+p\+Test} \textbf{ C\+U\+\_\+get\+\_\+test} (\textbf{ C\+U\+\_\+p\+Suite} p\+Suite, const char $\ast$str\+Name)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+p\+Test} \textbf{ C\+U\+\_\+get\+\_\+test\+\_\+at\+\_\+pos} (\textbf{ C\+U\+\_\+p\+Suite} p\+Suite, unsigned int pos)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT unsigned int \textbf{ C\+U\+\_\+get\+\_\+test\+\_\+pos} (\textbf{ C\+U\+\_\+p\+Suite} p\+Suite, \textbf{ C\+U\+\_\+p\+Test} p\+Test)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT unsigned int \textbf{ C\+U\+\_\+get\+\_\+test\+\_\+pos\+\_\+by\+\_\+name} (\textbf{ C\+U\+\_\+p\+Suite} p\+Suite, const char $\ast$str\+Name)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+\+Error\+Code} \textbf{ C\+U\+\_\+register\+\_\+suites} (\textbf{ C\+U\+\_\+\+Suite\+Info} suite\+\_\+info[$\,$])
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+\+Error\+Code} \textbf{ C\+U\+\_\+register\+\_\+nsuites} (int suite\+\_\+count,...)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+p\+Test\+Registry} \textbf{ C\+U\+\_\+get\+\_\+registry} (void)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+p\+Test\+Registry} \textbf{ C\+U\+\_\+set\+\_\+registry} (\textbf{ C\+U\+\_\+p\+Test\+Registry} p\+Test\+Registry)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+p\+Test\+Registry} \textbf{ C\+U\+\_\+create\+\_\+new\+\_\+registry} (void)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT void \textbf{ C\+U\+\_\+destroy\+\_\+existing\+\_\+registry} (\textbf{ C\+U\+\_\+p\+Test\+Registry} $\ast$pp\+Registry)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+p\+Suite} \textbf{ C\+U\+\_\+get\+\_\+suite\+\_\+by\+\_\+name} (const char $\ast$sz\+Suite\+Name, \textbf{ C\+U\+\_\+p\+Test\+Registry} p\+Registry)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+p\+Suite} \textbf{ C\+U\+\_\+get\+\_\+suite\+\_\+by\+\_\+index} (unsigned int index, \textbf{ C\+U\+\_\+p\+Test\+Registry} p\+Registry)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+p\+Test} \textbf{ C\+U\+\_\+get\+\_\+test\+\_\+by\+\_\+name} (const char $\ast$sz\+Test\+Name, \textbf{ C\+U\+\_\+p\+Suite} p\+Suite)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+p\+Test} \textbf{ C\+U\+\_\+get\+\_\+test\+\_\+by\+\_\+index} (unsigned int index, \textbf{ C\+U\+\_\+p\+Suite} p\+Suite)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Management functions for tests, suites, and the test registry. Unit testing in C\+Unit follows the common structure of unit tests aggregated in suites, which are themselves aggregated in a test registry. This module provides functions and typedef\textquotesingle{}s to support the creation, registration, and manipulation of test cases, suites, and the registry. 

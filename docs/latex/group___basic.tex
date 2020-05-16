@@ -1,0 +1,132 @@
+\doxysection{Basic}
+\label{group___basic}\index{Basic@{Basic}}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \textbf{ C\+U\+\_\+\+Basic\+Run\+Mode} \{ \textbf{ C\+U\+\_\+\+B\+R\+M\+\_\+\+N\+O\+R\+M\+AL} = 0, 
+\textbf{ C\+U\+\_\+\+B\+R\+M\+\_\+\+S\+I\+L\+E\+NT}, 
+\textbf{ C\+U\+\_\+\+B\+R\+M\+\_\+\+V\+E\+R\+B\+O\+SE}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+\+Error\+Code} \textbf{ C\+U\+\_\+basic\+\_\+run\+\_\+tests} (void)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+\+Error\+Code} \textbf{ C\+U\+\_\+basic\+\_\+run\+\_\+suite} (\textbf{ C\+U\+\_\+p\+Suite} p\+Suite)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+\+Error\+Code} \textbf{ C\+U\+\_\+basic\+\_\+run\+\_\+test} (\textbf{ C\+U\+\_\+p\+Suite} p\+Suite, \textbf{ C\+U\+\_\+p\+Test} p\+Test)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT void \textbf{ C\+U\+\_\+basic\+\_\+set\+\_\+mode} (\textbf{ C\+U\+\_\+\+Basic\+Run\+Mode} mode)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+\+Basic\+Run\+Mode} \textbf{ C\+U\+\_\+basic\+\_\+get\+\_\+mode} (void)
+\item 
+C\+U\+\_\+\+E\+X\+P\+O\+RT void \textbf{ C\+U\+\_\+basic\+\_\+show\+\_\+failures} (\textbf{ C\+U\+\_\+p\+Failure\+Record} p\+Failure)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\label{group___basic_ga2f7ec57f8b59cfef5c5600bafa4865a6}} 
+\index{Basic@{Basic}!CU\_BasicRunMode@{CU\_BasicRunMode}}
+\index{CU\_BasicRunMode@{CU\_BasicRunMode}!Basic@{Basic}}
+\doxysubsubsection{CU\_BasicRunMode}
+{\footnotesize\ttfamily enum \textbf{ C\+U\+\_\+\+Basic\+Run\+Mode}}
+
+Run modes for the basic interface. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CU\_BRM\_NORMAL@{CU\_BRM\_NORMAL}!Basic@{Basic}}\index{Basic@{Basic}!CU\_BRM\_NORMAL@{CU\_BRM\_NORMAL}}}\mbox{\label{group___basic_gga2f7ec57f8b59cfef5c5600bafa4865a6a9ef29da018d441e7c8e58b9a1676573b}} 
+C\+U\+\_\+\+B\+R\+M\+\_\+\+N\+O\+R\+M\+AL&Normal mode -\/ failures and run summary are printed [default]. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CU\_BRM\_SILENT@{CU\_BRM\_SILENT}!Basic@{Basic}}\index{Basic@{Basic}!CU\_BRM\_SILENT@{CU\_BRM\_SILENT}}}\mbox{\label{group___basic_gga2f7ec57f8b59cfef5c5600bafa4865a6aa7f2cb5a71733216814b6e3d61dcb24e}} 
+C\+U\+\_\+\+B\+R\+M\+\_\+\+S\+I\+L\+E\+NT&Silent mode -\/ no output is printed except framework error messages. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CU\_BRM\_VERBOSE@{CU\_BRM\_VERBOSE}!Basic@{Basic}}\index{Basic@{Basic}!CU\_BRM\_VERBOSE@{CU\_BRM\_VERBOSE}}}\mbox{\label{group___basic_gga2f7ec57f8b59cfef5c5600bafa4865a6a7ce505dc562e2fbf20505059114afea9}} 
+C\+U\+\_\+\+B\+R\+M\+\_\+\+V\+E\+R\+B\+O\+SE&Verbose mode -\/ maximum output of run details. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{group___basic_ga10cca27673fb32e100b27d72b9868956}} 
+\index{Basic@{Basic}!CU\_basic\_get\_mode@{CU\_basic\_get\_mode}}
+\index{CU\_basic\_get\_mode@{CU\_basic\_get\_mode}!Basic@{Basic}}
+\doxysubsubsection{CU\_basic\_get\_mode()}
+{\footnotesize\ttfamily C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+\+Basic\+Run\+Mode} C\+U\+\_\+basic\+\_\+get\+\_\+mode (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Retrieves the current run mode for the basic interface. \begin{DoxyReturn}{Returns}
+The current C\+U\+\_\+\+Basic\+Run\+Mode setting for test runs using the basic interface. 
+\end{DoxyReturn}
+\mbox{\label{group___basic_gad759648660e050dc43e31477ef2bf9e3}} 
+\index{Basic@{Basic}!CU\_basic\_run\_suite@{CU\_basic\_run\_suite}}
+\index{CU\_basic\_run\_suite@{CU\_basic\_run\_suite}!Basic@{Basic}}
+\doxysubsubsection{CU\_basic\_run\_suite()}
+{\footnotesize\ttfamily C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+\+Error\+Code} C\+U\+\_\+basic\+\_\+run\+\_\+suite (\begin{DoxyParamCaption}\item[{\textbf{ C\+U\+\_\+p\+Suite}}]{p\+Suite }\end{DoxyParamCaption})}
+
+Runs all tests for a specific suite in the basic interface. If p\+Suite is N\+U\+LL, the function returns without taking any action. The default C\+U\+\_\+\+Basic\+Run\+Mode is used unless it has been changed using \doxyref{C\+U\+\_\+basic\+\_\+set\+\_\+mode()}{p.}{group___basic_ga4a816b2dbd39aef96875a561e43026be}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Suite} & The \doxyref{C\+U\+\_\+\+Suite}{p.}{struct_c_u___suite} to run. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A C\+U\+\_\+\+Error\+Code indicating the framework error condition, including C\+U\+E\+\_\+\+N\+O\+S\+U\+I\+TE -\/ p\+Suite was N\+U\+LL. 
+\end{DoxyReturn}
+\mbox{\label{group___basic_ga201394cc25e1f711c105652cf9a9eda8}} 
+\index{Basic@{Basic}!CU\_basic\_run\_test@{CU\_basic\_run\_test}}
+\index{CU\_basic\_run\_test@{CU\_basic\_run\_test}!Basic@{Basic}}
+\doxysubsubsection{CU\_basic\_run\_test()}
+{\footnotesize\ttfamily C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+\+Error\+Code} C\+U\+\_\+basic\+\_\+run\+\_\+test (\begin{DoxyParamCaption}\item[{\textbf{ C\+U\+\_\+p\+Suite}}]{p\+Suite,  }\item[{\textbf{ C\+U\+\_\+p\+Test}}]{p\+Test }\end{DoxyParamCaption})}
+
+Runs a single test in a specific suite in the basic interface. If p\+Suite or p\+Test is N\+U\+LL, the function returns without taking any action. The default C\+U\+\_\+\+Basic\+Run\+Mode is used unless it has been changed using C\+U\+\_\+basic\+\_\+set\+\_\+mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Suite} & The \doxyref{C\+U\+\_\+\+Suite}{p.}{struct_c_u___suite} holding the \doxyref{C\+U\+\_\+\+Test}{p.}{struct_c_u___test} to run. \\
+\hline
+{\em p\+Test} & The \doxyref{C\+U\+\_\+\+Test}{p.}{struct_c_u___test} to run. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A C\+U\+\_\+\+Error\+Code indicating the framework error condition, including C\+U\+E\+\_\+\+N\+O\+S\+U\+I\+TE -\/ p\+Suite was N\+U\+LL. C\+U\+E\+\_\+\+N\+O\+T\+E\+ST -\/ p\+Test was N\+U\+LL. 
+\end{DoxyReturn}
+\mbox{\label{group___basic_gab8e9092071a6d97666451c1ea5cc4753}} 
+\index{Basic@{Basic}!CU\_basic\_run\_tests@{CU\_basic\_run\_tests}}
+\index{CU\_basic\_run\_tests@{CU\_basic\_run\_tests}!Basic@{Basic}}
+\doxysubsubsection{CU\_basic\_run\_tests()}
+{\footnotesize\ttfamily C\+U\+\_\+\+E\+X\+P\+O\+RT \textbf{ C\+U\+\_\+\+Error\+Code} C\+U\+\_\+basic\+\_\+run\+\_\+tests (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Runs all registered C\+Unit tests using the basic interface. The default C\+U\+\_\+\+Basic\+Run\+Mode is used unless it has been previously changed using \doxyref{C\+U\+\_\+basic\+\_\+set\+\_\+mode()}{p.}{group___basic_ga4a816b2dbd39aef96875a561e43026be}. The C\+Unit test registry must have been initialized before calling this function.
+
+\begin{DoxyReturn}{Returns}
+A C\+U\+\_\+\+Error\+Code indicating the framework error condition, including C\+U\+E\+\_\+\+N\+O\+R\+E\+G\+I\+S\+T\+RY -\/ Registry has not been initialized. 
+\end{DoxyReturn}
+\mbox{\label{group___basic_ga4a816b2dbd39aef96875a561e43026be}} 
+\index{Basic@{Basic}!CU\_basic\_set\_mode@{CU\_basic\_set\_mode}}
+\index{CU\_basic\_set\_mode@{CU\_basic\_set\_mode}!Basic@{Basic}}
+\doxysubsubsection{CU\_basic\_set\_mode()}
+{\footnotesize\ttfamily C\+U\+\_\+\+E\+X\+P\+O\+RT void C\+U\+\_\+basic\+\_\+set\+\_\+mode (\begin{DoxyParamCaption}\item[{\textbf{ C\+U\+\_\+\+Basic\+Run\+Mode}}]{mode }\end{DoxyParamCaption})}
+
+Sets the run mode for the basic interface. 
+\begin{DoxyParams}{Parameters}
+{\em mode} & The new C\+U\+\_\+\+Basic\+Run\+Mode for subsequent test runs using the basic interface. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{group___basic_ga42f85f17df1cd5fd68d0c20be273a878}} 
+\index{Basic@{Basic}!CU\_basic\_show\_failures@{CU\_basic\_show\_failures}}
+\index{CU\_basic\_show\_failures@{CU\_basic\_show\_failures}!Basic@{Basic}}
+\doxysubsubsection{CU\_basic\_show\_failures()}
+{\footnotesize\ttfamily C\+U\+\_\+\+E\+X\+P\+O\+RT void C\+U\+\_\+basic\+\_\+show\+\_\+failures (\begin{DoxyParamCaption}\item[{\textbf{ C\+U\+\_\+p\+Failure\+Record}}]{p\+Failure }\end{DoxyParamCaption})}
+
+Prints a summary of run failures to stdout. This is provided for user convenience upon request, and does not take into account the current run mode. The failures are printed to stdout independent of the most recent run mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Failure} & List of C\+U\+\_\+p\+Failure\+Record\textquotesingle{}s to output. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,104 @@
+\doxysection{/\+Users/saykasz/\+Desktop/\+Dev\+\_\+\+Techniques\+\_\+game-\/of-\/life/include/\+C\+Unit/\+C\+Unit.h File Reference}
+\label{_c_unit_8h}\index{/Users/saykasz/Desktop/Dev\_Techniques\_game-\/of-\/life/include/CUnit/CUnit.h@{/Users/saykasz/Desktop/Dev\_Techniques\_game-\/of-\/life/include/CUnit/CUnit.h}}
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}C\+U\+Error.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Test\+D\+B.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Test\+Run.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ C\+U\+\_\+\+V\+E\+R\+S\+I\+ON}~\char`\"{}2.\+1-\/3\char`\"{}
+\item 
+\#define \textbf{ C\+U\+\_\+\+M\+A\+X\+\_\+\+T\+E\+S\+T\+\_\+\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+TH}~256
+\item 
+\#define \textbf{ C\+U\+\_\+\+M\+A\+X\+\_\+\+S\+U\+I\+T\+E\+\_\+\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+TH}~256
+\item 
+\#define \textbf{ C\+U\+\_\+\+B\+O\+OL}~int
+\item 
+\#define \textbf{ C\+U\+\_\+\+T\+R\+UE}~1
+\item 
+\#define \textbf{ C\+U\+\_\+\+F\+A\+L\+SE}~0
+\item 
+\#define \textbf{ C\+U\+\_\+\+U\+N\+R\+E\+F\+E\+R\+E\+N\+C\+E\+D\+\_\+\+P\+A\+R\+A\+M\+E\+T\+ER}(x)~(void)x
+\item 
+\#define {\bfseries C\+U\+\_\+\+M\+AX}(a,  b)~(((a) $>$= (b)) ? (a) \+: (b))
+\item 
+\#define {\bfseries C\+U\+\_\+\+M\+IN}(a,  b)~(((a) $>$= (b)) ? (b) \+: (a))
+\item 
+\#define {\bfseries C\+U\+\_\+\+E\+X\+P\+O\+RT}
+\item 
+\#define \textbf{ C\+U\+\_\+\+P\+A\+SS}(msg)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}(\textbf{ C\+U\+\_\+\+T\+R\+UE}, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+P\+A\+SS(\char`\"{} \#msg \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+F\+A\+L\+SE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+RT}(value)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}((value), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \#value, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+F\+A\+L\+SE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+F\+A\+T\+AL}(value)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}((value), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \#value, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+T\+R\+UE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+T\+E\+ST}(value)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}((value), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \#value, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+F\+A\+L\+SE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+T\+E\+S\+T\+\_\+\+F\+A\+T\+AL}(value)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}((value), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \#value, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+T\+R\+UE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+F\+A\+IL}(msg)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}(\textbf{ C\+U\+\_\+\+F\+A\+L\+SE}, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+F\+A\+IL(\char`\"{} \#msg \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+F\+A\+L\+SE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+F\+A\+I\+L\+\_\+\+F\+A\+T\+AL}(msg)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}(\textbf{ C\+U\+\_\+\+F\+A\+L\+SE}, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+F\+A\+I\+L\+\_\+\+F\+A\+T\+AL(\char`\"{} \#msg \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+T\+R\+UE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+R\+UE}(value)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}((value), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+R\+UE(\char`\"{} \#value \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+F\+A\+L\+SE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+R\+U\+E\+\_\+\+F\+A\+T\+AL}(value)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}((value), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+T\+R\+U\+E\+\_\+\+F\+A\+T\+AL(\char`\"{} \#value \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+T\+R\+UE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+F\+A\+L\+SE}(value)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}(!(value), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+F\+A\+L\+SE(\char`\"{} \#value \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+F\+A\+L\+SE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+F\+A\+L\+S\+E\+\_\+\+F\+A\+T\+AL}(value)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}(!(value), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+F\+A\+L\+S\+E\+\_\+\+F\+A\+T\+AL(\char`\"{} \#value \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+T\+R\+UE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+AL}(actual,  expected)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}(((actual) == (expected)), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+AL(\char`\"{} \#actual \char`\"{},\char`\"{} \#expected \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+F\+A\+L\+SE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+F\+A\+T\+AL}(actual,  expected)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}(((actual) == (expected)), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+F\+A\+T\+AL(\char`\"{} \#actual \char`\"{},\char`\"{} \#expected \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+T\+R\+UE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+T\+\_\+\+E\+Q\+U\+AL}(actual,  expected)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}(((actual) != (expected)), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+T\+\_\+\+E\+Q\+U\+AL(\char`\"{} \#actual \char`\"{},\char`\"{} \#expected \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+F\+A\+L\+SE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+F\+A\+T\+AL}(actual,  expected)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}(((actual) != (expected)), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+O\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+F\+A\+T\+AL(\char`\"{} \#actual \char`\"{},\char`\"{} \#expected \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+T\+R\+UE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+P\+T\+R\+\_\+\+E\+Q\+U\+AL}(actual,  expected)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}(((const void$\ast$)(actual) == (const void$\ast$)(expected)), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+P\+T\+R\+\_\+\+E\+Q\+U\+AL(\char`\"{} \#actual \char`\"{},\char`\"{} \#expected \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+F\+A\+L\+SE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+P\+T\+R\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+F\+A\+T\+AL}(actual,  expected)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}(((const void$\ast$)(actual) == (const void$\ast$)(expected)), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+P\+T\+R\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+F\+A\+T\+AL(\char`\"{} \#actual \char`\"{},\char`\"{} \#expected \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+T\+R\+UE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+P\+T\+R\+\_\+\+N\+O\+T\+\_\+\+E\+Q\+U\+AL}(actual,  expected)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}(((const void$\ast$)(actual) != (const void$\ast$)(expected)), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+P\+T\+R\+\_\+\+N\+O\+T\+\_\+\+E\+Q\+U\+AL(\char`\"{} \#actual \char`\"{},\char`\"{} \#expected \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+F\+A\+L\+SE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+P\+T\+R\+\_\+\+N\+O\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+F\+A\+T\+AL}(actual,  expected)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}(((const void$\ast$)(actual) != (const void$\ast$)(expected)), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+P\+T\+R\+\_\+\+N\+O\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+F\+A\+T\+AL(\char`\"{} \#actual \char`\"{},\char`\"{} \#expected \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+T\+R\+UE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+P\+T\+R\+\_\+\+N\+U\+LL}(value)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}((N\+U\+LL == (const void$\ast$)(value)), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+P\+T\+R\+\_\+\+N\+U\+LL(\char`\"{} \#value\char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+F\+A\+L\+SE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+P\+T\+R\+\_\+\+N\+U\+L\+L\+\_\+\+F\+A\+T\+AL}(value)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}((N\+U\+LL == (const void$\ast$)(value)), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+P\+T\+R\+\_\+\+N\+U\+L\+L\+\_\+\+F\+A\+T\+AL(\char`\"{} \#value\char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+T\+R\+UE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+P\+T\+R\+\_\+\+N\+O\+T\+\_\+\+N\+U\+LL}(value)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}((N\+U\+LL != (const void$\ast$)(value)), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+P\+T\+R\+\_\+\+N\+O\+T\+\_\+\+N\+U\+LL(\char`\"{} \#value\char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+F\+A\+L\+SE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+P\+T\+R\+\_\+\+N\+O\+T\+\_\+\+N\+U\+L\+L\+\_\+\+F\+A\+T\+AL}(value)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}((N\+U\+LL != (const void$\ast$)(value)), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+P\+T\+R\+\_\+\+N\+O\+T\+\_\+\+N\+U\+L\+L\+\_\+\+F\+A\+T\+AL(\char`\"{} \#value\char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+T\+R\+UE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+E\+Q\+U\+AL}(actual,  expected)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}(!(strcmp((const char$\ast$)(actual), (const char$\ast$)(expected))), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+E\+Q\+U\+AL(\char`\"{} \#actual \char`\"{},\char`\"{}  \#expected \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+F\+A\+L\+SE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+F\+A\+T\+AL}(actual,  expected)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}(!(strcmp((const char$\ast$)(actual), (const char$\ast$)(expected))), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+F\+A\+T\+AL(\char`\"{} \#actual \char`\"{},\char`\"{}  \#expected \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+T\+R\+UE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+N\+O\+T\+\_\+\+E\+Q\+U\+AL}(actual,  expected)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}((strcmp((const char$\ast$)(actual), (const char$\ast$)(expected))), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+N\+O\+T\+\_\+\+E\+Q\+U\+AL(\char`\"{} \#actual \char`\"{},\char`\"{}  \#expected \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+F\+A\+L\+SE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+N\+O\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+F\+A\+T\+AL}(actual,  expected)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}((strcmp((const char$\ast$)(actual), (const char$\ast$)(expected))), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+N\+O\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+F\+A\+T\+AL(\char`\"{} \#actual \char`\"{},\char`\"{}  \#expected \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+T\+R\+UE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+S\+T\+R\+I\+N\+G\+\_\+\+E\+Q\+U\+AL}(actual,  expected,  count)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}(!(strncmp((const char$\ast$)(actual), (const char$\ast$)(expected), (size\+\_\+t)(count))), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+S\+T\+R\+I\+N\+G\+\_\+\+E\+Q\+U\+AL(\char`\"{} \#actual \char`\"{},\char`\"{}  \#expected \char`\"{},\char`\"{} \#count \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+F\+A\+L\+SE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+S\+T\+R\+I\+N\+G\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+F\+A\+T\+AL}(actual,  expected,  count)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}(!(strncmp((const char$\ast$)(actual), (const char$\ast$)(expected), (size\+\_\+t)(count))), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+S\+T\+R\+I\+N\+G\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+F\+A\+T\+AL(\char`\"{} \#actual \char`\"{},\char`\"{}  \#expected \char`\"{},\char`\"{} \#count \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+T\+R\+UE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+S\+T\+R\+I\+N\+G\+\_\+\+N\+O\+T\+\_\+\+E\+Q\+U\+AL}(actual,  expected,  count)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}((strncmp((const char$\ast$)(actual), (const char$\ast$)(expected), (size\+\_\+t)(count))), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+S\+T\+R\+I\+N\+G\+\_\+\+N\+O\+T\+\_\+\+E\+Q\+U\+AL(\char`\"{} \#actual \char`\"{},\char`\"{}  \#expected \char`\"{},\char`\"{} \#count \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+F\+A\+L\+SE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+S\+T\+R\+I\+N\+G\+\_\+\+N\+O\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+F\+A\+T\+AL}(actual,  expected,  count)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}((strncmp((const char$\ast$)(actual), (const char$\ast$)(expected), (size\+\_\+t)(count))), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+N\+S\+T\+R\+I\+N\+G\+\_\+\+N\+O\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+F\+A\+T\+AL(\char`\"{} \#actual \char`\"{},\char`\"{}  \#expected \char`\"{},\char`\"{} \#count \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+T\+R\+UE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+E\+Q\+U\+AL}(actual,  expected,  granularity)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}(((fabs((double)(actual) -\/ (expected)) $<$= fabs((double)(granularity)))), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+E\+Q\+U\+AL(\char`\"{} \#actual \char`\"{},\char`\"{}  \#expected \char`\"{},\char`\"{} \#granularity \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+F\+A\+L\+SE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+F\+A\+T\+AL}(actual,  expected,  granularity)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}(((fabs((double)(actual) -\/ (expected)) $<$= fabs((double)(granularity)))), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+F\+A\+T\+AL(\char`\"{} \#actual \char`\"{},\char`\"{}  \#expected \char`\"{},\char`\"{} \#granularity \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+T\+R\+UE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+N\+O\+T\+\_\+\+E\+Q\+U\+AL}(actual,  expected,  granularity)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}(((fabs((double)(actual) -\/ (expected)) $>$ fabs((double)(granularity)))), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+N\+O\+T\+\_\+\+E\+Q\+U\+AL(\char`\"{} \#actual \char`\"{},\char`\"{}  \#expected \char`\"{},\char`\"{} \#granularity \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+F\+A\+L\+SE}); \}
+\item 
+\#define \textbf{ C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+N\+O\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+F\+A\+T\+AL}(actual,  expected,  granularity)~\{ \textbf{ C\+U\+\_\+assert\+Implementation}(((fabs((double)(actual) -\/ (expected)) $>$ fabs((double)(granularity)))), \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (\char`\"{}C\+U\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+N\+O\+T\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+F\+A\+T\+AL(\char`\"{} \#actual \char`\"{},\char`\"{}  \#expected \char`\"{},\char`\"{} \#granularity \char`\"{})\char`\"{}), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \char`\"{}\char`\"{}, \textbf{ C\+U\+\_\+\+T\+R\+UE}); \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Basic C\+Unit include file for user and system code. Defines macros for assertions for use in user test cases. Basic system macro definitions also appear here. 

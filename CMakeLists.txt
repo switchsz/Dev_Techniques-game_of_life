@@ -20,6 +20,9 @@ target_link_libraries( ${PROJECT_NAME} PUBLIC draw game)
 
  
 #install(TARGETS ${PROJECT_NAME})
+############################
+
+target_include_directories(${PROJECT_NAME} PUBLIC /usr/local/include)
 
 
 

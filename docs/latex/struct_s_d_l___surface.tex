@@ -1,0 +1,121 @@
+\doxysection{S\+D\+L\+\_\+\+Surface Struct Reference}
+\label{struct_s_d_l___surface}\index{SDL\_Surface@{SDL\_Surface}}
+
+
+A collection of pixels used in software blitting.  
+
+
+
+
+{\ttfamily \#include $<$S\+D\+L\+\_\+surface.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+Uint32 \textbf{ flags}
+\item 
+\textbf{ S\+D\+L\+\_\+\+Pixel\+Format} $\ast$ \textbf{ format}
+\item 
+\mbox{\label{struct_s_d_l___surface_aac374e320caaadeca4874add33b62af2}} 
+int {\bfseries w}
+\item 
+int \textbf{ h}
+\item 
+int \textbf{ pitch}
+\item 
+void $\ast$ \textbf{ pixels}
+\item 
+void $\ast$ \textbf{ userdata}
+\item 
+int \textbf{ locked}
+\item 
+void $\ast$ \textbf{ lock\+\_\+data}
+\item 
+\textbf{ S\+D\+L\+\_\+\+Rect} \textbf{ clip\+\_\+rect}
+\item 
+struct S\+D\+L\+\_\+\+Blit\+Map $\ast$ \textbf{ map}
+\item 
+int \textbf{ refcount}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A collection of pixels used in software blitting. 
+
+\begin{DoxyNote}{Note}
+This structure should be treated as read-\/only, except for {\ttfamily pixels}, which, if not N\+U\+LL, contains the raw pixel data for the surface. 
+\end{DoxyNote}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\label{struct_s_d_l___surface_ada87d50bed22f849936519c4912a5a98}} 
+\index{SDL\_Surface@{SDL\_Surface}!clip\_rect@{clip\_rect}}
+\index{clip\_rect@{clip\_rect}!SDL\_Surface@{SDL\_Surface}}
+\doxysubsubsection{clip\_rect}
+{\footnotesize\ttfamily \textbf{ S\+D\+L\+\_\+\+Rect} clip\+\_\+rect}
+
+clipping information Read-\/only \mbox{\label{struct_s_d_l___surface_a048097c5cc2146ce1ff2450684f1b51c}} 
+\index{SDL\_Surface@{SDL\_Surface}!flags@{flags}}
+\index{flags@{flags}!SDL\_Surface@{SDL\_Surface}}
+\doxysubsubsection{flags}
+{\footnotesize\ttfamily Uint32 flags}
+
+Read-\/only \mbox{\label{struct_s_d_l___surface_a9d191a5bbd871cd7b4ded2158b4f61e8}} 
+\index{SDL\_Surface@{SDL\_Surface}!format@{format}}
+\index{format@{format}!SDL\_Surface@{SDL\_Surface}}
+\doxysubsubsection{format}
+{\footnotesize\ttfamily \textbf{ S\+D\+L\+\_\+\+Pixel\+Format}$\ast$ format}
+
+Read-\/only \mbox{\label{struct_s_d_l___surface_a16611451551e3d15916bae723c3f59f7}} 
+\index{SDL\_Surface@{SDL\_Surface}!h@{h}}
+\index{h@{h}!SDL\_Surface@{SDL\_Surface}}
+\doxysubsubsection{h}
+{\footnotesize\ttfamily int h}
+
+Read-\/only \mbox{\label{struct_s_d_l___surface_aae9edc33317dc7ff7c41d40fae6bb5c3}} 
+\index{SDL\_Surface@{SDL\_Surface}!lock\_data@{lock\_data}}
+\index{lock\_data@{lock\_data}!SDL\_Surface@{SDL\_Surface}}
+\doxysubsubsection{lock\_data}
+{\footnotesize\ttfamily void$\ast$ lock\+\_\+data}
+
+Read-\/only \mbox{\label{struct_s_d_l___surface_a3656313f0cb42dffd0c00864ca333c25}} 
+\index{SDL\_Surface@{SDL\_Surface}!locked@{locked}}
+\index{locked@{locked}!SDL\_Surface@{SDL\_Surface}}
+\doxysubsubsection{locked}
+{\footnotesize\ttfamily int locked}
+
+information needed for surfaces requiring locks Read-\/only \mbox{\label{struct_s_d_l___surface_a6305e21db64c3e35a648981e733414b3}} 
+\index{SDL\_Surface@{SDL\_Surface}!map@{map}}
+\index{map@{map}!SDL\_Surface@{SDL\_Surface}}
+\doxysubsubsection{map}
+{\footnotesize\ttfamily struct S\+D\+L\+\_\+\+Blit\+Map$\ast$ map}
+
+info for fast blit mapping to other surfaces Private \mbox{\label{struct_s_d_l___surface_a05c8b22d2905f7a52fa31b13f85c70f3}} 
+\index{SDL\_Surface@{SDL\_Surface}!pitch@{pitch}}
+\index{pitch@{pitch}!SDL\_Surface@{SDL\_Surface}}
+\doxysubsubsection{pitch}
+{\footnotesize\ttfamily int pitch}
+
+Read-\/only \mbox{\label{struct_s_d_l___surface_aaf78c2553b191735d6902cafb68a92ff}} 
+\index{SDL\_Surface@{SDL\_Surface}!pixels@{pixels}}
+\index{pixels@{pixels}!SDL\_Surface@{SDL\_Surface}}
+\doxysubsubsection{pixels}
+{\footnotesize\ttfamily void$\ast$ pixels}
+
+Read-\/write \mbox{\label{struct_s_d_l___surface_a6022c8a609170c7365fb96e83cb2df48}} 
+\index{SDL\_Surface@{SDL\_Surface}!refcount@{refcount}}
+\index{refcount@{refcount}!SDL\_Surface@{SDL\_Surface}}
+\doxysubsubsection{refcount}
+{\footnotesize\ttfamily int refcount}
+
+Reference count -- used when freeing surface Read-\/mostly \mbox{\label{struct_s_d_l___surface_afd0ffb02780e738d4c0a10ab833b7834}} 
+\index{SDL\_Surface@{SDL\_Surface}!userdata@{userdata}}
+\index{userdata@{userdata}!SDL\_Surface@{SDL\_Surface}}
+\doxysubsubsection{userdata}
+{\footnotesize\ttfamily void$\ast$ userdata}
+
+Application data associated with the surface Read-\/write 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/saykasz/\+Desktop/\+Dev\+\_\+\+Techniques\+\_\+game-\/of-\/life/draw/include/\+S\+D\+L2/\textbf{ S\+D\+L\+\_\+surface.\+h}\end{DoxyCompactItemize}

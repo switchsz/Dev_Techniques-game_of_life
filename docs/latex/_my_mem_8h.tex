@@ -1,0 +1,21 @@
+\doxysection{/\+Users/saykasz/\+Desktop/\+Dev\+\_\+\+Techniques\+\_\+game-\/of-\/life/include/\+C\+Unit/\+My\+Mem.h File Reference}
+\label{_my_mem_8h}\index{/Users/saykasz/Desktop/Dev\_Techniques\_game-\/of-\/life/include/CUnit/MyMem.h@{/Users/saykasz/Desktop/Dev\_Techniques\_game-\/of-\/life/include/CUnit/MyMem.h}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ C\+U\+\_\+\+C\+A\+L\+L\+OC}(x,  y)~calloc((x), (y))
+\item 
+\#define \textbf{ C\+U\+\_\+\+M\+A\+L\+L\+OC}(x)~malloc((x))
+\item 
+\#define \textbf{ C\+U\+\_\+\+F\+R\+EE}(x)~free((x))
+\item 
+\#define \textbf{ C\+U\+\_\+\+R\+E\+A\+L\+L\+OC}(x,  y)~realloc((x), (y))
+\item 
+\#define \textbf{ C\+U\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+R\+E\+P\+O\+RT}(x)
+\item 
+\#define \textbf{ C\+U\+\_\+\+D\+U\+M\+P\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+U\+S\+A\+GE}(x)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Memory management functions (user interface). Two versions of memory allocation/deallocation are available. If compiled with M\+E\+M\+T\+R\+A\+CE defined, C\+Unit keeps track of all system allocations \& deallocations. The memory record can then be reported using C\+U\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+R\+E\+P\+O\+RT. Otherwise, standard system memory allocation is used without tracing. 
