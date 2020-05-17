@@ -1,8 +1,9 @@
 {
+	"archive" : {},
 	"artifacts" : 
 	[
 		{
-			"path" : "game/test_pract1"
+			"path" : "game/libgame.a"
 		}
 	],
 	"backtrace" : 1,
@@ -10,8 +11,9 @@
 	{
 		"commands" : 
 		[
-			"add_executable",
-			"target_link_libraries",
+			"add_library",
+			"install",
+			"target_compile_options",
 			"target_include_directories",
 			"target_sources"
 		],
@@ -27,25 +29,31 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 21,
+				"line" : 5,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 25,
+				"line" : 27,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 23,
+				"line" : 24,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 22,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 6,
 				"parent" : 0
 			}
 		]
@@ -57,16 +65,16 @@
 			[
 				{
 					"fragment" : " -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk  "
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "--coverage"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
-					"path" : "/usr/local/include"
-				},
-				{
-					"backtrace" : 2,
+					"backtrace" : 4,
 					"path" : "/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game"
 				}
 			],
@@ -74,42 +82,27 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1,
-				2
+				1
 			]
 		}
 	],
-	"dependencies" : 
-	[
-		{
-			"backtrace" : 2,
-			"id" : "game::@0c53ff3c4131f9152fd3"
-		}
-	],
-	"id" : "test_pract1::@0c53ff3c4131f9152fd3",
-	"link" : 
+	"id" : "game::@0c53ff3c4131f9152fd3",
+	"install" : 
 	{
-		"commandFragments" : 
+		"destinations" : 
 		[
 			{
-				"fragment" : "",
-				"role" : "flags"
-			},
-			{
 				"backtrace" : 2,
-				"fragment" : "libgame.a",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "-lcunit",
-				"role" : "libraries"
+				"path" : "lib"
 			}
 		],
-		"language" : "C"
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
 	},
-	"name" : "test_pract1",
-	"nameOnDisk" : "test_pract1",
+	"name" : "game",
+	"nameOnDisk" : "libgame.a",
 	"paths" : 
 	{
 		"build" : "game",
@@ -122,49 +115,42 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1,
-				2
+				1
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				3,
-				4
+				2,
+				3
 			]
 		}
 	],
 	"sources" : 
 	[
 		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "game/cunit_tests.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
+			"backtrace" : 5,
 			"compileGroupIndex" : 0,
 			"path" : "game/cell.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 2,
+			"backtrace" : 5,
 			"compileGroupIndex" : 0,
 			"path" : "game/celllist.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 2,
+			"backtrace" : 5,
 			"path" : "game/cell.h",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 2,
+			"backtrace" : 5,
 			"path" : "game/celllist.h",
 			"sourceGroupIndex" : 1
 		}
 	],
-	"type" : "EXECUTABLE"
+	"type" : "STATIC_LIBRARY"
 }

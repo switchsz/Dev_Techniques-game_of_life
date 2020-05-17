@@ -1,0 +1,11 @@
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles/rebuild_cache.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles/edit_cache.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles/mygame.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/draw/CMakeFiles/test_pract2.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/draw/CMakeFiles/rebuild_cache.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/draw/CMakeFiles/edit_cache.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/draw/CMakeFiles/draw.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/game/CMakeFiles/test_pract1.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/game/CMakeFiles/rebuild_cache.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/game/CMakeFiles/edit_cache.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/game/CMakeFiles/game.dir

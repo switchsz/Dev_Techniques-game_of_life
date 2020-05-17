@@ -11,6 +11,7 @@
 						1,
 						2
 					],
+					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.0"
@@ -39,6 +40,7 @@
 				},
 				{
 					"build" : "game",
+					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.17"
@@ -104,35 +106,35 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "draw::@f99138a17b78bc09f6a1",
-					"jsonFile" : "target-draw-0146d8cb1b79423edad2.json",
+					"jsonFile" : "target-draw-33242a28af2de6404ee9.json",
 					"name" : "draw",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "game::@0c53ff3c4131f9152fd3",
-					"jsonFile" : "target-game-b34176598900525b3ce6.json",
+					"jsonFile" : "target-game-25d9d62af3f25ec39588.json",
 					"name" : "game",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "mygame::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-mygame-c9bf2e61f643c7d7fa1f.json",
+					"jsonFile" : "target-mygame-8c7832ff1d89bc29b6c2.json",
 					"name" : "mygame",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "test_pract1::@0c53ff3c4131f9152fd3",
-					"jsonFile" : "target-test_pract1-96813c78cf9021c755d2.json",
+					"jsonFile" : "target-test_pract1-d1cff37c0afe679ef73c.json",
 					"name" : "test_pract1",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "test_pract2::@f99138a17b78bc09f6a1",
-					"jsonFile" : "target-test_pract2-b329f91cf100e87b25a1.json",
+					"jsonFile" : "target-test_pract2-a9de4fa0c8ba8df123de.json",
 					"name" : "test_pract2",
 					"projectIndex" : 1
 				}

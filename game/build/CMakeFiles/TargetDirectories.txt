@@ -1,3 +1,7 @@
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/install/strip.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/install.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/list_install_components.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/install/local.dir
 /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/test.dir
 /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/test_pract1.dir
 /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/rebuild_cache.dir

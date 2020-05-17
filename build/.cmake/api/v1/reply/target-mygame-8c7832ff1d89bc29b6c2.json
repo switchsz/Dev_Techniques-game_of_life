@@ -50,6 +50,10 @@
 			[
 				{
 					"fragment" : " -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk  "
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "--coverage"
 				}
 			],
 			"includes" : 
@@ -61,10 +65,6 @@
 				{
 					"backtrace" : 2,
 					"path" : "/Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/usr/local/include"
 				},
 				{
 					"backtrace" : 2,
@@ -115,6 +115,10 @@
 			{
 				"backtrace" : 2,
 				"fragment" : "game/libgame.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "--coverage",
 				"role" : "libraries"
 			},
 			{

@@ -5,45 +5,23 @@ project(draw LANGUAGES C)
 find_package(SDL2 CONFIG REQUIRED) 
 add_library(${PROJECT_NAME} "")
 
-
-
 target_sources(${PROJECT_NAME} PUBLIC ansi.c sdl.c ansi.h sdl.h)
 
 target_include_directories(${PROJECT_NAME} PUBLIC /usr/local/include) #-I
 target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})#-I.
 
-#target_include_directories(${PROJECT_NAME} PUBLIC ../game)
 
 target_link_libraries( ${PROJECT_NAME} PUBLIC game)
-
-
-#target_link_libraries(${PROJECT_NAME} INTERFACE sdl2-2.0.0) #-lm
 target_link_libraries(${PROJECT_NAME} PUBLIC SDL2::SDL2 SDL2::SDL2main)
 
-target_include_directories(${PROJECT_NAME} PUBLIC usr/local/include)
-
-
-
-
 ##################################################################################
-
 
 
 set(TEST_PROJECT1 test_pract2)
 add_executable(${TEST_PROJECT1})
 target_sources(${TEST_PROJECT1} PUBLIC cunit_tests.c)
 target_include_directories(${TEST_PROJECT1} PUBLIC /usr/local/include)
-
 target_link_libraries(${TEST_PROJECT1} PUBLIC ${PROJECT_NAME} cunit)
-#target_link_libraries(${TEST_PROJECT1} cunit)
-
-
-
-#target_link_libraries(${TEST_PROJECT1} INTERFACE cunit)
-
-
-
-
 
 
 #############################################################

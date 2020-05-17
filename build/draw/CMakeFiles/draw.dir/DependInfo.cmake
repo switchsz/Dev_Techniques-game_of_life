@@ -15,7 +15,6 @@ set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "/usr/local/include"
   "../draw"
-  "../draw/usr/local/include"
   "../game"
   "/usr/local/Cellar/sdl2/2.0.12_1/include/SDL2"
   )
