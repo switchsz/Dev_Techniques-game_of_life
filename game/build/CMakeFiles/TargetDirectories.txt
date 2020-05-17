@@ -1,5 +1,5 @@
-/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/rebuild_cache.dir
-/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/test.dir
-/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/game.dir
-/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/edit_cache.dir
-/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/test_pract1.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/test.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/test_pract1.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/rebuild_cache.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/edit_cache.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/game.dir

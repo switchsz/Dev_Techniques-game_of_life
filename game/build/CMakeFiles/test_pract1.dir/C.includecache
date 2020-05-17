@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/cell.c
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/cell.c
 cell.h
-/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/cell.h
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/cell.h
 
-/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/cell.h
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/cell.h
 stdlib.h
 -
 stdio.h
@@ -20,23 +20,71 @@ time.h
 unistd.h
 -
 
-/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/celllist.c
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/celllist.c
 celllist.h
-/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/celllist.h
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/celllist.h
 
-/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/celllist.h
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/celllist.h
 cell.h
-/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/cell.h
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/cell.h
 
-/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/cunit_tests.c
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/cunit_tests.c
 stdio.h
 -
 celllist.h
-/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/celllist.h
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/celllist.h
 CUnit/Basic.h
 -
 CUnit/Console.h
 -
 CUnit/CUnit.h
+-
+
+/usr/local/include/CUnit/Basic.h
+CUnit.h
+/usr/local/include/CUnit/CUnit.h
+TestDB.h
+/usr/local/include/CUnit/TestDB.h
+
+/usr/local/include/CUnit/CUError.h
+errno.h
+-
+CUnit.h
+/usr/local/include/CUnit/CUnit.h
+
+/usr/local/include/CUnit/CUnit.h
+string.h
+-
+math.h
+-
+CUError.h
+/usr/local/include/CUnit/CUError.h
+TestDB.h
+/usr/local/include/CUnit/TestDB.h
+TestRun.h
+/usr/local/include/CUnit/TestRun.h
+
+/usr/local/include/CUnit/Console.h
+CUnit.h
+/usr/local/include/CUnit/CUnit.h
+TestDB.h
+/usr/local/include/CUnit/TestDB.h
+
+/usr/local/include/CUnit/TestDB.h
+setjmp.h
+-
+CUnit.h
+/usr/local/include/CUnit/CUnit.h
+CUError.h
+/usr/local/include/CUnit/CUError.h
+
+/usr/local/include/CUnit/TestRun.h
+CUnit.h
+/usr/local/include/CUnit/CUnit.h
+CUError.h
+/usr/local/include/CUnit/CUError.h
+TestDB.h
+/usr/local/include/CUnit/TestDB.h
+stdio.h
 -
 

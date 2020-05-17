@@ -11,4 +11,10 @@ CMakeFiles/test_pract1.dir/celllist.c.o: ../celllist.h
 CMakeFiles/test_pract1.dir/cunit_tests.c.o: ../cell.h
 CMakeFiles/test_pract1.dir/cunit_tests.c.o: ../celllist.h
 CMakeFiles/test_pract1.dir/cunit_tests.c.o: ../cunit_tests.c
+CMakeFiles/test_pract1.dir/cunit_tests.c.o: /usr/local/include/CUnit/Basic.h
+CMakeFiles/test_pract1.dir/cunit_tests.c.o: /usr/local/include/CUnit/CUError.h
+CMakeFiles/test_pract1.dir/cunit_tests.c.o: /usr/local/include/CUnit/CUnit.h
+CMakeFiles/test_pract1.dir/cunit_tests.c.o: /usr/local/include/CUnit/Console.h
+CMakeFiles/test_pract1.dir/cunit_tests.c.o: /usr/local/include/CUnit/TestDB.h
+CMakeFiles/test_pract1.dir/cunit_tests.c.o: /usr/local/include/CUnit/TestRun.h
 

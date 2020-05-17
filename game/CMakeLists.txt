@@ -6,6 +6,7 @@ add_library(${PROJECT_NAME} "")
 target_sources(${PROJECT_NAME} PUBLIC cell.c celllist.c cell.h celllist.h)
 target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}) #-I.
 
+
 ##############################################################################################
 
 #set(MYLIB functions)
@@ -22,6 +23,8 @@ target_sources(${TEST_PROJECT1} PUBLIC cunit_tests.c)
 target_include_directories(${TEST_PROJECT1} PUBLIC /usr/local/include)
 
 target_link_libraries(${TEST_PROJECT1} PUBLIC ${PROJECT_NAME} cunit)
+#target_link_libraries(${TEST_PROJECT1} cunit)
+
 
 
 #target_link_libraries(${TEST_PROJECT1} INTERFACE cunit)

@@ -1,3 +1,5 @@
-/home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles/rebuild_cache.dir
-/home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles/draw.dir
-/home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles/edit_cache.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles/test.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles/test_pract2.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles/rebuild_cache.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles/edit_cache.dir
+/Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles/draw.dir

@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/340/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.17.2/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/340/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.17.2/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/faxmishok/Desktop/Dev_Techniques_game-of-life
+CMAKE_SOURCE_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build
+CMAKE_BINARY_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/cmake/340/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.17.2/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/snap/cmake/340/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.17.2/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -144,6 +144,19 @@ mygame/fast:
 .PHONY : mygame/fast
 
 #=============================================================================
+# Target rules for targets named test_pract2
+
+# Build rule for target.
+test_pract2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_pract2
+.PHONY : test_pract2
+
+# fast build rule for target.
+test_pract2/fast:
+	$(MAKE) $(MAKESILENT) -f draw/CMakeFiles/test_pract2.dir/build.make draw/CMakeFiles/test_pract2.dir/build
+.PHONY : test_pract2/fast
+
+#=============================================================================
 # Target rules for targets named draw
 
 # Build rule for target.
@@ -157,19 +170,6 @@ draw/fast:
 .PHONY : draw/fast
 
 #=============================================================================
-# Target rules for targets named game
-
-# Build rule for target.
-game: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game
-.PHONY : game
-
-# fast build rule for target.
-game/fast:
-	$(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/build
-.PHONY : game/fast
-
-#=============================================================================
 # Target rules for targets named test_pract1
 
 # Build rule for target.
@@ -181,6 +181,19 @@ test_pract1: cmake_check_build_system
 test_pract1/fast:
 	$(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/build
 .PHONY : test_pract1/fast
+
+#=============================================================================
+# Target rules for targets named game
+
+# Build rule for target.
+game: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game
+.PHONY : game
+
+# fast build rule for target.
+game/fast:
+	$(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/build
+.PHONY : game/fast
 
 draw/ansi.o: draw/ansi.c.o
 
@@ -290,32 +303,32 @@ game/celllist.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/game/celllist.c.s
 .PHONY : game/celllist.c.s
 
-main.o: main.c.o
+mainsdl.o: mainsdl.c.o
 
-.PHONY : main.o
+.PHONY : mainsdl.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/main.c.o
-.PHONY : main.c.o
+mainsdl.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/mainsdl.c.o
+.PHONY : mainsdl.c.o
 
-main.i: main.c.i
+mainsdl.i: mainsdl.c.i
 
-.PHONY : main.i
+.PHONY : mainsdl.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/main.c.i
-.PHONY : main.c.i
+mainsdl.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/mainsdl.c.i
+.PHONY : mainsdl.c.i
 
-main.s: main.c.s
+mainsdl.s: mainsdl.c.s
 
-.PHONY : main.s
+.PHONY : mainsdl.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/main.c.s
-.PHONY : main.c.s
+mainsdl.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/mainsdl.c.s
+.PHONY : mainsdl.c.s
 
 # Help Target
 help:
@@ -329,6 +342,7 @@ help:
 	@echo "... game"
 	@echo "... mygame"
 	@echo "... test_pract1"
+	@echo "... test_pract2"
 	@echo "... draw/ansi.o"
 	@echo "... draw/ansi.i"
 	@echo "... draw/ansi.s"
@@ -341,9 +355,9 @@ help:
 	@echo "... game/celllist.o"
 	@echo "... game/celllist.i"
 	@echo "... game/celllist.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... mainsdl.o"
+	@echo "... mainsdl.i"
+	@echo "... mainsdl.s"
 .PHONY : help
 
 

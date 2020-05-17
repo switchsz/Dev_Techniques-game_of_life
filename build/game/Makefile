@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/340/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.17.2/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/340/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.17.2/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/faxmishok/Desktop/Dev_Techniques_game-of-life
+CMAKE_SOURCE_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build
+CMAKE_BINARY_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/cmake/340/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.17.2/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/snap/cmake/340/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.17.2/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,14 +100,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/game/CMakeFiles/progress.marks
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/game/CMakeFiles/progress.marks
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game/clean
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game/clean
 .PHONY : clean
 
 # The main clean target
@@ -117,37 +117,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game/preinstall
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game/preinstall
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-game/CMakeFiles/game.dir/rule:
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game/CMakeFiles/game.dir/rule
-.PHONY : game/CMakeFiles/game.dir/rule
-
-# Convenience name for target.
-game: game/CMakeFiles/game.dir/rule
-
-.PHONY : game
-
-# fast build rule for target.
-game/fast:
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/build
-.PHONY : game/fast
-
-# Convenience name for target.
 game/CMakeFiles/test_pract1.dir/rule:
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game/CMakeFiles/test_pract1.dir/rule
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game/CMakeFiles/test_pract1.dir/rule
 .PHONY : game/CMakeFiles/test_pract1.dir/rule
 
 # Convenience name for target.
@@ -157,8 +142,23 @@ test_pract1: game/CMakeFiles/test_pract1.dir/rule
 
 # fast build rule for target.
 test_pract1/fast:
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/build
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/build
 .PHONY : test_pract1/fast
+
+# Convenience name for target.
+game/CMakeFiles/game.dir/rule:
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game/CMakeFiles/game.dir/rule
+.PHONY : game/CMakeFiles/game.dir/rule
+
+# Convenience name for target.
+game: game/CMakeFiles/game.dir/rule
+
+.PHONY : game
+
+# fast build rule for target.
+game/fast:
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/build
+.PHONY : game/fast
 
 cell.o: cell.c.o
 
@@ -166,8 +166,8 @@ cell.o: cell.c.o
 
 # target to build an object file
 cell.c.o:
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/cell.c.o
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/cell.c.o
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/cell.c.o
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/cell.c.o
 .PHONY : cell.c.o
 
 cell.i: cell.c.i
@@ -176,8 +176,8 @@ cell.i: cell.c.i
 
 # target to preprocess a source file
 cell.c.i:
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/cell.c.i
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/cell.c.i
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/cell.c.i
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/cell.c.i
 .PHONY : cell.c.i
 
 cell.s: cell.c.s
@@ -186,8 +186,8 @@ cell.s: cell.c.s
 
 # target to generate assembly for a file
 cell.c.s:
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/cell.c.s
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/cell.c.s
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/cell.c.s
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/cell.c.s
 .PHONY : cell.c.s
 
 celllist.o: celllist.c.o
@@ -196,8 +196,8 @@ celllist.o: celllist.c.o
 
 # target to build an object file
 celllist.c.o:
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/celllist.c.o
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/celllist.c.o
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/celllist.c.o
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/celllist.c.o
 .PHONY : celllist.c.o
 
 celllist.i: celllist.c.i
@@ -206,8 +206,8 @@ celllist.i: celllist.c.i
 
 # target to preprocess a source file
 celllist.c.i:
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/celllist.c.i
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/celllist.c.i
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/celllist.c.i
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/celllist.c.i
 .PHONY : celllist.c.i
 
 celllist.s: celllist.c.s
@@ -216,8 +216,8 @@ celllist.s: celllist.c.s
 
 # target to generate assembly for a file
 celllist.c.s:
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/celllist.c.s
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/celllist.c.s
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/celllist.c.s
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/celllist.c.s
 .PHONY : celllist.c.s
 
 cunit_tests.o: cunit_tests.c.o
@@ -226,7 +226,7 @@ cunit_tests.o: cunit_tests.c.o
 
 # target to build an object file
 cunit_tests.c.o:
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/cunit_tests.c.o
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/cunit_tests.c.o
 .PHONY : cunit_tests.c.o
 
 cunit_tests.i: cunit_tests.c.i
@@ -235,7 +235,7 @@ cunit_tests.i: cunit_tests.c.i
 
 # target to preprocess a source file
 cunit_tests.c.i:
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/cunit_tests.c.i
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/cunit_tests.c.i
 .PHONY : cunit_tests.c.i
 
 cunit_tests.s: cunit_tests.c.s
@@ -244,7 +244,7 @@ cunit_tests.s: cunit_tests.c.s
 
 # target to generate assembly for a file
 cunit_tests.c.s:
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/cunit_tests.c.s
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/cunit_tests.c.s
 .PHONY : cunit_tests.c.s
 
 # Help Target
@@ -277,6 +277,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

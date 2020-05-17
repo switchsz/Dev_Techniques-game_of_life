@@ -59,27 +59,38 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/340/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.17.2/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/340/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.17.2/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw
+CMAKE_SOURCE_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/build
+CMAKE_BINARY_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/local/Cellar/cmake/3.17.2/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/cmake/340/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.17.2/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +101,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/snap/cmake/340/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.17.2/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,9 +111,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -131,6 +142,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_pract2
+
+# Build rule for target.
+test_pract2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_pract2
+.PHONY : test_pract2
+
+# fast build rule for target.
+test_pract2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract2.dir/build.make CMakeFiles/test_pract2.dir/build
+.PHONY : test_pract2/fast
+
+#=============================================================================
 # Target rules for targets named draw
 
 # Build rule for target.
@@ -149,6 +173,7 @@ ansi.o: ansi.c.o
 
 # target to build an object file
 ansi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract2.dir/build.make CMakeFiles/test_pract2.dir/ansi.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/draw.dir/build.make CMakeFiles/draw.dir/ansi.c.o
 .PHONY : ansi.c.o
 
@@ -158,6 +183,7 @@ ansi.i: ansi.c.i
 
 # target to preprocess a source file
 ansi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract2.dir/build.make CMakeFiles/test_pract2.dir/ansi.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/draw.dir/build.make CMakeFiles/draw.dir/ansi.c.i
 .PHONY : ansi.c.i
 
@@ -167,8 +193,36 @@ ansi.s: ansi.c.s
 
 # target to generate assembly for a file
 ansi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract2.dir/build.make CMakeFiles/test_pract2.dir/ansi.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/draw.dir/build.make CMakeFiles/draw.dir/ansi.c.s
 .PHONY : ansi.c.s
+
+cunit_tests.o: cunit_tests.c.o
+
+.PHONY : cunit_tests.o
+
+# target to build an object file
+cunit_tests.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract2.dir/build.make CMakeFiles/test_pract2.dir/cunit_tests.c.o
+.PHONY : cunit_tests.c.o
+
+cunit_tests.i: cunit_tests.c.i
+
+.PHONY : cunit_tests.i
+
+# target to preprocess a source file
+cunit_tests.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract2.dir/build.make CMakeFiles/test_pract2.dir/cunit_tests.c.i
+.PHONY : cunit_tests.c.i
+
+cunit_tests.s: cunit_tests.c.s
+
+.PHONY : cunit_tests.s
+
+# target to generate assembly for a file
+cunit_tests.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract2.dir/build.make CMakeFiles/test_pract2.dir/cunit_tests.c.s
+.PHONY : cunit_tests.c.s
 
 sdl.o: sdl.c.o
 
@@ -176,6 +230,7 @@ sdl.o: sdl.c.o
 
 # target to build an object file
 sdl.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract2.dir/build.make CMakeFiles/test_pract2.dir/sdl.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/draw.dir/build.make CMakeFiles/draw.dir/sdl.c.o
 .PHONY : sdl.c.o
 
@@ -185,6 +240,7 @@ sdl.i: sdl.c.i
 
 # target to preprocess a source file
 sdl.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract2.dir/build.make CMakeFiles/test_pract2.dir/sdl.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/draw.dir/build.make CMakeFiles/draw.dir/sdl.c.i
 .PHONY : sdl.c.i
 
@@ -194,6 +250,7 @@ sdl.s: sdl.c.s
 
 # target to generate assembly for a file
 sdl.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pract2.dir/build.make CMakeFiles/test_pract2.dir/sdl.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/draw.dir/build.make CMakeFiles/draw.dir/sdl.c.s
 .PHONY : sdl.c.s
 
@@ -205,10 +262,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... draw"
+	@echo "... test_pract2"
 	@echo "... ansi.o"
 	@echo "... ansi.i"
 	@echo "... ansi.s"
+	@echo "... cunit_tests.o"
+	@echo "... cunit_tests.i"
+	@echo "... cunit_tests.s"
 	@echo "... sdl.o"
 	@echo "... sdl.i"
 	@echo "... sdl.s"

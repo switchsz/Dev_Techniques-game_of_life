@@ -11,9 +11,9 @@ void draw(SDL_Renderer* renderer, CellList* pCellList)
 	for ( int i = 0 ; i < pCellList->nbRows; i++) {
 		for (int j = 0 ; j < pCellList->nbCols; j++) {
 			if (pCellList->board[i][j].life == 1) 
-				SDL_SetRenderDrawColor(renderer, 0 ,255 ,0,255);
+				SDL_SetRenderDrawColor(renderer, 0 ,255 ,0,255); // green
 			else
-				SDL_SetRenderDrawColor(renderer, 255 , 0 ,0,255);
+				SDL_SetRenderDrawColor(renderer, 255 , 0 ,0,255); // red
 			y = i*10;
 			x = j*10;
 			for (int i = 0; i < 10 ; i++) {

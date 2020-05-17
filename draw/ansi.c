@@ -52,7 +52,7 @@ void get_console_size(int* w, int* h) {
 	printf("\033[2J"); // clears screen 
 	puts("Resize the window and press enter twice to start");
     getc(stdin);
-	printf("\033[30m\033[999;999H"); // write with black 
+	printf("\033[37m\033[999;999H"); // write with white 
 	printf("\033[6n");
 	scanf("\033[%d;%dR",h,w);
 }
