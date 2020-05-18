@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.17.2/bin/cmake
+CMAKE_COMMAND = /snap/cmake/340/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.17.2/bin/cmake -E rm -f
+RM = /snap/cmake/340/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life
+CMAKE_SOURCE_DIR = /home/faxmishok/Desktop/Dev_Techniques_game-of-life
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build
+CMAKE_BINARY_DIR = /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build
 
 # Include any dependencies generated for this target.
 include draw/CMakeFiles/draw.dir/depend.make
@@ -79,55 +79,55 @@ include draw/CMakeFiles/draw.dir/flags.make
 
 draw/CMakeFiles/draw.dir/ansi.c.o: draw/CMakeFiles/draw.dir/flags.make
 draw/CMakeFiles/draw.dir/ansi.c.o: ../draw/ansi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object draw/CMakeFiles/draw.dir/ansi.c.o"
-	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/draw && /usr/local/bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/draw.dir/ansi.c.o   -c /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/ansi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object draw/CMakeFiles/draw.dir/ansi.c.o"
+	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/draw && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/draw.dir/ansi.c.o   -c /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/ansi.c
 
 draw/CMakeFiles/draw.dir/ansi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/draw.dir/ansi.c.i"
-	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/draw && /usr/local/bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/ansi.c > CMakeFiles/draw.dir/ansi.c.i
+	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/draw && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/ansi.c > CMakeFiles/draw.dir/ansi.c.i
 
 draw/CMakeFiles/draw.dir/ansi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/draw.dir/ansi.c.s"
-	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/draw && /usr/local/bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/ansi.c -o CMakeFiles/draw.dir/ansi.c.s
+	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/draw && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/ansi.c -o CMakeFiles/draw.dir/ansi.c.s
 
 draw/CMakeFiles/draw.dir/sdl.c.o: draw/CMakeFiles/draw.dir/flags.make
 draw/CMakeFiles/draw.dir/sdl.c.o: ../draw/sdl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object draw/CMakeFiles/draw.dir/sdl.c.o"
-	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/draw && /usr/local/bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/draw.dir/sdl.c.o   -c /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/sdl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object draw/CMakeFiles/draw.dir/sdl.c.o"
+	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/draw && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/draw.dir/sdl.c.o   -c /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/sdl.c
 
 draw/CMakeFiles/draw.dir/sdl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/draw.dir/sdl.c.i"
-	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/draw && /usr/local/bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/sdl.c > CMakeFiles/draw.dir/sdl.c.i
+	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/draw && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/sdl.c > CMakeFiles/draw.dir/sdl.c.i
 
 draw/CMakeFiles/draw.dir/sdl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/draw.dir/sdl.c.s"
-	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/draw && /usr/local/bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/sdl.c -o CMakeFiles/draw.dir/sdl.c.s
+	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/draw && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/sdl.c -o CMakeFiles/draw.dir/sdl.c.s
 
 draw/CMakeFiles/draw.dir/__/game/cell.c.o: draw/CMakeFiles/draw.dir/flags.make
 draw/CMakeFiles/draw.dir/__/game/cell.c.o: ../game/cell.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object draw/CMakeFiles/draw.dir/__/game/cell.c.o"
-	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/draw && /usr/local/bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/draw.dir/__/game/cell.c.o   -c /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/cell.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object draw/CMakeFiles/draw.dir/__/game/cell.c.o"
+	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/draw && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/draw.dir/__/game/cell.c.o   -c /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/cell.c
 
 draw/CMakeFiles/draw.dir/__/game/cell.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/draw.dir/__/game/cell.c.i"
-	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/draw && /usr/local/bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/cell.c > CMakeFiles/draw.dir/__/game/cell.c.i
+	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/draw && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/cell.c > CMakeFiles/draw.dir/__/game/cell.c.i
 
 draw/CMakeFiles/draw.dir/__/game/cell.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/draw.dir/__/game/cell.c.s"
-	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/draw && /usr/local/bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/cell.c -o CMakeFiles/draw.dir/__/game/cell.c.s
+	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/draw && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/cell.c -o CMakeFiles/draw.dir/__/game/cell.c.s
 
 draw/CMakeFiles/draw.dir/__/game/celllist.c.o: draw/CMakeFiles/draw.dir/flags.make
 draw/CMakeFiles/draw.dir/__/game/celllist.c.o: ../game/celllist.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object draw/CMakeFiles/draw.dir/__/game/celllist.c.o"
-	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/draw && /usr/local/bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/draw.dir/__/game/celllist.c.o   -c /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/celllist.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object draw/CMakeFiles/draw.dir/__/game/celllist.c.o"
+	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/draw && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/draw.dir/__/game/celllist.c.o   -c /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/celllist.c
 
 draw/CMakeFiles/draw.dir/__/game/celllist.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/draw.dir/__/game/celllist.c.i"
-	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/draw && /usr/local/bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/celllist.c > CMakeFiles/draw.dir/__/game/celllist.c.i
+	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/draw && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/celllist.c > CMakeFiles/draw.dir/__/game/celllist.c.i
 
 draw/CMakeFiles/draw.dir/__/game/celllist.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/draw.dir/__/game/celllist.c.s"
-	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/draw && /usr/local/bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/celllist.c -o CMakeFiles/draw.dir/__/game/celllist.c.s
+	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/draw && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/celllist.c -o CMakeFiles/draw.dir/__/game/celllist.c.s
 
 # Object files for target draw
 draw_OBJECTS = \
@@ -145,9 +145,9 @@ draw/libdraw.a: draw/CMakeFiles/draw.dir/__/game/cell.c.o
 draw/libdraw.a: draw/CMakeFiles/draw.dir/__/game/celllist.c.o
 draw/libdraw.a: draw/CMakeFiles/draw.dir/build.make
 draw/libdraw.a: draw/CMakeFiles/draw.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libdraw.a"
-	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/draw && $(CMAKE_COMMAND) -P CMakeFiles/draw.dir/cmake_clean_target.cmake
-	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/draw && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/draw.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libdraw.a"
+	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/draw && $(CMAKE_COMMAND) -P CMakeFiles/draw.dir/cmake_clean_target.cmake
+	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/draw && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/draw.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 draw/CMakeFiles/draw.dir/build: draw/libdraw.a
@@ -155,10 +155,10 @@ draw/CMakeFiles/draw.dir/build: draw/libdraw.a
 .PHONY : draw/CMakeFiles/draw.dir/build
 
 draw/CMakeFiles/draw.dir/clean:
-	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/draw && $(CMAKE_COMMAND) -P CMakeFiles/draw.dir/cmake_clean.cmake
+	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/draw && $(CMAKE_COMMAND) -P CMakeFiles/draw.dir/cmake_clean.cmake
 .PHONY : draw/CMakeFiles/draw.dir/clean
 
 draw/CMakeFiles/draw.dir/depend:
-	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/saykasz/Desktop/Dev_Techniques_game-of-life /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/draw /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/draw/CMakeFiles/draw.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/faxmishok/Desktop/Dev_Techniques_game-of-life /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/draw /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/draw/CMakeFiles/draw.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : draw/CMakeFiles/draw.dir/depend
 

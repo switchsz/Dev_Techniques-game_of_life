@@ -12,7 +12,8 @@ target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})#-
 
 
 target_link_libraries( ${PROJECT_NAME} PUBLIC game)
-target_link_libraries(${PROJECT_NAME} PUBLIC SDL2::SDL2 SDL2::SDL2main)
+#target_link_libraries(${PROJECT_NAME} PUBLIC SDL2::SDL2 SDL2::SDL2main)
+target_link_libraries( ${PROJECT_NAME} PUBLIC SDL2)
 
 ##################################################################################
 
@@ -37,7 +38,13 @@ target_link_options(${PROJECT_NAME} PUBLIC "--coverage")
 
 
 
-add_custom_target(cover 
-COMMAND cmake --build . --target test
+add_custom_target(cover2 
+COMMAND cmake --build . --target test_pract2
 COMMAND gcovr -r ${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR} $<TARGET_FILE:${TEST_PROJECT2}>
+WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
+
+
+add_custom_target(cover_html2
+COMMAND cmake --build . --target test_pract2
+COMMAND gcovr --html --html-detail -o index.html -r ${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR} $<TARGET_FILE:${TEST_PROJECT2}>
 WORKING_DIRECTORY ${CMAKE_BINARY_DIR})

@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.17.2/bin/cmake
+CMAKE_COMMAND = /snap/cmake/340/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.17.2/bin/cmake -E rm -f
+RM = /snap/cmake/340/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game
+CMAKE_SOURCE_DIR = /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build
+CMAKE_BINARY_DIR = /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/Cellar/cmake/3.17.2/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/cmake/340/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/Cellar/cmake/3.17.2/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/cmake/340/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -101,7 +101,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/local/Cellar/cmake/3.17.2/bin/ctest --force-new-ctest-process $(ARGS)
+	/snap/cmake/340/bin/ctest --force-new-ctest-process $(ARGS)
 .PHONY : test
 
 # Special rule for the target test
@@ -111,9 +111,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,19 +142,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cover_html
-
-# Build rule for target.
-cover_html: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cover_html
-.PHONY : cover_html
-
-# fast build rule for target.
-cover_html/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cover_html.dir/build.make CMakeFiles/cover_html.dir/build
-.PHONY : cover_html/fast
-
-#=============================================================================
 # Target rules for targets named test_pract1
 
 # Build rule for target.
@@ -168,17 +155,17 @@ test_pract1/fast:
 .PHONY : test_pract1/fast
 
 #=============================================================================
-# Target rules for targets named cover
+# Target rules for targets named cover1
 
 # Build rule for target.
-cover: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cover
-.PHONY : cover
+cover1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cover1
+.PHONY : cover1
 
 # fast build rule for target.
-cover/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cover.dir/build.make CMakeFiles/cover.dir/build
-.PHONY : cover/fast
+cover1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cover1.dir/build.make CMakeFiles/cover1.dir/build
+.PHONY : cover1/fast
 
 #=============================================================================
 # Target rules for targets named game
@@ -192,6 +179,19 @@ game: cmake_check_build_system
 game/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/build
 .PHONY : game/fast
+
+#=============================================================================
+# Target rules for targets named cover_html1
+
+# Build rule for target.
+cover_html1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cover_html1
+.PHONY : cover_html1
+
+# fast build rule for target.
+cover_html1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cover_html1.dir/build.make CMakeFiles/cover_html1.dir/build
+.PHONY : cover_html1/fast
 
 cell.o: cell.c.o
 
@@ -289,8 +289,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... cover"
-	@echo "... cover_html"
+	@echo "... cover1"
+	@echo "... cover_html1"
 	@echo "... game"
 	@echo "... test_pract1"
 	@echo "... cell.o"

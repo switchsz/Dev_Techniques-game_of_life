@@ -1,2 +1,0 @@
-/usr/bin/ar qc libdraw.a  CMakeFiles/draw.dir/ansi.c.o CMakeFiles/draw.dir/sdl.c.o CMakeFiles/draw.dir/__/game/cell.c.o CMakeFiles/draw.dir/__/game/celllist.c.o
-/usr/bin/ranlib libdraw.a

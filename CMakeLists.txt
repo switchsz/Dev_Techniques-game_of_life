@@ -8,7 +8,7 @@ project(mygame LANGUAGES C)
 add_subdirectory(draw)
 add_subdirectory(game)
 
-set (SRC mainsdl.c)
+set (SRC main.c)
 
 add_executable(${PROJECT_NAME} "")
 
@@ -20,10 +20,16 @@ target_link_libraries( ${PROJECT_NAME} PUBLIC draw game)
 
 
 
- 
-#install(TARGETS ${PROJECT_NAME})
-############################
+target_compile_options(${PROJECT_NAME} PUBLIC "--coverage")
+target_link_libraries(${PROJECT_NAME} PUBLIC "--coverage")
 
 
+add_custom_target(cover 
+COMMAND cmake --build . --target test_pract1 test_pract2
+COMMAND gcovr -r ${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR} $<TARGET_FILE:${PROJECT_NAME}>
+WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
 
-
+add_custom_target(cover_html
+COMMAND cmake --build . --target test_pract1 test_pract2
+COMMAND gcovr --html --html-detail -o index.html -r ${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR} $<TARGET_FILE:${PROJECT_NAME}>
+WORKING_DIRECTORY ${CMAKE_BINARY_DIR})

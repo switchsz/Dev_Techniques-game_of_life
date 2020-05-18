@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.17.2/bin/cmake
+CMAKE_COMMAND = /snap/cmake/340/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.17.2/bin/cmake -E rm -f
+RM = /snap/cmake/340/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw
+CMAKE_SOURCE_DIR = /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/build
+CMAKE_BINARY_DIR = /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test_pract2.dir/depend.make
@@ -79,42 +79,42 @@ include CMakeFiles/test_pract2.dir/flags.make
 
 CMakeFiles/test_pract2.dir/cunit_tests.c.o: CMakeFiles/test_pract2.dir/flags.make
 CMakeFiles/test_pract2.dir/cunit_tests.c.o: ../cunit_tests.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test_pract2.dir/cunit_tests.c.o"
-	/usr/local/bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_pract2.dir/cunit_tests.c.o   -c /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/cunit_tests.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test_pract2.dir/cunit_tests.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_pract2.dir/cunit_tests.c.o   -c /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/cunit_tests.c
 
 CMakeFiles/test_pract2.dir/cunit_tests.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_pract2.dir/cunit_tests.c.i"
-	/usr/local/bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/cunit_tests.c > CMakeFiles/test_pract2.dir/cunit_tests.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/cunit_tests.c > CMakeFiles/test_pract2.dir/cunit_tests.c.i
 
 CMakeFiles/test_pract2.dir/cunit_tests.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_pract2.dir/cunit_tests.c.s"
-	/usr/local/bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/cunit_tests.c -o CMakeFiles/test_pract2.dir/cunit_tests.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/cunit_tests.c -o CMakeFiles/test_pract2.dir/cunit_tests.c.s
 
 CMakeFiles/test_pract2.dir/ansi.c.o: CMakeFiles/test_pract2.dir/flags.make
 CMakeFiles/test_pract2.dir/ansi.c.o: ../ansi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/test_pract2.dir/ansi.c.o"
-	/usr/local/bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_pract2.dir/ansi.c.o   -c /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/ansi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/test_pract2.dir/ansi.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_pract2.dir/ansi.c.o   -c /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/ansi.c
 
 CMakeFiles/test_pract2.dir/ansi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_pract2.dir/ansi.c.i"
-	/usr/local/bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/ansi.c > CMakeFiles/test_pract2.dir/ansi.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/ansi.c > CMakeFiles/test_pract2.dir/ansi.c.i
 
 CMakeFiles/test_pract2.dir/ansi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_pract2.dir/ansi.c.s"
-	/usr/local/bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/ansi.c -o CMakeFiles/test_pract2.dir/ansi.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/ansi.c -o CMakeFiles/test_pract2.dir/ansi.c.s
 
 CMakeFiles/test_pract2.dir/sdl.c.o: CMakeFiles/test_pract2.dir/flags.make
 CMakeFiles/test_pract2.dir/sdl.c.o: ../sdl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/test_pract2.dir/sdl.c.o"
-	/usr/local/bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_pract2.dir/sdl.c.o   -c /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/sdl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/test_pract2.dir/sdl.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_pract2.dir/sdl.c.o   -c /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/sdl.c
 
 CMakeFiles/test_pract2.dir/sdl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_pract2.dir/sdl.c.i"
-	/usr/local/bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/sdl.c > CMakeFiles/test_pract2.dir/sdl.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/sdl.c > CMakeFiles/test_pract2.dir/sdl.c.i
 
 CMakeFiles/test_pract2.dir/sdl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_pract2.dir/sdl.c.s"
-	/usr/local/bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/sdl.c -o CMakeFiles/test_pract2.dir/sdl.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/sdl.c -o CMakeFiles/test_pract2.dir/sdl.c.s
 
 # Object files for target test_pract2
 test_pract2_OBJECTS = \
@@ -130,10 +130,8 @@ test_pract2: CMakeFiles/test_pract2.dir/ansi.c.o
 test_pract2: CMakeFiles/test_pract2.dir/sdl.c.o
 test_pract2: CMakeFiles/test_pract2.dir/build.make
 test_pract2: libdraw.a
-test_pract2: /usr/local/Cellar/sdl2/2.0.12_1/lib/libSDL2.dylib
-test_pract2: /usr/local/Cellar/sdl2/2.0.12_1/lib/libSDL2main.a
 test_pract2: CMakeFiles/test_pract2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable test_pract2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable test_pract2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_pract2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -146,6 +144,6 @@ CMakeFiles/test_pract2.dir/clean:
 .PHONY : CMakeFiles/test_pract2.dir/clean
 
 CMakeFiles/test_pract2.dir/depend:
-	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/build /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/build /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles/test_pract2.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/build /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/build /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/build/CMakeFiles/test_pract2.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test_pract2.dir/depend
 

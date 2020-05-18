@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/cell.c" "/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/game/CMakeFiles/game.dir/cell.c.o"
-  "/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/celllist.c" "/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/game/CMakeFiles/game.dir/celllist.c.o"
+  "/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/cell.c" "/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/game/CMakeFiles/game.dir/cell.c.o"
+  "/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/celllist.c" "/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/game/CMakeFiles/game.dir/celllist.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

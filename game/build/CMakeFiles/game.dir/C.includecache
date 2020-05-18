@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/cell.c
+/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/cell.c
 cell.h
-/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/cell.h
+/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/cell.h
 
-/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/cell.h
+/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/cell.h
 stdlib.h
 -
 stdio.h
@@ -20,11 +20,11 @@ time.h
 unistd.h
 -
 
-/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/celllist.c
+/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/celllist.c
 celllist.h
-/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/celllist.h
+/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/celllist.h
 
-/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/celllist.h
+/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/celllist.h
 cell.h
-/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/cell.h
+/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/cell.h
 
