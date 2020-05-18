@@ -18,7 +18,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 48,
+				"line" : 41,
 				"parent" : 0
 			}
 		]
@@ -29,8 +29,8 @@
 			"id" : "test_pract2::@f99138a17b78bc09f6a1"
 		}
 	],
-	"id" : "cover_html2::@f99138a17b78bc09f6a1",
-	"name" : "cover_html2",
+	"id" : "cover2::@f99138a17b78bc09f6a1",
+	"name" : "cover2",
 	"paths" : 
 	{
 		"build" : "draw",
@@ -58,13 +58,13 @@
 		{
 			"backtrace" : 1,
 			"isGenerated" : true,
-			"path" : "build/draw/CMakeFiles/cover_html2",
+			"path" : "build/draw/CMakeFiles/cover2",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/draw/CMakeFiles/cover_html2.rule",
+			"path" : "build/draw/CMakeFiles/cover2.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

@@ -116,63 +116,63 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "cover::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-cover-81aa6cb77c4e7584de74.json",
+					"jsonFile" : "target-cover-2dcf42b692b4477c0c70.json",
 					"name" : "cover",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "cover1::@0c53ff3c4131f9152fd3",
-					"jsonFile" : "target-cover1-a851ac0e11bb873ff6b6.json",
+					"jsonFile" : "target-cover1-c47106055ccc3fd3c368.json",
 					"name" : "cover1",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "cover2::@f99138a17b78bc09f6a1",
-					"jsonFile" : "target-cover2-06de45c99a0f7d88aa1f.json",
+					"jsonFile" : "target-cover2-20329ccecdf578ee6818.json",
 					"name" : "cover2",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "cover_html::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-cover_html-39bed8f00e0fa34acc7f.json",
+					"jsonFile" : "target-cover_html-eb22ef48da2c9beb4c0a.json",
 					"name" : "cover_html",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "cover_html1::@0c53ff3c4131f9152fd3",
-					"jsonFile" : "target-cover_html1-0d6b74fcde65d2670bf6.json",
+					"jsonFile" : "target-cover_html1-7336301dfac50d515c29.json",
 					"name" : "cover_html1",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "cover_html2::@f99138a17b78bc09f6a1",
-					"jsonFile" : "target-cover_html2-17c40e6cb5d96cc11ac9.json",
+					"jsonFile" : "target-cover_html2-41b7328d5cc2fac0aafc.json",
 					"name" : "cover_html2",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "draw::@f99138a17b78bc09f6a1",
-					"jsonFile" : "target-draw-efdb5a21409f48017858.json",
+					"jsonFile" : "target-draw-688096d837efc191d9dd.json",
 					"name" : "draw",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "game::@0c53ff3c4131f9152fd3",
-					"jsonFile" : "target-game-8b98b6dbf6519769e57f.json",
+					"jsonFile" : "target-game-81f18a92090a39fb0895.json",
 					"name" : "game",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "mygame::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-mygame-f18afe57df8a8d71575b.json",
+					"jsonFile" : "target-mygame-fe2e99b16ddaf9403e7a.json",
 					"name" : "mygame",
 					"projectIndex" : 0
 				},
@@ -186,7 +186,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "test_pract2::@f99138a17b78bc09f6a1",
-					"jsonFile" : "target-test_pract2-f33c014c12fb76fdedbd.json",
+					"jsonFile" : "target-test_pract2-ae7939898ceb4ce4fc4d.json",
 					"name" : "test_pract2",
 					"projectIndex" : 1
 				}

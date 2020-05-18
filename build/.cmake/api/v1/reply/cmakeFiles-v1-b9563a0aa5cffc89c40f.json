@@ -380,10 +380,6 @@
 			"path" : "draw/CMakeLists.txt"
 		},
 		{
-			"isExternal" : true,
-			"path" : "/usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config.cmake"
-		},
-		{
 			"path" : "game/CMakeLists.txt"
 		}
 	],

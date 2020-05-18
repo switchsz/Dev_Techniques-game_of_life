@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.17)
 cmake_policy(SET CMP0076 NEW)
 
 project(draw LANGUAGES C)
-find_package(SDL2 CONFIG REQUIRED) 
+#find_package(SDL2 CONFIG REQUIRED) 
 add_library(${PROJECT_NAME} "")
 
 target_sources(${PROJECT_NAME} PUBLIC ansi.c sdl.c ansi.h sdl.h)

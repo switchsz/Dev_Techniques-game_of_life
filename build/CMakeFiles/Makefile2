@@ -169,8 +169,8 @@ CMakeFiles/cover_html.dir/clean:
 # Target rules for target CMakeFiles/mygame.dir
 
 # All Build rule for target.
-CMakeFiles/mygame.dir/all: draw/CMakeFiles/draw.dir/all
 CMakeFiles/mygame.dir/all: game/CMakeFiles/game.dir/all
+CMakeFiles/mygame.dir/all: draw/CMakeFiles/draw.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=9,10,11,12,13,14 "Built target mygame"
@@ -305,8 +305,8 @@ draw/CMakeFiles/draw.dir/clean:
 # Target rules for target draw/CMakeFiles/test_pract2.dir
 
 # All Build rule for target.
-draw/CMakeFiles/test_pract2.dir/all: draw/CMakeFiles/draw.dir/all
 draw/CMakeFiles/test_pract2.dir/all: game/CMakeFiles/game.dir/all
+draw/CMakeFiles/test_pract2.dir/all: draw/CMakeFiles/draw.dir/all
 	$(MAKE) $(MAKESILENT) -f draw/CMakeFiles/test_pract2.dir/build.make draw/CMakeFiles/test_pract2.dir/depend
 	$(MAKE) $(MAKESILENT) -f draw/CMakeFiles/test_pract2.dir/build.make draw/CMakeFiles/test_pract2.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=19,20,21,22,23,24 "Built target test_pract2"

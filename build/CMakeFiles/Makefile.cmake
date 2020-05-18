@@ -79,7 +79,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/snap/cmake/340/share/cmake-3.17/Modules/Platform/Linux-GNU.cmake"
   "/snap/cmake/340/share/cmake-3.17/Modules/Platform/Linux.cmake"
   "/snap/cmake/340/share/cmake-3.17/Modules/Platform/UnixPaths.cmake"
-  "/usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config.cmake"
   )
 
 # The corresponding makefile is:
