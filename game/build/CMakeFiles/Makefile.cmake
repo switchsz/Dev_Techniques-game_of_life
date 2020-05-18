@@ -96,6 +96,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/cover_html.dir/DependInfo.cmake"
   "CMakeFiles/test_pract1.dir/DependInfo.cmake"
+  "CMakeFiles/cover.dir/DependInfo.cmake"
   "CMakeFiles/game.dir/DependInfo.cmake"
   )
