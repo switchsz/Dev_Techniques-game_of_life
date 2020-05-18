@@ -18,8 +18,8 @@ CMakeFiles/mygame.dir/game/celllist.c.o: ../game/cell.h
 CMakeFiles/mygame.dir/game/celllist.c.o: ../game/celllist.c
 CMakeFiles/mygame.dir/game/celllist.c.o: ../game/celllist.h
 
-CMakeFiles/mygame.dir/main.c.o: ../draw/ansi.h
-CMakeFiles/mygame.dir/main.c.o: ../game/cell.h
-CMakeFiles/mygame.dir/main.c.o: ../game/celllist.h
-CMakeFiles/mygame.dir/main.c.o: ../main.c
+CMakeFiles/mygame.dir/mainsdl.c.o: ../draw/sdl.h
+CMakeFiles/mygame.dir/mainsdl.c.o: ../game/cell.h
+CMakeFiles/mygame.dir/mainsdl.c.o: ../game/celllist.h
+CMakeFiles/mygame.dir/mainsdl.c.o: ../mainsdl.c
 

@@ -77,18 +77,18 @@ include CMakeFiles/mygame.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/mygame.dir/flags.make
 
-CMakeFiles/mygame.dir/main.c.o: CMakeFiles/mygame.dir/flags.make
-CMakeFiles/mygame.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mygame.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mygame.dir/main.c.o   -c /home/faxmishok/Desktop/Dev_Techniques_game-of-life/main.c
+CMakeFiles/mygame.dir/mainsdl.c.o: CMakeFiles/mygame.dir/flags.make
+CMakeFiles/mygame.dir/mainsdl.c.o: ../mainsdl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mygame.dir/mainsdl.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mygame.dir/mainsdl.c.o   -c /home/faxmishok/Desktop/Dev_Techniques_game-of-life/mainsdl.c
 
-CMakeFiles/mygame.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mygame.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/faxmishok/Desktop/Dev_Techniques_game-of-life/main.c > CMakeFiles/mygame.dir/main.c.i
+CMakeFiles/mygame.dir/mainsdl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mygame.dir/mainsdl.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/faxmishok/Desktop/Dev_Techniques_game-of-life/mainsdl.c > CMakeFiles/mygame.dir/mainsdl.c.i
 
-CMakeFiles/mygame.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mygame.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/faxmishok/Desktop/Dev_Techniques_game-of-life/main.c -o CMakeFiles/mygame.dir/main.c.s
+CMakeFiles/mygame.dir/mainsdl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mygame.dir/mainsdl.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/faxmishok/Desktop/Dev_Techniques_game-of-life/mainsdl.c -o CMakeFiles/mygame.dir/mainsdl.c.s
 
 CMakeFiles/mygame.dir/draw/ansi.c.o: CMakeFiles/mygame.dir/flags.make
 CMakeFiles/mygame.dir/draw/ansi.c.o: ../draw/ansi.c
@@ -144,7 +144,7 @@ CMakeFiles/mygame.dir/game/celllist.c.s: cmake_force
 
 # Object files for target mygame
 mygame_OBJECTS = \
-"CMakeFiles/mygame.dir/main.c.o" \
+"CMakeFiles/mygame.dir/mainsdl.c.o" \
 "CMakeFiles/mygame.dir/draw/ansi.c.o" \
 "CMakeFiles/mygame.dir/draw/sdl.c.o" \
 "CMakeFiles/mygame.dir/game/cell.c.o" \
@@ -153,7 +153,7 @@ mygame_OBJECTS = \
 # External object files for target mygame
 mygame_EXTERNAL_OBJECTS =
 
-mygame: CMakeFiles/mygame.dir/main.c.o
+mygame: CMakeFiles/mygame.dir/mainsdl.c.o
 mygame: CMakeFiles/mygame.dir/draw/ansi.c.o
 mygame: CMakeFiles/mygame.dir/draw/sdl.c.o
 mygame: CMakeFiles/mygame.dir/game/cell.c.o

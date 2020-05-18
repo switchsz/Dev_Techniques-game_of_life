@@ -6,7 +6,21 @@
 
 #IncludeRegexTransform: 
 
-../draw/ansi.h
+../draw/sdl.h
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+assert.h
+-
+stdint.h
+-
+time.h
+-
+SDL2/SDL.h
+-
 celllist.h
 ../draw/celllist.h
 
@@ -76,7 +90,9 @@ celllist.h
 cell.h
 /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/cell.h
 
-/home/faxmishok/Desktop/Dev_Techniques_game-of-life/main.c
-ansi.h
-/home/faxmishok/Desktop/Dev_Techniques_game-of-life/ansi.h
+/home/faxmishok/Desktop/Dev_Techniques_game-of-life/mainsdl.c
+SDL2/SDL.h
+-
+sdl.h
+/home/faxmishok/Desktop/Dev_Techniques_game-of-life/sdl.h
 

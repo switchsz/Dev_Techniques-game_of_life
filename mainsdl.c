@@ -5,8 +5,8 @@
 int main()
 {
     CellList *pCellList = generateCellList(50,50);
-    CellList *pNewCellList;
-     CellList *pOldCellList;
+    CellList *pNewCellList = newCellList(50,50);
+     CellList *pOldCellList = newCellList(50,50);;
 	if (SDL_Init(SDL_INIT_VIDEO) != 0)
 	{
 		fprintf(stderr,"Problem can not init SDL2 \n");

@@ -381,32 +381,32 @@ game/celllist.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/game/celllist.c.s
 .PHONY : game/celllist.c.s
 
-main.o: main.c.o
+mainsdl.o: mainsdl.c.o
 
-.PHONY : main.o
+.PHONY : mainsdl.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/main.c.o
-.PHONY : main.c.o
+mainsdl.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/mainsdl.c.o
+.PHONY : mainsdl.c.o
 
-main.i: main.c.i
+mainsdl.i: mainsdl.c.i
 
-.PHONY : main.i
+.PHONY : mainsdl.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/main.c.i
-.PHONY : main.c.i
+mainsdl.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/mainsdl.c.i
+.PHONY : mainsdl.c.i
 
-main.s: main.c.s
+mainsdl.s: mainsdl.c.s
 
-.PHONY : main.s
+.PHONY : mainsdl.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/main.c.s
-.PHONY : main.c.s
+mainsdl.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/mainsdl.c.s
+.PHONY : mainsdl.c.s
 
 # Help Target
 help:
@@ -439,9 +439,9 @@ help:
 	@echo "... game/celllist.o"
 	@echo "... game/celllist.i"
 	@echo "... game/celllist.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... mainsdl.o"
+	@echo "... mainsdl.i"
+	@echo "... mainsdl.s"
 .PHONY : help
 
 

@@ -8,7 +8,7 @@ project(mygame LANGUAGES C)
 add_subdirectory(draw)
 add_subdirectory(game)
 
-set (SRC main.c)
+set (SRC mainsdl.c)
 
 add_executable(${PROJECT_NAME} "")
 

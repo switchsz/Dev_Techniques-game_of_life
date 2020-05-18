@@ -18,8 +18,8 @@ CMakeFiles/mygame.dir/game/celllist.c.o
  /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/cell.h
  /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/celllist.c
  /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/celllist.h
-CMakeFiles/mygame.dir/main.c.o
- ../draw/ansi.h
+CMakeFiles/mygame.dir/mainsdl.c.o
+ ../draw/sdl.h
  ../game/cell.h
  ../game/celllist.h
- /home/faxmishok/Desktop/Dev_Techniques_game-of-life/main.c
+ /home/faxmishok/Desktop/Dev_Techniques_game-of-life/mainsdl.c

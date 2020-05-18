@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/sdl.c" "/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles/mygame.dir/draw/sdl.c.o"
   "/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/cell.c" "/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles/mygame.dir/game/cell.c.o"
   "/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/celllist.c" "/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles/mygame.dir/game/celllist.c.o"
-  "/home/faxmishok/Desktop/Dev_Techniques_game-of-life/main.c" "/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles/mygame.dir/main.c.o"
+  "/home/faxmishok/Desktop/Dev_Techniques_game-of-life/mainsdl.c" "/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles/mygame.dir/mainsdl.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
