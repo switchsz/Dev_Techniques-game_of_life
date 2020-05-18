@@ -1,2 +1,2 @@
-/usr/bin/ar qc libgame.a  CMakeFiles/game.dir/cell.c.o CMakeFiles/game.dir/celllist.c.o
-/usr/bin/ranlib libgame.a
+/Library/Developer/CommandLineTools/usr/bin/ar qc libgame.a  CMakeFiles/game.dir/cell.c.o CMakeFiles/game.dir/celllist.c.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libgame.a

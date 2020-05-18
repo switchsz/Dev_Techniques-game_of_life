@@ -1,0 +1,207 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						3,
+						8
+					]
+				},
+				{
+					"build" : "draw",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.17"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "draw",
+					"targetIndexes" : 
+					[
+						2,
+						5,
+						6,
+						10
+					]
+				},
+				{
+					"build" : "game",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.17"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "game",
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						7,
+						9
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "mygame",
+					"targetIndexes" : 
+					[
+						0,
+						3,
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "draw",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						5,
+						6,
+						10
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "game",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						7,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "cover::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cover-c598eb6dddc63aed8130.json",
+					"name" : "cover",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "cover1::@0c53ff3c4131f9152fd3",
+					"jsonFile" : "target-cover1-25674eccfd6597dea117.json",
+					"name" : "cover1",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cover2::@f99138a17b78bc09f6a1",
+					"jsonFile" : "target-cover2-06de45c99a0f7d88aa1f.json",
+					"name" : "cover2",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cover_html::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cover_html-a7bcbe7a5515bc1a38f4.json",
+					"name" : "cover_html",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "cover_html1::@0c53ff3c4131f9152fd3",
+					"jsonFile" : "target-cover_html1-8469c227eccae5984928.json",
+					"name" : "cover_html1",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cover_html2::@f99138a17b78bc09f6a1",
+					"jsonFile" : "target-cover_html2-17c40e6cb5d96cc11ac9.json",
+					"name" : "cover_html2",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "draw::@f99138a17b78bc09f6a1",
+					"jsonFile" : "target-draw-e81a2aad5914676d767b.json",
+					"name" : "draw",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "game::@0c53ff3c4131f9152fd3",
+					"jsonFile" : "target-game-d808e955bf79d840a049.json",
+					"name" : "game",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mygame::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mygame-c0afa275ccca6252a807.json",
+					"name" : "mygame",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "test_pract1::@0c53ff3c4131f9152fd3",
+					"jsonFile" : "target-test_pract1-8ccf46fbd47520c8bcb3.json",
+					"name" : "test_pract1",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_pract2::@f99138a17b78bc09f6a1",
+					"jsonFile" : "target-test_pract2-1401a895f42cf02ad703.json",
+					"name" : "test_pract2",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build",
+		"source" : "/Users/saykasz/Desktop/Dev_Techniques_game-of-life"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

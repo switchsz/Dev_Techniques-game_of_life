@@ -1,4 +1,5 @@
 #include "celllist.h"
+#include<string.h>
 
 
 // +
@@ -91,8 +92,10 @@ CellList* updateCellList(CellList* pCellList) {
         CellList *pNew = newCellList(pCellList->nbRows,pCellList->nbCols);
         for ( int i = 0 ; i < pNew->nbRows ; i++ ) {
             for ( int j = 0 ; j < pNew->nbCols ; j++ ) {
-
+                if(strcmp(NEIGHBOURHOOD,"Clipped")==0)
                 nNeighb = nNeighboursClipped(pCellList,&(pCellList->board[i][j]));
+                else //default Circular
+                nNeighb = nNeighboursCircular(pCellList,&(pCellList->board[i][j]));
                 if (  nNeighb == 3 ) {
                     pNew->board[i][j].life = 1;
                 }

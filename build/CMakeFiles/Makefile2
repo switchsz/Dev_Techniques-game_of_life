@@ -55,19 +55,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/340/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.17.2/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/340/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.17.2/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/faxmishok/Desktop/Dev_Techniques_game-of-life
+CMAKE_SOURCE_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build
+CMAKE_BINARY_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -86,9 +86,9 @@ preinstall: game/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/cover.dir/clean
 clean: CMakeFiles/cover_html.dir/clean
 clean: CMakeFiles/mygame.dir/clean
-clean: CMakeFiles/cover.dir/clean
 clean: draw/clean
 clean: game/clean
 
@@ -98,8 +98,8 @@ clean: game/clean
 # Directory level rules for directory draw
 
 # Recursive "all" directory target.
-draw/all: draw/CMakeFiles/draw.dir/all
 draw/all: draw/CMakeFiles/test_pract2.dir/all
+draw/all: draw/CMakeFiles/draw.dir/all
 
 .PHONY : draw/all
 
@@ -109,10 +109,10 @@ draw/preinstall:
 .PHONY : draw/preinstall
 
 # Recursive "clean" directory target.
-draw/clean: draw/CMakeFiles/cover_html2.dir/clean
 draw/clean: draw/CMakeFiles/cover2.dir/clean
-draw/clean: draw/CMakeFiles/draw.dir/clean
+draw/clean: draw/CMakeFiles/cover_html2.dir/clean
 draw/clean: draw/CMakeFiles/test_pract2.dir/clean
+draw/clean: draw/CMakeFiles/draw.dir/clean
 
 .PHONY : draw/clean
 
@@ -131,12 +131,39 @@ game/preinstall:
 .PHONY : game/preinstall
 
 # Recursive "clean" directory target.
+game/clean: game/CMakeFiles/game.dir/clean
 game/clean: game/CMakeFiles/cover_html1.dir/clean
 game/clean: game/CMakeFiles/cover1.dir/clean
-game/clean: game/CMakeFiles/game.dir/clean
 game/clean: game/CMakeFiles/test_pract1.dir/clean
 
 .PHONY : game/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/cover.dir
+
+# All Build rule for target.
+CMakeFiles/cover.dir/all: CMakeFiles/mygame.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cover.dir/build.make CMakeFiles/cover.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cover.dir/build.make CMakeFiles/cover.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num= "Built target cover"
+.PHONY : CMakeFiles/cover.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/cover.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 14
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cover.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
+.PHONY : CMakeFiles/cover.dir/rule
+
+# Convenience name for target.
+cover: CMakeFiles/cover.dir/rule
+
+.PHONY : cover
+
+# clean rule for target.
+CMakeFiles/cover.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cover.dir/build.make CMakeFiles/cover.dir/clean
+.PHONY : CMakeFiles/cover.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/cover_html.dir
@@ -145,14 +172,14 @@ game/clean: game/CMakeFiles/test_pract1.dir/clean
 CMakeFiles/cover_html.dir/all: CMakeFiles/mygame.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cover_html.dir/build.make CMakeFiles/cover_html.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cover_html.dir/build.make CMakeFiles/cover_html.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num= "Built target cover_html"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num= "Built target cover_html"
 .PHONY : CMakeFiles/cover_html.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cover_html.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cover_html.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
 .PHONY : CMakeFiles/cover_html.dir/rule
 
 # Convenience name for target.
@@ -169,18 +196,18 @@ CMakeFiles/cover_html.dir/clean:
 # Target rules for target CMakeFiles/mygame.dir
 
 # All Build rule for target.
-CMakeFiles/mygame.dir/all: game/CMakeFiles/game.dir/all
 CMakeFiles/mygame.dir/all: draw/CMakeFiles/draw.dir/all
+CMakeFiles/mygame.dir/all: game/CMakeFiles/game.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mygame.dir/build.make CMakeFiles/mygame.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=9,10,11,12,13,14 "Built target mygame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=9,10,11,12,13,14 "Built target mygame"
 .PHONY : CMakeFiles/mygame.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mygame.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mygame.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
 .PHONY : CMakeFiles/mygame.dir/rule
 
 # Convenience name for target.
@@ -194,74 +221,20 @@ CMakeFiles/mygame.dir/clean:
 .PHONY : CMakeFiles/mygame.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/cover.dir
-
-# All Build rule for target.
-CMakeFiles/cover.dir/all: CMakeFiles/mygame.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cover.dir/build.make CMakeFiles/cover.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cover.dir/build.make CMakeFiles/cover.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num= "Built target cover"
-.PHONY : CMakeFiles/cover.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/cover.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 14
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cover.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
-.PHONY : CMakeFiles/cover.dir/rule
-
-# Convenience name for target.
-cover: CMakeFiles/cover.dir/rule
-
-.PHONY : cover
-
-# clean rule for target.
-CMakeFiles/cover.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cover.dir/build.make CMakeFiles/cover.dir/clean
-.PHONY : CMakeFiles/cover.dir/clean
-
-#=============================================================================
-# Target rules for target draw/CMakeFiles/cover_html2.dir
-
-# All Build rule for target.
-draw/CMakeFiles/cover_html2.dir/all: draw/CMakeFiles/test_pract2.dir/all
-	$(MAKE) $(MAKESILENT) -f draw/CMakeFiles/cover_html2.dir/build.make draw/CMakeFiles/cover_html2.dir/depend
-	$(MAKE) $(MAKESILENT) -f draw/CMakeFiles/cover_html2.dir/build.make draw/CMakeFiles/cover_html2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num= "Built target cover_html2"
-.PHONY : draw/CMakeFiles/cover_html2.dir/all
-
-# Build rule for subdir invocation for target.
-draw/CMakeFiles/cover_html2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 14
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 draw/CMakeFiles/cover_html2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
-.PHONY : draw/CMakeFiles/cover_html2.dir/rule
-
-# Convenience name for target.
-cover_html2: draw/CMakeFiles/cover_html2.dir/rule
-
-.PHONY : cover_html2
-
-# clean rule for target.
-draw/CMakeFiles/cover_html2.dir/clean:
-	$(MAKE) $(MAKESILENT) -f draw/CMakeFiles/cover_html2.dir/build.make draw/CMakeFiles/cover_html2.dir/clean
-.PHONY : draw/CMakeFiles/cover_html2.dir/clean
-
-#=============================================================================
 # Target rules for target draw/CMakeFiles/cover2.dir
 
 # All Build rule for target.
 draw/CMakeFiles/cover2.dir/all: draw/CMakeFiles/test_pract2.dir/all
 	$(MAKE) $(MAKESILENT) -f draw/CMakeFiles/cover2.dir/build.make draw/CMakeFiles/cover2.dir/depend
 	$(MAKE) $(MAKESILENT) -f draw/CMakeFiles/cover2.dir/build.make draw/CMakeFiles/cover2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num= "Built target cover2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num= "Built target cover2"
 .PHONY : draw/CMakeFiles/cover2.dir/all
 
 # Build rule for subdir invocation for target.
 draw/CMakeFiles/cover2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 draw/CMakeFiles/cover2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
 .PHONY : draw/CMakeFiles/cover2.dir/rule
 
 # Convenience name for target.
@@ -275,48 +248,48 @@ draw/CMakeFiles/cover2.dir/clean:
 .PHONY : draw/CMakeFiles/cover2.dir/clean
 
 #=============================================================================
-# Target rules for target draw/CMakeFiles/draw.dir
+# Target rules for target draw/CMakeFiles/cover_html2.dir
 
 # All Build rule for target.
-draw/CMakeFiles/draw.dir/all: game/CMakeFiles/game.dir/all
-	$(MAKE) $(MAKESILENT) -f draw/CMakeFiles/draw.dir/build.make draw/CMakeFiles/draw.dir/depend
-	$(MAKE) $(MAKESILENT) -f draw/CMakeFiles/draw.dir/build.make draw/CMakeFiles/draw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target draw"
-.PHONY : draw/CMakeFiles/draw.dir/all
+draw/CMakeFiles/cover_html2.dir/all: draw/CMakeFiles/test_pract2.dir/all
+	$(MAKE) $(MAKESILENT) -f draw/CMakeFiles/cover_html2.dir/build.make draw/CMakeFiles/cover_html2.dir/depend
+	$(MAKE) $(MAKESILENT) -f draw/CMakeFiles/cover_html2.dir/build.make draw/CMakeFiles/cover_html2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num= "Built target cover_html2"
+.PHONY : draw/CMakeFiles/cover_html2.dir/all
 
 # Build rule for subdir invocation for target.
-draw/CMakeFiles/draw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 draw/CMakeFiles/draw.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
-.PHONY : draw/CMakeFiles/draw.dir/rule
+draw/CMakeFiles/cover_html2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 14
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 draw/CMakeFiles/cover_html2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
+.PHONY : draw/CMakeFiles/cover_html2.dir/rule
 
 # Convenience name for target.
-draw: draw/CMakeFiles/draw.dir/rule
+cover_html2: draw/CMakeFiles/cover_html2.dir/rule
 
-.PHONY : draw
+.PHONY : cover_html2
 
 # clean rule for target.
-draw/CMakeFiles/draw.dir/clean:
-	$(MAKE) $(MAKESILENT) -f draw/CMakeFiles/draw.dir/build.make draw/CMakeFiles/draw.dir/clean
-.PHONY : draw/CMakeFiles/draw.dir/clean
+draw/CMakeFiles/cover_html2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f draw/CMakeFiles/cover_html2.dir/build.make draw/CMakeFiles/cover_html2.dir/clean
+.PHONY : draw/CMakeFiles/cover_html2.dir/clean
 
 #=============================================================================
 # Target rules for target draw/CMakeFiles/test_pract2.dir
 
 # All Build rule for target.
-draw/CMakeFiles/test_pract2.dir/all: game/CMakeFiles/game.dir/all
 draw/CMakeFiles/test_pract2.dir/all: draw/CMakeFiles/draw.dir/all
+draw/CMakeFiles/test_pract2.dir/all: game/CMakeFiles/game.dir/all
 	$(MAKE) $(MAKESILENT) -f draw/CMakeFiles/test_pract2.dir/build.make draw/CMakeFiles/test_pract2.dir/depend
 	$(MAKE) $(MAKESILENT) -f draw/CMakeFiles/test_pract2.dir/build.make draw/CMakeFiles/test_pract2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=19,20,21,22,23,24 "Built target test_pract2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=19,20,21,22,23,24 "Built target test_pract2"
 .PHONY : draw/CMakeFiles/test_pract2.dir/all
 
 # Build rule for subdir invocation for target.
 draw/CMakeFiles/test_pract2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 draw/CMakeFiles/test_pract2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
 .PHONY : draw/CMakeFiles/test_pract2.dir/rule
 
 # Convenience name for target.
@@ -330,20 +303,74 @@ draw/CMakeFiles/test_pract2.dir/clean:
 .PHONY : draw/CMakeFiles/test_pract2.dir/clean
 
 #=============================================================================
+# Target rules for target draw/CMakeFiles/draw.dir
+
+# All Build rule for target.
+draw/CMakeFiles/draw.dir/all: game/CMakeFiles/game.dir/all
+	$(MAKE) $(MAKESILENT) -f draw/CMakeFiles/draw.dir/build.make draw/CMakeFiles/draw.dir/depend
+	$(MAKE) $(MAKESILENT) -f draw/CMakeFiles/draw.dir/build.make draw/CMakeFiles/draw.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target draw"
+.PHONY : draw/CMakeFiles/draw.dir/all
+
+# Build rule for subdir invocation for target.
+draw/CMakeFiles/draw.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 draw/CMakeFiles/draw.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
+.PHONY : draw/CMakeFiles/draw.dir/rule
+
+# Convenience name for target.
+draw: draw/CMakeFiles/draw.dir/rule
+
+.PHONY : draw
+
+# clean rule for target.
+draw/CMakeFiles/draw.dir/clean:
+	$(MAKE) $(MAKESILENT) -f draw/CMakeFiles/draw.dir/build.make draw/CMakeFiles/draw.dir/clean
+.PHONY : draw/CMakeFiles/draw.dir/clean
+
+#=============================================================================
+# Target rules for target game/CMakeFiles/game.dir
+
+# All Build rule for target.
+game/CMakeFiles/game.dir/all:
+	$(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/depend
+	$(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=6,7,8 "Built target game"
+.PHONY : game/CMakeFiles/game.dir/all
+
+# Build rule for subdir invocation for target.
+game/CMakeFiles/game.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game/CMakeFiles/game.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
+.PHONY : game/CMakeFiles/game.dir/rule
+
+# Convenience name for target.
+game: game/CMakeFiles/game.dir/rule
+
+.PHONY : game
+
+# clean rule for target.
+game/CMakeFiles/game.dir/clean:
+	$(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/clean
+.PHONY : game/CMakeFiles/game.dir/clean
+
+#=============================================================================
 # Target rules for target game/CMakeFiles/cover_html1.dir
 
 # All Build rule for target.
 game/CMakeFiles/cover_html1.dir/all: game/CMakeFiles/test_pract1.dir/all
 	$(MAKE) $(MAKESILENT) -f game/CMakeFiles/cover_html1.dir/build.make game/CMakeFiles/cover_html1.dir/depend
 	$(MAKE) $(MAKESILENT) -f game/CMakeFiles/cover_html1.dir/build.make game/CMakeFiles/cover_html1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num= "Built target cover_html1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num= "Built target cover_html1"
 .PHONY : game/CMakeFiles/cover_html1.dir/all
 
 # Build rule for subdir invocation for target.
 game/CMakeFiles/cover_html1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game/CMakeFiles/cover_html1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
 .PHONY : game/CMakeFiles/cover_html1.dir/rule
 
 # Convenience name for target.
@@ -363,14 +390,14 @@ game/CMakeFiles/cover_html1.dir/clean:
 game/CMakeFiles/cover1.dir/all: game/CMakeFiles/test_pract1.dir/all
 	$(MAKE) $(MAKESILENT) -f game/CMakeFiles/cover1.dir/build.make game/CMakeFiles/cover1.dir/depend
 	$(MAKE) $(MAKESILENT) -f game/CMakeFiles/cover1.dir/build.make game/CMakeFiles/cover1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num= "Built target cover1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num= "Built target cover1"
 .PHONY : game/CMakeFiles/cover1.dir/all
 
 # Build rule for subdir invocation for target.
 game/CMakeFiles/cover1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game/CMakeFiles/cover1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
 .PHONY : game/CMakeFiles/cover1.dir/rule
 
 # Convenience name for target.
@@ -384,47 +411,20 @@ game/CMakeFiles/cover1.dir/clean:
 .PHONY : game/CMakeFiles/cover1.dir/clean
 
 #=============================================================================
-# Target rules for target game/CMakeFiles/game.dir
-
-# All Build rule for target.
-game/CMakeFiles/game.dir/all:
-	$(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/depend
-	$(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=6,7,8 "Built target game"
-.PHONY : game/CMakeFiles/game.dir/all
-
-# Build rule for subdir invocation for target.
-game/CMakeFiles/game.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game/CMakeFiles/game.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
-.PHONY : game/CMakeFiles/game.dir/rule
-
-# Convenience name for target.
-game: game/CMakeFiles/game.dir/rule
-
-.PHONY : game
-
-# clean rule for target.
-game/CMakeFiles/game.dir/clean:
-	$(MAKE) $(MAKESILENT) -f game/CMakeFiles/game.dir/build.make game/CMakeFiles/game.dir/clean
-.PHONY : game/CMakeFiles/game.dir/clean
-
-#=============================================================================
 # Target rules for target game/CMakeFiles/test_pract1.dir
 
 # All Build rule for target.
 game/CMakeFiles/test_pract1.dir/all: game/CMakeFiles/game.dir/all
 	$(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/depend
 	$(MAKE) $(MAKESILENT) -f game/CMakeFiles/test_pract1.dir/build.make game/CMakeFiles/test_pract1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=15,16,17,18 "Built target test_pract1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=15,16,17,18 "Built target test_pract1"
 .PHONY : game/CMakeFiles/test_pract1.dir/all
 
 # Build rule for subdir invocation for target.
 game/CMakeFiles/test_pract1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game/CMakeFiles/test_pract1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles 0
 .PHONY : game/CMakeFiles/test_pract1.dir/rule
 
 # Convenience name for target.

@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/340/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.17.2/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/340/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.17.2/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/faxmishok/Desktop/Dev_Techniques_game-of-life
+CMAKE_SOURCE_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build
+CMAKE_BINARY_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build
 
 # Utility rule file for cover1.
 
@@ -75,7 +75,7 @@ include game/CMakeFiles/cover1.dir/progress.make
 
 game/CMakeFiles/cover1:
 	cmake --build . --target test_pract1
-	gcovr -r /home/faxmishok/Desktop/Dev_Techniques_game-of-life /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/game/test_pract1
+	gcovr -r /Users/saykasz/Desktop/Dev_Techniques_game-of-life /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/game/test_pract1
 
 cover1: game/CMakeFiles/cover1
 cover1: game/CMakeFiles/cover1.dir/build.make
@@ -88,10 +88,10 @@ game/CMakeFiles/cover1.dir/build: cover1
 .PHONY : game/CMakeFiles/cover1.dir/build
 
 game/CMakeFiles/cover1.dir/clean:
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/game && $(CMAKE_COMMAND) -P CMakeFiles/cover1.dir/cmake_clean.cmake
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/game && $(CMAKE_COMMAND) -P CMakeFiles/cover1.dir/cmake_clean.cmake
 .PHONY : game/CMakeFiles/cover1.dir/clean
 
 game/CMakeFiles/cover1.dir/depend:
-	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/faxmishok/Desktop/Dev_Techniques_game-of-life /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/game /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/game/CMakeFiles/cover1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/saykasz/Desktop/Dev_Techniques_game-of-life /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/game /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/game/CMakeFiles/cover1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : game/CMakeFiles/cover1.dir/depend
 

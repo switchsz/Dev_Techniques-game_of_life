@@ -1,1 +1,0 @@
-/usr/bin/cc   --coverage CMakeFiles/test_pract2.dir/cunit_tests.c.o CMakeFiles/test_pract2.dir/ansi.c.o CMakeFiles/test_pract2.dir/sdl.c.o  -o test_pract2  libdraw.a -lcunit -lgame -lSDL2 

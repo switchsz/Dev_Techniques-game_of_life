@@ -8,7 +8,14 @@ project(mygame LANGUAGES C)
 add_subdirectory(draw)
 add_subdirectory(game)
 
-set (SRC mainsdl.c)
+SET(DRAWING_MODE CACHE STRING "Choose the type of Drawing, Options are: \"Ansi\" or \"SDL\"")
+if(DRAWING_MODE=="Ansi")
+    set (SRC main.c)
+else()
+    set (SRC mainsdl.c)
+endif()
+
+#set (SRC mainsdl.c)
 
 add_executable(${PROJECT_NAME} "")
 

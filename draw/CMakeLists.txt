@@ -5,6 +5,7 @@ project(draw LANGUAGES C)
 #find_package(SDL2 CONFIG REQUIRED) 
 add_library(${PROJECT_NAME} "")
 
+
 target_sources(${PROJECT_NAME} PUBLIC ansi.c sdl.c ansi.h sdl.h)
 
 target_include_directories(${PROJECT_NAME} PUBLIC /usr/local/include) #-I
@@ -48,3 +49,19 @@ add_custom_target(cover_html2
 COMMAND cmake --build . --target test_pract2
 COMMAND gcovr --html --html-detail -o index.html -r ${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR} $<TARGET_FILE:${TEST_PROJECT2}>
 WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
+
+
+
+#option(VAL "1 OR 2")
+#if(VAL)
+    #set(VALUE 1)
+#else()
+    #set(VALUE 2)
+#endif()
+
+
+#SET(Neighbourhood CACHE STRING "Circular Clipped")
+
+#target_compile_definitions(${PROJECT_NAME} PUBLIC USING_LIB=${VALUE}) #-D USING_LIB=1
+
+
