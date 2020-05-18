@@ -31,5 +31,7 @@ WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
 
 add_custom_target(cover_html
 COMMAND cmake --build . --target test_pract1 test_pract2
-COMMAND gcovr --html --html-detail -o index.html -r ${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR} $<TARGET_FILE:${PROJECT_NAME}>
+COMMAND [ ! -d Coverage ] && mkdir Coverage  || true
+COMMAND rm -rf Coverage/*
+COMMAND gcovr --html --html-detail -o Coverage/index.html -r ${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR} $<TARGET_FILE:${PROJECT_NAME}>
 WORKING_DIRECTORY ${CMAKE_BINARY_DIR})

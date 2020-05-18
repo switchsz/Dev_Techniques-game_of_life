@@ -75,7 +75,9 @@ include CMakeFiles/cover_html.dir/progress.make
 
 CMakeFiles/cover_html:
 	cmake --build . --target test_pract1 test_pract2
-	gcovr --html --html-detail -o index.html -r /home/faxmishok/Desktop/Dev_Techniques_game-of-life /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/mygame
+	[ ! -d Coverage ] && mkdir Coverage || true
+	rm -rf Coverage/*
+	gcovr --html --html-detail -o Coverage/index.html -r /home/faxmishok/Desktop/Dev_Techniques_game-of-life /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/mygame
 
 cover_html: CMakeFiles/cover_html
 cover_html: CMakeFiles/cover_html.dir/build.make
