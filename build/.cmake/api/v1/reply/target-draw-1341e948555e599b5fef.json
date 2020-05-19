@@ -47,12 +47,6 @@
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 11,
-				"parent" : 0
-			},
-			{
-				"command" : 3,
-				"file" : 0,
 				"line" : 12,
 				"parent" : 0
 			},
@@ -70,7 +64,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk  "
+					"fragment" : " "
 				},
 				{
 					"backtrace" : 3,
@@ -81,22 +75,18 @@
 			[
 				{
 					"backtrace" : 2,
-					"define" : "NEIGHBOURHOOD=\"Circular\""
+					"define" : "NEIGHBOURHOOD=\"Clipped\""
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 4,
-					"path" : "/usr/local/include"
-				},
-				{
-					"backtrace" : 5,
-					"path" : "/Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw"
+					"path" : "/home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game"
+					"path" : "/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game"
 				}
 			],
 			"language" : "C",
@@ -150,24 +140,24 @@
 	"sources" : 
 	[
 		{
-			"backtrace" : 6,
+			"backtrace" : 5,
 			"compileGroupIndex" : 0,
 			"path" : "draw/ansi.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 6,
+			"backtrace" : 5,
 			"compileGroupIndex" : 0,
 			"path" : "draw/sdl.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 6,
+			"backtrace" : 5,
 			"path" : "draw/ansi.h",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 6,
+			"backtrace" : 5,
 			"path" : "draw/sdl.h",
 			"sourceGroupIndex" : 1
 		},

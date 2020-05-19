@@ -158,35 +158,35 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "draw::@f99138a17b78bc09f6a1",
-					"jsonFile" : "target-draw-e81a2aad5914676d767b.json",
+					"jsonFile" : "target-draw-1341e948555e599b5fef.json",
 					"name" : "draw",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "game::@0c53ff3c4131f9152fd3",
-					"jsonFile" : "target-game-d808e955bf79d840a049.json",
+					"jsonFile" : "target-game-f47a8b23e4912659797b.json",
 					"name" : "game",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "mygame::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-mygame-c0afa275ccca6252a807.json",
+					"jsonFile" : "target-mygame-7d2eb6ae77fb4542417a.json",
 					"name" : "mygame",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "test_pract1::@0c53ff3c4131f9152fd3",
-					"jsonFile" : "target-test_pract1-8ccf46fbd47520c8bcb3.json",
+					"jsonFile" : "target-test_pract1-abd05f3923230479d7c9.json",
 					"name" : "test_pract1",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "test_pract2::@f99138a17b78bc09f6a1",
-					"jsonFile" : "target-test_pract2-1401a895f42cf02ad703.json",
+					"jsonFile" : "target-test_pract2-b8df52c6c00686567c65.json",
 					"name" : "test_pract2",
 					"projectIndex" : 1
 				}
@@ -196,8 +196,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build",
-		"source" : "/Users/saykasz/Desktop/Dev_Techniques_game-of-life"
+		"build" : "/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build",
+		"source" : "/home/faxmishok/Desktop/Dev_Techniques_game-of-life"
 	},
 	"version" : 
 	{

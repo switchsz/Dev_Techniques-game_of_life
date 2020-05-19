@@ -64,7 +64,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk  "
+					"fragment" : " "
 				},
 				{
 					"backtrace" : 2,
@@ -75,14 +75,14 @@
 			[
 				{
 					"backtrace" : 3,
-					"define" : "NEIGHBOURHOOD=\"Circular\""
+					"define" : "NEIGHBOURHOOD=\"Clipped\""
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 4,
-					"path" : "/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game"
+					"path" : "/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game"
 				}
 			],
 			"language" : "C",

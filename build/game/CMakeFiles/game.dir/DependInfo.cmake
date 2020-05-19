@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/cell.c" "/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/game/CMakeFiles/game.dir/cell.c.o"
-  "/Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/celllist.c" "/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/game/CMakeFiles/game.dir/celllist.c.o"
+  "/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/cell.c" "/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/game/CMakeFiles/game.dir/cell.c.o"
+  "/home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/celllist.c" "/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/game/CMakeFiles/game.dir/celllist.c.o"
   )
-set(CMAKE_C_COMPILER_ID "AppleClang")
+set(CMAKE_C_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_C
-  "NEIGHBOURHOOD=\"Circular\""
+  "NEIGHBOURHOOD=\"Clipped\""
   )
 
 # The include file search paths:

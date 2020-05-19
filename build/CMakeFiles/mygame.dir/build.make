@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.17.2/bin/cmake
+CMAKE_COMMAND = /snap/cmake/340/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.17.2/bin/cmake -E rm -f
+RM = /snap/cmake/340/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life
+CMAKE_SOURCE_DIR = /home/faxmishok/Desktop/Dev_Techniques_game-of-life
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build
+CMAKE_BINARY_DIR = /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/mygame.dir/depend.make
@@ -77,74 +77,74 @@ include CMakeFiles/mygame.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/mygame.dir/flags.make
 
-CMakeFiles/mygame.dir/mainsdl.c.o: CMakeFiles/mygame.dir/flags.make
-CMakeFiles/mygame.dir/mainsdl.c.o: ../mainsdl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mygame.dir/mainsdl.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mygame.dir/mainsdl.c.o   -c /Users/saykasz/Desktop/Dev_Techniques_game-of-life/mainsdl.c
+CMakeFiles/mygame.dir/main.c.o: CMakeFiles/mygame.dir/flags.make
+CMakeFiles/mygame.dir/main.c.o: ../main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mygame.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mygame.dir/main.c.o   -c /home/faxmishok/Desktop/Dev_Techniques_game-of-life/main.c
 
-CMakeFiles/mygame.dir/mainsdl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mygame.dir/mainsdl.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/saykasz/Desktop/Dev_Techniques_game-of-life/mainsdl.c > CMakeFiles/mygame.dir/mainsdl.c.i
+CMakeFiles/mygame.dir/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mygame.dir/main.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/faxmishok/Desktop/Dev_Techniques_game-of-life/main.c > CMakeFiles/mygame.dir/main.c.i
 
-CMakeFiles/mygame.dir/mainsdl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mygame.dir/mainsdl.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/saykasz/Desktop/Dev_Techniques_game-of-life/mainsdl.c -o CMakeFiles/mygame.dir/mainsdl.c.s
+CMakeFiles/mygame.dir/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mygame.dir/main.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/faxmishok/Desktop/Dev_Techniques_game-of-life/main.c -o CMakeFiles/mygame.dir/main.c.s
 
 CMakeFiles/mygame.dir/draw/ansi.c.o: CMakeFiles/mygame.dir/flags.make
 CMakeFiles/mygame.dir/draw/ansi.c.o: ../draw/ansi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/mygame.dir/draw/ansi.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mygame.dir/draw/ansi.c.o   -c /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/ansi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/mygame.dir/draw/ansi.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mygame.dir/draw/ansi.c.o   -c /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/ansi.c
 
 CMakeFiles/mygame.dir/draw/ansi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mygame.dir/draw/ansi.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/ansi.c > CMakeFiles/mygame.dir/draw/ansi.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/ansi.c > CMakeFiles/mygame.dir/draw/ansi.c.i
 
 CMakeFiles/mygame.dir/draw/ansi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mygame.dir/draw/ansi.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/ansi.c -o CMakeFiles/mygame.dir/draw/ansi.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/ansi.c -o CMakeFiles/mygame.dir/draw/ansi.c.s
 
 CMakeFiles/mygame.dir/draw/sdl.c.o: CMakeFiles/mygame.dir/flags.make
 CMakeFiles/mygame.dir/draw/sdl.c.o: ../draw/sdl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mygame.dir/draw/sdl.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mygame.dir/draw/sdl.c.o   -c /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/sdl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mygame.dir/draw/sdl.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mygame.dir/draw/sdl.c.o   -c /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/sdl.c
 
 CMakeFiles/mygame.dir/draw/sdl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mygame.dir/draw/sdl.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/sdl.c > CMakeFiles/mygame.dir/draw/sdl.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/sdl.c > CMakeFiles/mygame.dir/draw/sdl.c.i
 
 CMakeFiles/mygame.dir/draw/sdl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mygame.dir/draw/sdl.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/saykasz/Desktop/Dev_Techniques_game-of-life/draw/sdl.c -o CMakeFiles/mygame.dir/draw/sdl.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/faxmishok/Desktop/Dev_Techniques_game-of-life/draw/sdl.c -o CMakeFiles/mygame.dir/draw/sdl.c.s
 
 CMakeFiles/mygame.dir/game/cell.c.o: CMakeFiles/mygame.dir/flags.make
 CMakeFiles/mygame.dir/game/cell.c.o: ../game/cell.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mygame.dir/game/cell.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mygame.dir/game/cell.c.o   -c /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/cell.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mygame.dir/game/cell.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mygame.dir/game/cell.c.o   -c /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/cell.c
 
 CMakeFiles/mygame.dir/game/cell.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mygame.dir/game/cell.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/cell.c > CMakeFiles/mygame.dir/game/cell.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/cell.c > CMakeFiles/mygame.dir/game/cell.c.i
 
 CMakeFiles/mygame.dir/game/cell.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mygame.dir/game/cell.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/cell.c -o CMakeFiles/mygame.dir/game/cell.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/cell.c -o CMakeFiles/mygame.dir/game/cell.c.s
 
 CMakeFiles/mygame.dir/game/celllist.c.o: CMakeFiles/mygame.dir/flags.make
 CMakeFiles/mygame.dir/game/celllist.c.o: ../game/celllist.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mygame.dir/game/celllist.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mygame.dir/game/celllist.c.o   -c /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/celllist.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mygame.dir/game/celllist.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mygame.dir/game/celllist.c.o   -c /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/celllist.c
 
 CMakeFiles/mygame.dir/game/celllist.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mygame.dir/game/celllist.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/celllist.c > CMakeFiles/mygame.dir/game/celllist.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/celllist.c > CMakeFiles/mygame.dir/game/celllist.c.i
 
 CMakeFiles/mygame.dir/game/celllist.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mygame.dir/game/celllist.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/saykasz/Desktop/Dev_Techniques_game-of-life/game/celllist.c -o CMakeFiles/mygame.dir/game/celllist.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/faxmishok/Desktop/Dev_Techniques_game-of-life/game/celllist.c -o CMakeFiles/mygame.dir/game/celllist.c.s
 
 # Object files for target mygame
 mygame_OBJECTS = \
-"CMakeFiles/mygame.dir/mainsdl.c.o" \
+"CMakeFiles/mygame.dir/main.c.o" \
 "CMakeFiles/mygame.dir/draw/ansi.c.o" \
 "CMakeFiles/mygame.dir/draw/sdl.c.o" \
 "CMakeFiles/mygame.dir/game/cell.c.o" \
@@ -153,7 +153,7 @@ mygame_OBJECTS = \
 # External object files for target mygame
 mygame_EXTERNAL_OBJECTS =
 
-mygame: CMakeFiles/mygame.dir/mainsdl.c.o
+mygame: CMakeFiles/mygame.dir/main.c.o
 mygame: CMakeFiles/mygame.dir/draw/ansi.c.o
 mygame: CMakeFiles/mygame.dir/draw/sdl.c.o
 mygame: CMakeFiles/mygame.dir/game/cell.c.o
@@ -162,7 +162,7 @@ mygame: CMakeFiles/mygame.dir/build.make
 mygame: draw/libdraw.a
 mygame: game/libgame.a
 mygame: CMakeFiles/mygame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable mygame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable mygame"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mygame.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -175,6 +175,6 @@ CMakeFiles/mygame.dir/clean:
 .PHONY : CMakeFiles/mygame.dir/clean
 
 CMakeFiles/mygame.dir/depend:
-	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/saykasz/Desktop/Dev_Techniques_game-of-life /Users/saykasz/Desktop/Dev_Techniques_game-of-life /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles/mygame.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/faxmishok/Desktop/Dev_Techniques_game-of-life /home/faxmishok/Desktop/Dev_Techniques_game-of-life /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles/mygame.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/mygame.dir/depend
 

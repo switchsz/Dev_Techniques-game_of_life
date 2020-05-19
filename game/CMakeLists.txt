@@ -39,5 +39,5 @@ WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
 #install(FILES f1.h DESTINATION include)
 
 
-SET(NEIGHBOURHOOD_MODE CACHE STRING "Choose the type of Neighbourhood, Options are: \"Circular\" or \"Clipped\"")
-target_compile_definitions(${PROJECT_NAME} PUBLIC NEIGHBOURHOOD=${NEIGHBOURHOOD_MODE}) #-D USING_LIB=1
+SET(NEIGHBOURHOOD_MODE CACHE STRING "Choose the type of Neighbourhood, Options are: Circular or Clipped ")
+target_compile_definitions(${PROJECT_NAME} PUBLIC NEIGHBOURHOOD="${NEIGHBOURHOOD_MODE}") #-D USING_LIB=1

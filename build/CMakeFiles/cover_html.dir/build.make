@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.17.2/bin/cmake
+CMAKE_COMMAND = /snap/cmake/340/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.17.2/bin/cmake -E rm -f
+RM = /snap/cmake/340/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life
+CMAKE_SOURCE_DIR = /home/faxmishok/Desktop/Dev_Techniques_game-of-life
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build
+CMAKE_BINARY_DIR = /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build
 
 # Utility rule file for cover_html.
 
@@ -77,7 +77,7 @@ CMakeFiles/cover_html:
 	cmake --build . --target test_pract1 test_pract2
 	[ ! -d Coverage ] && mkdir Coverage || true
 	rm -rf Coverage/*
-	gcovr --html --html-detail -o Coverage/index.html -r /Users/saykasz/Desktop/Dev_Techniques_game-of-life /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/mygame
+	gcovr --html --html-detail -o Coverage/index.html -r /home/faxmishok/Desktop/Dev_Techniques_game-of-life /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/mygame
 
 cover_html: CMakeFiles/cover_html
 cover_html: CMakeFiles/cover_html.dir/build.make
@@ -94,6 +94,6 @@ CMakeFiles/cover_html.dir/clean:
 .PHONY : CMakeFiles/cover_html.dir/clean
 
 CMakeFiles/cover_html.dir/depend:
-	cd /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/saykasz/Desktop/Dev_Techniques_game-of-life /Users/saykasz/Desktop/Dev_Techniques_game-of-life /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build /Users/saykasz/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles/cover_html.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/faxmishok/Desktop/Dev_Techniques_game-of-life /home/faxmishok/Desktop/Dev_Techniques_game-of-life /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build /home/faxmishok/Desktop/Dev_Techniques_game-of-life/build/CMakeFiles/cover_html.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cover_html.dir/depend
 
