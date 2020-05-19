@@ -1,0 +1,98 @@
+\hypertarget{ansi_8c}{}\doxysection{ansi.\+c File Reference}
+\label{ansi_8c}\index{ansi.c@{ansi.c}}
+{\ttfamily \#include \char`\"{}ansi.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{ansi_8c_a42702791e6da9510e4f44f33d2dad8f1}{hide\+\_\+cursor}} ()
+\begin{DoxyCompactList}\small\item\em Hides cursor on terminal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ansi_8c_a1bdd62a6bef7cfd6522dc1412e162559}{show\+\_\+cursor}} ()
+\begin{DoxyCompactList}\small\item\em Shows cursor on terminal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ansi_8c_ace03e272bd19884c4ed8cb4c07667ca3}{reset\+\_\+styles}} ()
+\begin{DoxyCompactList}\small\item\em Resets all styles to default. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ansi_8c_a2fcc8485f7686a90dda96e13cf0d4554}{draw\+Ansi}} (\mbox{\hyperlink{struct_cell_list}{Cell\+List}} $\ast$p\+Cell\+List)
+\begin{DoxyCompactList}\small\item\em Draw given celllist in terminal using \char`\"{}\+Ansi\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ansi_8c_a1b224cac72287e2ef2f91e00de1bba83}{print}} (\mbox{\hyperlink{struct_cell_list}{Cell\+List}} $\ast$p\+Cell\+List)
+\begin{DoxyCompactList}\small\item\em Prints given celllist in terminal with $\ast$ (alive cells) and . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ansi_8c_ab26c5ccc43b034e63b6182b431de8e44}{get\+\_\+console\+\_\+size}} (int $\ast$w, int $\ast$h)
+\begin{DoxyCompactList}\small\item\em Gets console size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ansi_8c_a2fcc8485f7686a90dda96e13cf0d4554}\label{ansi_8c_a2fcc8485f7686a90dda96e13cf0d4554}} 
+\index{ansi.c@{ansi.c}!drawAnsi@{drawAnsi}}
+\index{drawAnsi@{drawAnsi}!ansi.c@{ansi.c}}
+\doxysubsubsection{\texorpdfstring{drawAnsi()}{drawAnsi()}}
+{\footnotesize\ttfamily void draw\+Ansi (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cell_list}{Cell\+List}} $\ast$}]{p\+Cell\+List }\end{DoxyParamCaption})}
+
+
+
+Draw given celllist in terminal using \char`\"{}\+Ansi\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Cell\+List} & Pointer to a list to be drawn \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ansi_8c_ab26c5ccc43b034e63b6182b431de8e44}\label{ansi_8c_ab26c5ccc43b034e63b6182b431de8e44}} 
+\index{ansi.c@{ansi.c}!get\_console\_size@{get\_console\_size}}
+\index{get\_console\_size@{get\_console\_size}!ansi.c@{ansi.c}}
+\doxysubsubsection{\texorpdfstring{get\_console\_size()}{get\_console\_size()}}
+{\footnotesize\ttfamily void get\+\_\+console\+\_\+size (\begin{DoxyParamCaption}\item[{int $\ast$}]{w,  }\item[{int $\ast$}]{h }\end{DoxyParamCaption})}
+
+
+
+Gets console size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & placeholder where the width of terminal will be stored \\
+\hline
+{\em h} & placeholder where the height of terminal will be stored \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ansi_8c_a42702791e6da9510e4f44f33d2dad8f1}\label{ansi_8c_a42702791e6da9510e4f44f33d2dad8f1}} 
+\index{ansi.c@{ansi.c}!hide\_cursor@{hide\_cursor}}
+\index{hide\_cursor@{hide\_cursor}!ansi.c@{ansi.c}}
+\doxysubsubsection{\texorpdfstring{hide\_cursor()}{hide\_cursor()}}
+{\footnotesize\ttfamily void hide\+\_\+cursor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Hides cursor on terminal. 
+
+\mbox{\Hypertarget{ansi_8c_a1b224cac72287e2ef2f91e00de1bba83}\label{ansi_8c_a1b224cac72287e2ef2f91e00de1bba83}} 
+\index{ansi.c@{ansi.c}!print@{print}}
+\index{print@{print}!ansi.c@{ansi.c}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cell_list}{Cell\+List}} $\ast$}]{p\+Cell\+List }\end{DoxyParamCaption})}
+
+
+
+Prints given celllist in terminal with $\ast$ (alive cells) and . 
+
+(dead cells) 
+\begin{DoxyParams}{Parameters}
+{\em p\+Cell\+List} & Pointer to a list to be printed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ansi_8c_ace03e272bd19884c4ed8cb4c07667ca3}\label{ansi_8c_ace03e272bd19884c4ed8cb4c07667ca3}} 
+\index{ansi.c@{ansi.c}!reset\_styles@{reset\_styles}}
+\index{reset\_styles@{reset\_styles}!ansi.c@{ansi.c}}
+\doxysubsubsection{\texorpdfstring{reset\_styles()}{reset\_styles()}}
+{\footnotesize\ttfamily void reset\+\_\+styles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets all styles to default. 
+
+\mbox{\Hypertarget{ansi_8c_a1bdd62a6bef7cfd6522dc1412e162559}\label{ansi_8c_a1bdd62a6bef7cfd6522dc1412e162559}} 
+\index{ansi.c@{ansi.c}!show\_cursor@{show\_cursor}}
+\index{show\_cursor@{show\_cursor}!ansi.c@{ansi.c}}
+\doxysubsubsection{\texorpdfstring{show\_cursor()}{show\_cursor()}}
+{\footnotesize\ttfamily void show\+\_\+cursor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Shows cursor on terminal. 
+

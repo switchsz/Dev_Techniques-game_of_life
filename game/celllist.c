@@ -1,5 +1,8 @@
 #include "celllist.h"
 
+
+
+
 CellList* newCellList(int nbRows, int nbCols) {
     CellList* pCellList = (CellList*) malloc(sizeof(CellList));
     pCellList->nbRows = nbRows;
@@ -13,6 +16,9 @@ CellList* newCellList(int nbRows, int nbCols) {
     return pCellList;
 
 }
+
+
+
 
 int nNeighboursClipped(CellList *pCellList, Cell *pCell) {
     int n = 0;
@@ -39,6 +45,7 @@ int nNeighboursClipped(CellList *pCellList, Cell *pCell) {
         return -1;
     }
 }
+
 
 int nNeighboursCircular(CellList *pCellList, Cell *pCell) {
     int tempi, tempj;
@@ -76,6 +83,7 @@ int nNeighboursCircular(CellList *pCellList, Cell *pCell) {
     }
 }
 
+
 CellList* updateCellList(CellList* pCellList) {
     if ( pCellList != NULL ) {
         int nNeighb = 0;
@@ -83,9 +91,9 @@ CellList* updateCellList(CellList* pCellList) {
         for ( int i = 0 ; i < pNew->nbRows ; i++ ) {
             for ( int j = 0 ; j < pNew->nbCols ; j++ ) {
                 if(strcmp(NEIGHBOURHOOD,"Clipped")==0)
-                nNeighb = nNeighboursClipped(pCellList,&(pCellList->board[i][j]));
+                    nNeighb = nNeighboursClipped(pCellList,&(pCellList->board[i][j]));
                 else //default Circular
-                nNeighb = nNeighboursCircular(pCellList,&(pCellList->board[i][j]));
+                    nNeighb = nNeighboursCircular(pCellList,&(pCellList->board[i][j]));
                 if (  nNeighb == 3 ) {
                     pNew->board[i][j].life = 1;
                 }
@@ -102,6 +110,8 @@ CellList* updateCellList(CellList* pCellList) {
         return NULL;
     }
 }
+
+
 
 CellList* generateCellList(int nbRows, int nbCols) {
     srand(time(NULL));
@@ -129,6 +139,8 @@ int nAlives(CellList *pCellList) {
     return nAlives;
 }
 
+
+
 int sameCellList(CellList *pCellList1, CellList *pCellList2) {
     if ( pCellList1 == NULL || pCellList2 == NULL) {
         return 0;
@@ -146,6 +158,7 @@ int sameCellList(CellList *pCellList1, CellList *pCellList2) {
     return 1;
 }
 
+
 CellList* copyCellList(CellList *pCellList) {
     CellList* pCopy = newCellList(pCellList->nbRows, pCellList -> nbCols);
     for (int i = 0; i < pCellList->nbRows; i++) {
@@ -157,12 +170,12 @@ CellList* copyCellList(CellList *pCellList) {
     return pCopy;
 }
 
-void emptyCellList(CellList* pCellList) {
 
+
+void emptyCellList(CellList* pCellList) {
     for ( int i = 0 ; i < pCellList->nbRows; i++) {
         for ( int j = 0 ; j < pCellList->nbCols; j++) {
             pCellList->board[i][j].life = 0;
         }
     }
-
 }

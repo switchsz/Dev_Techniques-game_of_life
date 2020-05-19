@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['int_1780',['int',['../struct_s_d_l___r_wops.html#a1eaac7a271585ada805ca27aaf39e3cd',1,'SDL_RWops']]]
+  ['bear_5fcell_5ftest_126',['bear_cell_test',['../game_2cunit__tests_8c.html#adfa06c9d748f4a8054b07e27825e2f5f',1,'cunit_tests.c']]],
+  ['bearcell_127',['bearCell',['../cell_8c.html#acbc837b0bafc9c5bd2ed931bc471f22c',1,'bearCell(Cell *pCell):&#160;cell.c'],['../cell_8h.html#acbc837b0bafc9c5bd2ed931bc471f22c',1,'bearCell(Cell *pCell):&#160;cell.c']]]
 ];

@@ -1,0 +1,77 @@
+\hypertarget{cell_8h}{}\doxysection{cell.\+h File Reference}
+\label{cell_8h}\index{cell.h@{cell.h}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_cell}{Cell}}
+\begin{DoxyCompactList}\small\item\em A structure to represent one element of a \mbox{\hyperlink{struct_cell_list}{Cell\+List}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{cell_8h_acbc837b0bafc9c5bd2ed931bc471f22c}{bear\+Cell}} (\mbox{\hyperlink{struct_cell}{Cell}} $\ast$p\+Cell)
+\begin{DoxyCompactList}\small\item\em Makes a cell alive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{cell_8h_a879b2abae49691dd7678378289ede3ee}{kill\+Cell}} (\mbox{\hyperlink{struct_cell}{Cell}} $\ast$p\+Cell)
+\begin{DoxyCompactList}\small\item\em Makes a cell dead. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_cell}{Cell}} $\ast$ \mbox{\hyperlink{cell_8h_a62d5d69bbc81e8ce1b6b2ed5b24e215b}{new\+Cell}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Creates an object of struct \mbox{\hyperlink{struct_cell}{Cell}} by allocating space in memory for it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{cell_8h_acbc837b0bafc9c5bd2ed931bc471f22c}\label{cell_8h_acbc837b0bafc9c5bd2ed931bc471f22c}} 
+\index{cell.h@{cell.h}!bearCell@{bearCell}}
+\index{bearCell@{bearCell}!cell.h@{cell.h}}
+\doxysubsubsection{\texorpdfstring{bearCell()}{bearCell()}}
+{\footnotesize\ttfamily void bear\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cell}{Cell}} $\ast$}]{p\+Cell }\end{DoxyParamCaption})}
+
+
+
+Makes a cell alive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Cell} & adress of a cell to be born. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{cell_8h_a879b2abae49691dd7678378289ede3ee}\label{cell_8h_a879b2abae49691dd7678378289ede3ee}} 
+\index{cell.h@{cell.h}!killCell@{killCell}}
+\index{killCell@{killCell}!cell.h@{cell.h}}
+\doxysubsubsection{\texorpdfstring{killCell()}{killCell()}}
+{\footnotesize\ttfamily void kill\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cell}{Cell}} $\ast$}]{p\+Cell }\end{DoxyParamCaption})}
+
+
+
+Makes a cell dead. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Cell} & adress of a cell to be killed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{cell_8h_a62d5d69bbc81e8ce1b6b2ed5b24e215b}\label{cell_8h_a62d5d69bbc81e8ce1b6b2ed5b24e215b}} 
+\index{cell.h@{cell.h}!newCell@{newCell}}
+\index{newCell@{newCell}!cell.h@{cell.h}}
+\doxysubsubsection{\texorpdfstring{newCell()}{newCell()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_cell}{Cell}}$\ast$ new\+Cell (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Creates an object of struct \mbox{\hyperlink{struct_cell}{Cell}} by allocating space in memory for it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & vertical coordinate of a \mbox{\hyperlink{struct_cell}{Cell}}. \\
+\hline
+{\em y} & horizontal coordinate of a \mbox{\hyperlink{struct_cell}{Cell}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer which represents an address, where new cell is located. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+When \mbox{\hyperlink{struct_cell}{Cell}} is created, it is dead by default. 
+\end{DoxyNote}

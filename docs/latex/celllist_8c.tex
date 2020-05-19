@@ -1,0 +1,217 @@
+\hypertarget{celllist_8c}{}\doxysection{celllist.\+c File Reference}
+\label{celllist_8c}\index{celllist.c@{celllist.c}}
+{\ttfamily \#include \char`\"{}celllist.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_cell_list}{Cell\+List}} $\ast$ \mbox{\hyperlink{celllist_8c_a8dd5a649ec2fa4d749aec22aaa2f942e}{new\+Cell\+List}} (int nb\+Rows, int nb\+Cols)
+\begin{DoxyCompactList}\small\item\em Creates a new celllist by allocating a memory for a whole celllist. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{celllist_8c_a5ae828b268819a7236fd4eeaecfc449e}{n\+Neighbours\+Clipped}} (\mbox{\hyperlink{struct_cell_list}{Cell\+List}} $\ast$p\+Cell\+List, \mbox{\hyperlink{struct_cell}{Cell}} $\ast$p\+Cell)
+\begin{DoxyCompactList}\small\item\em Counts number of neighbours for a given cell in a given celllist in {\itshape Clipped} mode. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{celllist_8c_a336528c99fea18fdd31bd63916483def}{n\+Neighbours\+Circular}} (\mbox{\hyperlink{struct_cell_list}{Cell\+List}} $\ast$p\+Cell\+List, \mbox{\hyperlink{struct_cell}{Cell}} $\ast$p\+Cell)
+\begin{DoxyCompactList}\small\item\em Counts number of neighbours for a given cell in a given celllist in {\itshape Circular} mode. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_cell_list}{Cell\+List}} $\ast$ \mbox{\hyperlink{celllist_8c_a8460df065cb51c573bc5c84c678a121a}{update\+Cell\+List}} (\mbox{\hyperlink{struct_cell_list}{Cell\+List}} $\ast$p\+Cell\+List)
+\begin{DoxyCompactList}\small\item\em Updates the given \mbox{\hyperlink{struct_cell_list}{Cell\+List}} by creating a new Celllist and checking the life conditions for each cell. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_cell_list}{Cell\+List}} $\ast$ \mbox{\hyperlink{celllist_8c_ac22167f2271cacc0d40ead05a1ee89a3}{generate\+Cell\+List}} (int nb\+Rows, int nb\+Cols)
+\begin{DoxyCompactList}\small\item\em Generates a table of given size with random life states of Cells. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{celllist_8c_a4919fd3af3ef5a9e0bdc072b31454488}{n\+Alives}} (\mbox{\hyperlink{struct_cell_list}{Cell\+List}} $\ast$p\+Cell\+List)
+\begin{DoxyCompactList}\small\item\em Counts number of alive cells in a given celllist. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{celllist_8c_a3c643ac3a15efd88fad720633c16a11a}{same\+Cell\+List}} (\mbox{\hyperlink{struct_cell_list}{Cell\+List}} $\ast$p\+Cell\+List1, \mbox{\hyperlink{struct_cell_list}{Cell\+List}} $\ast$p\+Cell\+List2)
+\begin{DoxyCompactList}\small\item\em Checks whethet the given lists are the same. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_cell_list}{Cell\+List}} $\ast$ \mbox{\hyperlink{celllist_8c_ad3d0b9c448c1ec31433f57a169780719}{copy\+Cell\+List}} (\mbox{\hyperlink{struct_cell_list}{Cell\+List}} $\ast$p\+Cell\+List)
+\begin{DoxyCompactList}\small\item\em Creates {\bfseries{in memory}} the copy of the given list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{celllist_8c_a0a45ebc1fc8becbefa87ab996d775834}{empty\+Cell\+List}} (\mbox{\hyperlink{struct_cell_list}{Cell\+List}} $\ast$p\+Cell\+List)
+\begin{DoxyCompactList}\small\item\em Flushes the given list, makes all the cells dead. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{celllist_8c_ad3d0b9c448c1ec31433f57a169780719}\label{celllist_8c_ad3d0b9c448c1ec31433f57a169780719}} 
+\index{celllist.c@{celllist.c}!copyCellList@{copyCellList}}
+\index{copyCellList@{copyCellList}!celllist.c@{celllist.c}}
+\doxysubsubsection{\texorpdfstring{copyCellList()}{copyCellList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_cell_list}{Cell\+List}}$\ast$ copy\+Cell\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cell_list}{Cell\+List}} $\ast$}]{p\+Cell\+List }\end{DoxyParamCaption})}
+
+
+
+Creates {\bfseries{in memory}} the copy of the given list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Cell\+List} & pointer to a \mbox{\hyperlink{struct_cell_list}{Cell\+List}} to be copied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer which represents an address, where copy of celllist is located. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{celllist_8c_a0a45ebc1fc8becbefa87ab996d775834}\label{celllist_8c_a0a45ebc1fc8becbefa87ab996d775834}} 
+\index{celllist.c@{celllist.c}!emptyCellList@{emptyCellList}}
+\index{emptyCellList@{emptyCellList}!celllist.c@{celllist.c}}
+\doxysubsubsection{\texorpdfstring{emptyCellList()}{emptyCellList()}}
+{\footnotesize\ttfamily void empty\+Cell\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cell_list}{Cell\+List}} $\ast$}]{p\+Cell\+List }\end{DoxyParamCaption})}
+
+
+
+Flushes the given list, makes all the cells dead. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Cell\+List} & pointer to a \mbox{\hyperlink{struct_cell_list}{Cell\+List}} to be emptied. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{celllist_8c_ac22167f2271cacc0d40ead05a1ee89a3}\label{celllist_8c_ac22167f2271cacc0d40ead05a1ee89a3}} 
+\index{celllist.c@{celllist.c}!generateCellList@{generateCellList}}
+\index{generateCellList@{generateCellList}!celllist.c@{celllist.c}}
+\doxysubsubsection{\texorpdfstring{generateCellList()}{generateCellList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_cell_list}{Cell\+List}}$\ast$ generate\+Cell\+List (\begin{DoxyParamCaption}\item[{int}]{nb\+Rows,  }\item[{int}]{nb\+Cols }\end{DoxyParamCaption})}
+
+
+
+Generates a table of given size with random life states of Cells. 
+
+Method is used as a starting point for game. 
+\begin{DoxyParams}{Parameters}
+{\em nb\+Rows} & number of rows to be created \\
+\hline
+{\em nb\+Cols} & number of columns to be created \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to a generated celllist. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{celllist_8c_a4919fd3af3ef5a9e0bdc072b31454488}\label{celllist_8c_a4919fd3af3ef5a9e0bdc072b31454488}} 
+\index{celllist.c@{celllist.c}!nAlives@{nAlives}}
+\index{nAlives@{nAlives}!celllist.c@{celllist.c}}
+\doxysubsubsection{\texorpdfstring{nAlives()}{nAlives()}}
+{\footnotesize\ttfamily int n\+Alives (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cell_list}{Cell\+List}} $\ast$}]{p\+Cell\+List }\end{DoxyParamCaption})}
+
+
+
+Counts number of alive cells in a given celllist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Cell\+List} & pointer to a \mbox{\hyperlink{struct_cell_list}{Cell\+List}} where alive cells needs to be counted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of alive cells. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{celllist_8c_a8dd5a649ec2fa4d749aec22aaa2f942e}\label{celllist_8c_a8dd5a649ec2fa4d749aec22aaa2f942e}} 
+\index{celllist.c@{celllist.c}!newCellList@{newCellList}}
+\index{newCellList@{newCellList}!celllist.c@{celllist.c}}
+\doxysubsubsection{\texorpdfstring{newCellList()}{newCellList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_cell_list}{Cell\+List}}$\ast$ new\+Cell\+List (\begin{DoxyParamCaption}\item[{int}]{nb\+Rows,  }\item[{int}]{nb\+Cols }\end{DoxyParamCaption})}
+
+
+
+Creates a new celllist by allocating a memory for a whole celllist. 
+
+Recursively go through board, and allocates a memory for each cell. 
+\begin{DoxyParams}{Parameters}
+{\em nb\+Rows} & number of rows to be created \\
+\hline
+{\em nb\+Cols} & number of columns to be created \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer which represents an address, where new celllist is located. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{celllist_8c_a336528c99fea18fdd31bd63916483def}\label{celllist_8c_a336528c99fea18fdd31bd63916483def}} 
+\index{celllist.c@{celllist.c}!nNeighboursCircular@{nNeighboursCircular}}
+\index{nNeighboursCircular@{nNeighboursCircular}!celllist.c@{celllist.c}}
+\doxysubsubsection{\texorpdfstring{nNeighboursCircular()}{nNeighboursCircular()}}
+{\footnotesize\ttfamily int n\+Neighbours\+Circular (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cell_list}{Cell\+List}} $\ast$}]{p\+Cell\+List,  }\item[{\mbox{\hyperlink{struct_cell}{Cell}} $\ast$}]{p\+Cell }\end{DoxyParamCaption})}
+
+
+
+Counts number of neighbours for a given cell in a given celllist in {\itshape Circular} mode. 
+
+Checks with algorithms the {\bfseries{special}} neighbours to take them into consideration. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Cell\+List} & pointer to a \mbox{\hyperlink{struct_cell_list}{Cell\+List}} where the neighbours should be counted \\
+\hline
+{\em p\+Cell} & pointer to a \mbox{\hyperlink{struct_cell}{Cell}} for which the neighbours should be counted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{celllist_8c_a5ae828b268819a7236fd4eeaecfc449e}\label{celllist_8c_a5ae828b268819a7236fd4eeaecfc449e}} 
+\index{celllist.c@{celllist.c}!nNeighboursClipped@{nNeighboursClipped}}
+\index{nNeighboursClipped@{nNeighboursClipped}!celllist.c@{celllist.c}}
+\doxysubsubsection{\texorpdfstring{nNeighboursClipped()}{nNeighboursClipped()}}
+{\footnotesize\ttfamily int n\+Neighbours\+Clipped (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cell_list}{Cell\+List}} $\ast$}]{p\+Cell\+List,  }\item[{\mbox{\hyperlink{struct_cell}{Cell}} $\ast$}]{p\+Cell }\end{DoxyParamCaption})}
+
+
+
+Counts number of neighbours for a given cell in a given celllist in {\itshape Clipped} mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Cell\+List} & pointer to a \mbox{\hyperlink{struct_cell_list}{Cell\+List}} where the neighbours should be counted \\
+\hline
+{\em p\+Cell} & pointer to a \mbox{\hyperlink{struct_cell}{Cell}} for which the neighbours should be counted \\
+\hline
+\end{DoxyParams}
+\hypertarget{celllist_8h_autotoc_md0}{}\doxyparagraph{Code}\label{celllist_8h_autotoc_md0}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (i < 0 || i > pCellList-\/>nbRows-\/1) \{ \textcolor{comment}{// checking if index which represents horizontal coordinate is out of board bound}}
+\DoxyCodeLine{    \textcolor{keywordflow}{continue}; \textcolor{comment}{// if so, skip current iteration}}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if}( j < 0 || j > pCellList-\/>nbCols-\/1) \{ \textcolor{comment}{// checking if index which represents vertical coordinate is out of board bound}}
+\DoxyCodeLine{    \textcolor{keywordflow}{continue}; \textcolor{comment}{// if so, skip current iteration}}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ \mbox{\Hypertarget{celllist_8c_a3c643ac3a15efd88fad720633c16a11a}\label{celllist_8c_a3c643ac3a15efd88fad720633c16a11a}} 
+\index{celllist.c@{celllist.c}!sameCellList@{sameCellList}}
+\index{sameCellList@{sameCellList}!celllist.c@{celllist.c}}
+\doxysubsubsection{\texorpdfstring{sameCellList()}{sameCellList()}}
+{\footnotesize\ttfamily int same\+Cell\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cell_list}{Cell\+List}} $\ast$}]{p\+Cell\+List1,  }\item[{\mbox{\hyperlink{struct_cell_list}{Cell\+List}} $\ast$}]{p\+Cell\+List2 }\end{DoxyParamCaption})}
+
+
+
+Checks whethet the given lists are the same. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Cell\+List1} & List to be compared with p\+Cell\+List2. \\
+\hline
+{\em p\+Cell\+List2} & List to be compared with p\+Cell\+List1. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 -\/ if the given lists are same 
+
+0 -\/ if the given lists are different 
+\end{DoxyReturn}
+\mbox{\Hypertarget{celllist_8c_a8460df065cb51c573bc5c84c678a121a}\label{celllist_8c_a8460df065cb51c573bc5c84c678a121a}} 
+\index{celllist.c@{celllist.c}!updateCellList@{updateCellList}}
+\index{updateCellList@{updateCellList}!celllist.c@{celllist.c}}
+\doxysubsubsection{\texorpdfstring{updateCellList()}{updateCellList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_cell_list}{Cell\+List}}$\ast$ update\+Cell\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cell_list}{Cell\+List}} $\ast$}]{p\+Cell\+List }\end{DoxyParamCaption})}
+
+
+
+Updates the given \mbox{\hyperlink{struct_cell_list}{Cell\+List}} by creating a new Celllist and checking the life conditions for each cell. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Cell\+List} & pointer to a \mbox{\hyperlink{struct_cell_list}{Cell\+List}} which needs to be updated \\
+\hline
+\end{DoxyParams}
+\hypertarget{celllist_8h_autotoc_md1}{}\doxyparagraph{Code}\label{celllist_8h_autotoc_md1}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if}(strcmp(NEIGHBOURHOOD,\textcolor{stringliteral}{"Clipped"})==0) \textcolor{comment}{// checking if Clipped Neighbourhood was set}}
+\DoxyCodeLine{        nNeighb = \mbox{\hyperlink{celllist_8c_a5ae828b268819a7236fd4eeaecfc449e}{nNeighboursClipped}}(pCellList,\&(pCellList-\/>board[i][j]));}
+\DoxyCodeLine{\textcolor{keywordflow}{else} \textcolor{comment}{// if Neighbourhood is not set, the Circular Neighbourhood is used.}}
+\DoxyCodeLine{        nNeighb = \mbox{\hyperlink{celllist_8c_a336528c99fea18fdd31bd63916483def}{nNeighboursCircular}}(pCellList,\&(pCellList-\/>board[i][j]));}
+\end{DoxyCode}
+
+
+\begin{DoxyReturn}{Returns}
+Pointer to a new celllist which stores the updated life states of cells. 
+\end{DoxyReturn}

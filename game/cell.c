@@ -1,9 +1,12 @@
 #include "cell.h"
 
 
+
 void bearCell(Cell *pCell) {
     pCell->life = 1;
 }
+
+
 
 Cell *newCell(int x, int y) {
     Cell *pCell = (Cell *) malloc(sizeof(Cell));
@@ -15,11 +18,8 @@ Cell *newCell(int x, int y) {
     return pCell;
 }
 
-
 void killCell(Cell *pCell) {
-
     if ( pCell != NULL ) {
         pCell->life = 0;
     } 
-    
 }

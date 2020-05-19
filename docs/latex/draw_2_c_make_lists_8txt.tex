@@ -1,0 +1,56 @@
+\hypertarget{draw_2_c_make_lists_8txt}{}\doxysection{C\+Make\+Lists.\+txt File Reference}
+\label{draw_2_c_make_lists_8txt}\index{CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{draw_2_c_make_lists_8txt_ab9c8e7247ab65542827f479c4e1b1845}{cmake\+\_\+minimum\+\_\+required}} (V\+E\+R\+S\+I\+ON 3.\+17) cmake\+\_\+policy(S\+ET C\+M\+P0076 N\+EW) project(\mbox{\hyperlink{sdl_8h_a58563a003be41a9fa91ddd7455b5f161}{draw}} L\+A\+N\+G\+U\+A\+G\+ES C) add\+\_\+library(\$
+\item 
+\mbox{\hyperlink{draw_2_c_make_lists_8txt_a7f662d9635e51fa11e68eba1e9a81d22}{target\+\_\+sources}} (\$\{P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+ME\} P\+U\+B\+L\+IC ansi.\+c sdl.\+c ansi.\+h sdl.\+h) \mbox{\hyperlink{draw_2_c_make_lists_8txt_a07648dd1d97a8b174ce334d5907a1fd2}{target\+\_\+include\+\_\+directories}}(\$
+\item 
+P\+U\+B\+L\+IC usr local include \mbox{\hyperlink{draw_2_c_make_lists_8txt_a07648dd1d97a8b174ce334d5907a1fd2}{target\+\_\+include\+\_\+directories}} (\$\{P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+ME\} P\+U\+B\+L\+IC \$\{C\+M\+A\+K\+E\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+D\+IR\}) \mbox{\hyperlink{draw_2_c_make_lists_8txt_ac8d0901fa73c7497a94f187e3321b423}{target\+\_\+link\+\_\+libraries}}(\$
+\item 
+P\+U\+B\+L\+IC game \mbox{\hyperlink{draw_2_c_make_lists_8txt_ac8d0901fa73c7497a94f187e3321b423}{target\+\_\+link\+\_\+libraries}} (\$\{P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+ME\} P\+U\+B\+L\+IC S\+D\+L2) \mbox{\hyperlink{_c_make_lists_8txt_a74426b12f55a79a9b903ab57fefcb7ef}{set}}(T\+E\+S\+T\+\_\+\+P\+R\+O\+J\+E\+C\+T2 test\+\_\+pract2) add\+\_\+executable(\$
+\item 
+\mbox{\hyperlink{draw_2_c_make_lists_8txt_a5bb2a56291a834dc63515451c1ac8346}{target\+\_\+compile\+\_\+options}} (\$\{P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+ME\} P\+U\+B\+L\+IC \char`\"{}-\/-\/coverage\char`\"{}) target\+\_\+link\+\_\+options(\$
+\item 
+P\+U\+B\+L\+IC coverage \mbox{\hyperlink{draw_2_c_make_lists_8txt_a44f98c276b4fb5d656138d39009ce77f}{add\+\_\+custom\+\_\+target}} (cover2 C\+O\+M\+M\+A\+ND cmake -\/-\/build . -\/-\/target test\+\_\+pract2 C\+O\+M\+M\+A\+ND gcovr -\/r \$\{C\+M\+A\+K\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+D\+IR\} \$\{C\+M\+A\+K\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+D\+IR\} \$$<$ T\+A\+R\+G\+E\+T\+\_\+\+F\+I\+L\+E\+:\$\{T\+E\+S\+T\+\_\+\+P\+R\+O\+J\+E\+C\+T2\}$>$ W\+O\+R\+K\+I\+N\+G\+\_\+\+D\+I\+R\+E\+C\+T\+O\+RY \$\{C\+M\+A\+K\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+D\+IR\}) add\+\_\+custom\+\_\+target(cover\+\_\+html2 C\+O\+M\+M\+A\+ND cmake -\/-\/build . -\/-\/target test\+\_\+pract2 C\+O\+M\+M\+A\+ND gcovr -\/-\/html -\/-\/html-\/detail -\/o index.\+html -\/r \$
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{draw_2_c_make_lists_8txt_a44f98c276b4fb5d656138d39009ce77f}\label{draw_2_c_make_lists_8txt_a44f98c276b4fb5d656138d39009ce77f}} 
+\index{draw/CMakeLists.txt@{draw/CMakeLists.txt}!add\_custom\_target@{add\_custom\_target}}
+\index{add\_custom\_target@{add\_custom\_target}!draw/CMakeLists.txt@{draw/CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{add\_custom\_target()}{add\_custom\_target()}}
+{\footnotesize\ttfamily P\+U\+B\+L\+IC coverage add\+\_\+custom\+\_\+target (\begin{DoxyParamCaption}\item[{cover2 C\+O\+M\+M\+A\+ND cmake -\/-\/build . -\/-\/target test\+\_\+pract2 C\+O\+M\+M\+A\+ND gcovr -\/r \$\{C\+M\+A\+K\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+D\+IR\} \$\{C\+M\+A\+K\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+D\+IR\} \$$<$ T\+A\+R\+G\+E\+T\+\_\+\+F\+I\+L\+E\+:\$\{T\+E\+S\+T\+\_\+\+P\+R\+O\+J\+E\+C\+T2\}$>$ W\+O\+R\+K\+I\+N\+G\+\_\+\+D\+I\+R\+E\+C\+T\+O\+RY \$\{C\+M\+A\+K\+E\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+D\+IR\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{draw_2_c_make_lists_8txt_ab9c8e7247ab65542827f479c4e1b1845}\label{draw_2_c_make_lists_8txt_ab9c8e7247ab65542827f479c4e1b1845}} 
+\index{draw/CMakeLists.txt@{draw/CMakeLists.txt}!cmake\_minimum\_required@{cmake\_minimum\_required}}
+\index{cmake\_minimum\_required@{cmake\_minimum\_required}!draw/CMakeLists.txt@{draw/CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{cmake\_minimum\_required()}{cmake\_minimum\_required()}}
+{\footnotesize\ttfamily cmake\+\_\+minimum\+\_\+required (\begin{DoxyParamCaption}\item[{V\+E\+R\+S\+I\+ON 3.}]{17 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{draw_2_c_make_lists_8txt_a5bb2a56291a834dc63515451c1ac8346}\label{draw_2_c_make_lists_8txt_a5bb2a56291a834dc63515451c1ac8346}} 
+\index{draw/CMakeLists.txt@{draw/CMakeLists.txt}!target\_compile\_options@{target\_compile\_options}}
+\index{target\_compile\_options@{target\_compile\_options}!draw/CMakeLists.txt@{draw/CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{target\_compile\_options()}{target\_compile\_options()}}
+{\footnotesize\ttfamily target\+\_\+compile\+\_\+options (\begin{DoxyParamCaption}\item[{}]{\$\{\+P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+M\+E\} P\+U\+B\+L\+I\+C \char`\"{}-\/-\/coverage\char`\"{} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{draw_2_c_make_lists_8txt_a07648dd1d97a8b174ce334d5907a1fd2}\label{draw_2_c_make_lists_8txt_a07648dd1d97a8b174ce334d5907a1fd2}} 
+\index{draw/CMakeLists.txt@{draw/CMakeLists.txt}!target\_include\_directories@{target\_include\_directories}}
+\index{target\_include\_directories@{target\_include\_directories}!draw/CMakeLists.txt@{draw/CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{target\_include\_directories()}{target\_include\_directories()}}
+{\footnotesize\ttfamily P\+U\+B\+L\+IC usr local include target\+\_\+include\+\_\+directories (\begin{DoxyParamCaption}\item[{}]{\$\{\+P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+M\+E\} P\+U\+B\+L\+I\+C \$\{\+C\+M\+A\+K\+E\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+D\+I\+R\} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{draw_2_c_make_lists_8txt_ac8d0901fa73c7497a94f187e3321b423}\label{draw_2_c_make_lists_8txt_ac8d0901fa73c7497a94f187e3321b423}} 
+\index{draw/CMakeLists.txt@{draw/CMakeLists.txt}!target\_link\_libraries@{target\_link\_libraries}}
+\index{target\_link\_libraries@{target\_link\_libraries}!draw/CMakeLists.txt@{draw/CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{target\_link\_libraries()}{target\_link\_libraries()}}
+{\footnotesize\ttfamily P\+U\+B\+L\+IC usr local include target\+\_\+link\+\_\+libraries (\begin{DoxyParamCaption}\item[{}]{\$\{\+P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+M\+E\} P\+U\+B\+L\+IC }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{draw_2_c_make_lists_8txt_a7f662d9635e51fa11e68eba1e9a81d22}\label{draw_2_c_make_lists_8txt_a7f662d9635e51fa11e68eba1e9a81d22}} 
+\index{draw/CMakeLists.txt@{draw/CMakeLists.txt}!target\_sources@{target\_sources}}
+\index{target\_sources@{target\_sources}!draw/CMakeLists.txt@{draw/CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{target\_sources()}{target\_sources()}}
+{\footnotesize\ttfamily target\+\_\+sources (\begin{DoxyParamCaption}\item[{}]{\$\{\+P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+M\+E\} P\+U\+B\+L\+I\+C ansi.\+c sdl.\+c ansi.\+h sdl. }\end{DoxyParamCaption})}
+

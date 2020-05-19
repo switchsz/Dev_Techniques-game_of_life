@@ -1,13 +1,5 @@
 var searchData=
 [
-  ['ramp_353',['ramp',['../union_s_d_l___haptic_effect.html#a7292694427f98b535d05484ee7b3ca45',1,'SDL_HapticEffect']]],
-  ['rate_5fincr_354',['rate_incr',['../struct_s_d_l___audio_c_v_t.html#aa84e79f31da7eaa8715492a7655fc12e',1,'SDL_AudioCVT']]],
-  ['refcount_355',['refcount',['../struct_s_d_l___surface.html#a6022c8a609170c7365fb96e83cb2df48',1,'SDL_Surface']]],
-  ['refresh_5frate_356',['refresh_rate',['../struct_s_d_l___display_mode.html#a1885d5e794c0f216ec6dfdeb5933e4b5',1,'SDL_DisplayMode']]],
-  ['repeat_357',['repeat',['../struct_s_d_l___keyboard_event.html#a719e1ec1b2969d941426593f9822ef6d',1,'SDL_KeyboardEvent']]],
-  ['right_5fcoeff_358',['right_coeff',['../struct_s_d_l___haptic_condition.html#aba08b5cf32eaa731813117458dca7710',1,'SDL_HapticCondition']]],
-  ['right_5fsat_359',['right_sat',['../struct_s_d_l___haptic_condition.html#ac923a3cfe907fc31483f4103516bf280',1,'SDL_HapticCondition']]],
-  ['rw_5fseek_5fcur_360',['RW_SEEK_CUR',['../_s_d_l__rwops_8h.html#aba5f3b60c197def370ffa2ca1ab1348d',1,'SDL_rwops.h']]],
-  ['rw_5fseek_5fend_361',['RW_SEEK_END',['../_s_d_l__rwops_8h.html#a6cf141faabd1b8f2ec3c03cf76eaf553',1,'SDL_rwops.h']]],
-  ['rw_5fseek_5fset_362',['RW_SEEK_SET',['../_s_d_l__rwops_8h.html#ac028b032bb8230df64bc6284e04789f5',1,'SDL_rwops.h']]]
+  ['update_5fcelllist_5ftest_87',['update_celllist_test',['../game_2cunit__tests_8c.html#a3ffd8d7f451aa85262484815e3b36869',1,'cunit_tests.c']]],
+  ['updatecelllist_88',['updateCellList',['../celllist_8c.html#a8460df065cb51c573bc5c84c678a121a',1,'updateCellList(CellList *pCellList):&#160;celllist.c'],['../celllist_8h.html#a8460df065cb51c573bc5c84c678a121a',1,'updateCellList(CellList *pCellList):&#160;celllist.c']]]
 ];

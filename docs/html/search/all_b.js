@@ -1,16 +1,14 @@
 var searchData=
 [
-  ['magnitude_304',['magnitude',['../struct_s_d_l___haptic_periodic.html#a976c0cada4fae99d95d309257abdd71b',1,'SDL_HapticPeriodic']]],
-  ['major_305',['major',['../struct_s_d_l__version.html#a302f1b7284c3bcdfa0dee1aa267b955e',1,'SDL_version']]],
-  ['map_306',['map',['../struct_s_d_l___surface.html#a6305e21db64c3e35a648981e733414b3',1,'SDL_Surface']]],
-  ['max_5ftexture_5fheight_307',['max_texture_height',['../struct_s_d_l___renderer_info.html#a0660205b899cefb8b2c807dc244296f7',1,'SDL_RendererInfo']]],
-  ['max_5ftexture_5fwidth_308',['max_texture_width',['../struct_s_d_l___renderer_info.html#abe1e7efe1a1dae989c33c89e0597493d',1,'SDL_RendererInfo']]],
-  ['message_309',['message',['../struct_s_d_l___message_box_data.html#a254bf0858da09c96a48daf64404eb4f8',1,'SDL_MessageBoxData']]],
-  ['mgesture_310',['mgesture',['../union_s_d_l___event.html#aa0605c4f966521b135a1a429a2a255f4',1,'SDL_Event']]],
-  ['minor_311',['minor',['../struct_s_d_l__version.html#a8eb06ff08bc41ff4eed7c42fc8b40d50',1,'SDL_version']]],
-  ['mod_312',['mod',['../struct_s_d_l___keysym.html#a09294cbc86473d2bcb27513748b81aec',1,'SDL_Keysym']]],
-  ['mode_313',['mode',['../struct_s_d_l___window_shape_mode.html#ab4a7dfd410934bebf80e105f6fa72b74',1,'SDL_WindowShapeMode']]],
-  ['motion_314',['motion',['../union_s_d_l___event.html#a8b74ec063362bbd2e4ec6d1a878eb0ca',1,'SDL_Event']]],
-  ['msg_315',['msg',['../struct_s_d_l___sys_w_m_event.html#a7b74458e040fff2d0b02a00df56049b0',1,'SDL_SysWMEvent']]],
-  ['mymem_2eh_316',['MyMem.h',['../_my_mem_8h.html',1,'']]]
+  ['nalives_59',['nAlives',['../celllist_8c.html#a4919fd3af3ef5a9e0bdc072b31454488',1,'nAlives(CellList *pCellList):&#160;celllist.c'],['../celllist_8h.html#a4919fd3af3ef5a9e0bdc072b31454488',1,'nAlives(CellList *pCellList):&#160;celllist.c']]],
+  ['nbcols_60',['nbCols',['../struct_cell_list.html#a2cae92efa1faf846d629902de3147c26',1,'CellList']]],
+  ['nbrows_61',['nbRows',['../struct_cell_list.html#a79216b74e382c29c63ee9be03b8eda5f',1,'CellList']]],
+  ['neighbours_5ftest_62',['neighbours_test',['../game_2cunit__tests_8c.html#a2d0ff67ac8e89fa4cb35e43d5aa63767',1,'cunit_tests.c']]],
+  ['new_5fcell_5ftest_63',['new_cell_test',['../game_2cunit__tests_8c.html#a0c74550be18416ef157defdcdadb7612',1,'cunit_tests.c']]],
+  ['new_5fcelllist_5ftest_64',['new_celllist_test',['../game_2cunit__tests_8c.html#a964d3c23ccf2c12224f4a19a6907e195',1,'cunit_tests.c']]],
+  ['newcell_65',['newCell',['../cell_8c.html#a62d5d69bbc81e8ce1b6b2ed5b24e215b',1,'newCell(int x, int y):&#160;cell.c'],['../cell_8h.html#a62d5d69bbc81e8ce1b6b2ed5b24e215b',1,'newCell(int x, int y):&#160;cell.c']]],
+  ['newcelllist_66',['newCellList',['../celllist_8c.html#a8dd5a649ec2fa4d749aec22aaa2f942e',1,'newCellList(int nbRows, int nbCols):&#160;celllist.c'],['../celllist_8h.html#a8dd5a649ec2fa4d749aec22aaa2f942e',1,'newCellList(int nbRows, int nbCols):&#160;celllist.c']]],
+  ['nneighbourscircular_67',['nNeighboursCircular',['../celllist_8c.html#a336528c99fea18fdd31bd63916483def',1,'nNeighboursCircular(CellList *pCellList, Cell *pCell):&#160;celllist.c'],['../celllist_8h.html#a336528c99fea18fdd31bd63916483def',1,'nNeighboursCircular(CellList *pCellList, Cell *pCell):&#160;celllist.c']]],
+  ['nneighboursclipped_68',['nNeighboursClipped',['../celllist_8c.html#a5ae828b268819a7236fd4eeaecfc449e',1,'nNeighboursClipped(CellList *pCellList, Cell *pCell):&#160;celllist.c'],['../celllist_8h.html#a5ae828b268819a7236fd4eeaecfc449e',1,'nNeighboursClipped(CellList *pCellList, Cell *pCell):&#160;celllist.c']]],
+  ['number_5fof_5falives_5ftest_69',['number_of_alives_test',['../game_2cunit__tests_8c.html#a75a23643d8e4ebdcfbfc3b27d0252141',1,'cunit_tests.c']]]
 ];

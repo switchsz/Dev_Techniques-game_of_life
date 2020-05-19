@@ -5,13 +5,22 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Globals</title>
+<title>Game of Life: Globals</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -20,13 +29,27 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="Unknown.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="Gospers_glider_gun.gif"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
-   &#160;<span id="projectnumber">By Conway</span>
+   <div id="projectname">Game of Life
    </div>
-   <div id="projectbrief">Everyone will die</div>
+   <div id="projectbrief">The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970. It is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input.</div>
   </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -38,17 +61,23 @@
 var searchBox = new SearchBox("searchBox", "search",false,'Search');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(function() {
-  initMenu('',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
-});
-/* @license-end */</script>
-<div id="main-nav"></div>
-</div><!-- top -->
+$(document).ready(function(){initNavTree('globals_func.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -66,290 +95,220 @@ $(function() {
 <div class="contents">
 &#160;
 
+<h3><a id="index_a"></a>- a -</h3><ul>
+<li>add_custom_target()
+: <a class="el" href="draw_2_c_make_lists_8txt.html#a44f98c276b4fb5d656138d39009ce77f">draw/CMakeLists.txt</a>
+</li>
+</ul>
+
+
+<h3><a id="index_b"></a>- b -</h3><ul>
+<li>bear_cell_test()
+: <a class="el" href="game_2cunit__tests_8c.html#adfa06c9d748f4a8054b07e27825e2f5f">game/cunit_tests.c</a>
+</li>
+<li>bearCell()
+: <a class="el" href="cell_8h.html#acbc837b0bafc9c5bd2ed931bc471f22c">cell.h</a>
+, <a class="el" href="cell_8c.html#acbc837b0bafc9c5bd2ed931bc471f22c">cell.c</a>
+</li>
+</ul>
+
+
 <h3><a id="index_c"></a>- c -</h3><ul>
-<li>CU_add_suite()
-: <a class="el" href="group___framework.html#ga94b8f1bbbd93b154a60bb1d43391b48a">TestDB.h</a>
-</li>
-<li>CU_add_suite_with_setup_and_teardown()
-: <a class="el" href="group___framework.html#gab197acbf60aef24a327d3b5b23755844">TestDB.h</a>
-</li>
-<li>CU_add_test()
-: <a class="el" href="group___framework.html#gad9f198a8a5fa8cc6870c3c8be873869f">TestDB.h</a>
-</li>
-<li>CU_assertImplementation()
-: <a class="el" href="group___framework.html#ga31a858e8b496b2af992b63902064c5fa">TestRun.h</a>
-</li>
-<li>CU_automated_run_tests()
-: <a class="el" href="group___automated.html#ga4204c6d187aa6c366a8f4e0ba50645b4">Automated.h</a>
-</li>
-<li>CU_basic_get_mode()
-: <a class="el" href="group___basic.html#ga10cca27673fb32e100b27d72b9868956">Basic.h</a>
-</li>
-<li>CU_basic_run_suite()
-: <a class="el" href="group___basic.html#gad759648660e050dc43e31477ef2bf9e3">Basic.h</a>
-</li>
-<li>CU_basic_run_test()
-: <a class="el" href="group___basic.html#ga201394cc25e1f711c105652cf9a9eda8">Basic.h</a>
-</li>
-<li>CU_basic_run_tests()
-: <a class="el" href="group___basic.html#gab8e9092071a6d97666451c1ea5cc4753">Basic.h</a>
-</li>
-<li>CU_basic_set_mode()
-: <a class="el" href="group___basic.html#ga4a816b2dbd39aef96875a561e43026be">Basic.h</a>
-</li>
-<li>CU_basic_show_failures()
-: <a class="el" href="group___basic.html#ga42f85f17df1cd5fd68d0c20be273a878">Basic.h</a>
-</li>
-<li>CU_cleanup_registry()
-: <a class="el" href="group___framework.html#ga183eb7d7f79e149c767237cfef52cb82">TestDB.h</a>
-</li>
-<li>CU_clear_previous_results()
-: <a class="el" href="group___framework.html#ga7c9c2263c915119ce0e5b835b2a30c07">TestRun.h</a>
-</li>
-<li>CU_compare_strings()
-: <a class="el" href="group___framework.html#gab88ddd1b0e508bf6210808d34285659e">Util.h</a>
-</li>
-<li>CU_console_run_tests()
-: <a class="el" href="group___console.html#ga938c9024e84602e94c20d4b246d9c3a2">Console.h</a>
-</li>
-<li>CU_create_new_registry()
-: <a class="el" href="group___framework.html#ga5d2ce564b228122842f515cb4e5beda2">TestDB.h</a>
-</li>
-<li>CU_destroy_existing_registry()
-: <a class="el" href="group___framework.html#ga7c46b0ae888482411575c93d5d780b0d">TestDB.h</a>
-</li>
-<li>CU_get_all_test_complete_handler()
-: <a class="el" href="group___framework.html#gaaa8c23572f049b78a48eaad6add84f5a">TestRun.h</a>
-</li>
-<li>CU_get_current_suite()
-: <a class="el" href="group___framework.html#ga18a515b080595137afe72034c387e7dd">TestRun.h</a>
-</li>
-<li>CU_get_current_test()
-: <a class="el" href="group___framework.html#ga71bd5fb9588620f3c73afbbc526a06fb">TestRun.h</a>
-</li>
-<li>CU_get_elapsed_time()
-: <a class="el" href="group___framework.html#ga80bc7ff46505762ac47c0997be1a32a4">TestRun.h</a>
-</li>
-<li>CU_get_error()
-: <a class="el" href="group___framework.html#ga0bf3f9733e5fa0c0ed6ca0a37a2d995e">CUError.h</a>
-</li>
-<li>CU_get_error_action()
-: <a class="el" href="group___framework.html#gab2e98ce95448aa5a04a4875bc8152d6e">CUError.h</a>
-</li>
-<li>CU_get_error_msg()
-: <a class="el" href="group___framework.html#gaee27bf496da77437288bc9fe2a0b20ed">CUError.h</a>
-</li>
-<li>CU_get_fail_on_inactive()
-: <a class="el" href="group___framework.html#gad1d61d7275df876f7bb90413e21f3757">TestRun.h</a>
-</li>
-<li>CU_get_failure_list()
-: <a class="el" href="group___framework.html#ga29e70990caa96ba6570bd6503650c4e7">TestRun.h</a>
-</li>
-<li>CU_get_number_of_asserts()
-: <a class="el" href="group___framework.html#ga2ac4bd2bd80e94b1288a472b12ee9931">TestRun.h</a>
-</li>
-<li>CU_get_number_of_failure_records()
-: <a class="el" href="group___framework.html#ga359a5f43045406d42978b5d7a9bd4632">TestRun.h</a>
-</li>
-<li>CU_get_number_of_failures()
-: <a class="el" href="group___framework.html#ga5715f679af053504c7c74c4dc67f00d8">TestRun.h</a>
-</li>
-<li>CU_get_number_of_successes()
-: <a class="el" href="group___framework.html#ga56d72dc7bd4c976194c71f144bda75bf">TestRun.h</a>
-</li>
-<li>CU_get_number_of_suites_failed()
-: <a class="el" href="group___framework.html#ga1bfdd516a754e0f914b0138746b645a4">TestRun.h</a>
-</li>
-<li>CU_get_number_of_suites_inactive()
-: <a class="el" href="group___framework.html#gad186c9dd5c2140cef36534d227f4c78b">TestRun.h</a>
-</li>
-<li>CU_get_number_of_suites_run()
-: <a class="el" href="group___framework.html#gaab6fa276971a06883668eb2c4f1e99d0">TestRun.h</a>
-</li>
-<li>CU_get_number_of_tests_failed()
-: <a class="el" href="group___framework.html#ga4025c263b716768adf42705a8df34f1c">TestRun.h</a>
-</li>
-<li>CU_get_number_of_tests_inactive()
-: <a class="el" href="group___framework.html#ga981ba8759b754eb07e2999e380610ad9">TestRun.h</a>
-</li>
-<li>CU_get_number_of_tests_run()
-: <a class="el" href="group___framework.html#gac65efb0052e7dce29d1d7ad08cecdbce">TestRun.h</a>
-</li>
-<li>CU_get_registry()
-: <a class="el" href="group___framework.html#gacdc4bab7b0492ed1e3a4e076677de22e">TestDB.h</a>
-</li>
-<li>CU_get_run_results_string()
-: <a class="el" href="group___framework.html#ga829a4792d9de45459cc9e874f240ca5b">TestRun.h</a>
-</li>
-<li>CU_get_run_summary()
-: <a class="el" href="group___framework.html#gad51994a28ffa19ba06b6c803d2796d94">TestRun.h</a>
-</li>
-<li>CU_get_suite()
-: <a class="el" href="group___framework.html#ga58e560d695d4f6fdec8f2f2c9805bfcd">TestDB.h</a>
-</li>
-<li>CU_get_suite_at_pos()
-: <a class="el" href="group___framework.html#ga66cbc0f181722251ac52a28eb26e7886">TestDB.h</a>
-</li>
-<li>CU_get_suite_by_index()
-: <a class="el" href="group___framework.html#ga75a31876ad11c8e5a6a5fadea7ef1051">TestDB.h</a>
-</li>
-<li>CU_get_suite_by_name()
-: <a class="el" href="group___framework.html#ga625d2e3767cdb663399a99cf88321e60">TestDB.h</a>
-</li>
-<li>CU_get_suite_cleanup_failure_handler()
-: <a class="el" href="group___framework.html#ga9d180e4db3591109077c81c6ab4cb151">TestRun.h</a>
-</li>
-<li>CU_get_suite_complete_handler()
-: <a class="el" href="group___framework.html#gabbc23abadd2c3e2e8fd9edf723d9870d">TestRun.h</a>
-</li>
-<li>CU_get_suite_init_failure_handler()
-: <a class="el" href="group___framework.html#ga9b9f86b2d875553995daf07baea7db3b">TestRun.h</a>
-</li>
-<li>CU_get_suite_pos()
-: <a class="el" href="group___framework.html#ga49a20837af93245aa578935758c7810c">TestDB.h</a>
-</li>
-<li>CU_get_suite_pos_by_name()
-: <a class="el" href="group___framework.html#gab8f529d5919f590593210eb2dcec37f1">TestDB.h</a>
-</li>
-<li>CU_get_suite_start_handler()
-: <a class="el" href="group___framework.html#ga4403d186236201362d04069c9565a777">TestRun.h</a>
-</li>
-<li>CU_get_test()
-: <a class="el" href="group___framework.html#ga032d257cade342d583d56a1346222d12">TestDB.h</a>
-</li>
-<li>CU_get_test_at_pos()
-: <a class="el" href="group___framework.html#ga75d44f091f3ab0ec818fa0edfec0d465">TestDB.h</a>
-</li>
-<li>CU_get_test_by_index()
-: <a class="el" href="group___framework.html#gad12cd874661530cd3aa61d715be58dd6">TestDB.h</a>
-</li>
-<li>CU_get_test_by_name()
-: <a class="el" href="group___framework.html#gab627141bbc9dff09228530d289517e9c">TestDB.h</a>
-</li>
-<li>CU_get_test_complete_handler()
-: <a class="el" href="group___framework.html#ga98c5d999807279aa1960cbd2b3645f82">TestRun.h</a>
-</li>
-<li>CU_get_test_pos()
-: <a class="el" href="group___framework.html#ga30be88922ceec733a8aa7d44ed366170">TestDB.h</a>
-</li>
-<li>CU_get_test_pos_by_name()
-: <a class="el" href="group___framework.html#ga0a271a736d6cc9403a4bc5c6f6ea29e3">TestDB.h</a>
-</li>
-<li>CU_get_test_start_handler()
-: <a class="el" href="group___framework.html#gaa68ed834a6a3c4b1bfd5beaa9b40a735">TestRun.h</a>
-</li>
-<li>CU_initialize_registry()
-: <a class="el" href="group___framework.html#ga3477b2d3e57c8f8aba36bbbdfa54920d">TestDB.h</a>
-</li>
-<li>CU_is_test_running()
-: <a class="el" href="group___framework.html#gad971fa22c8d1349f9d0b97bc95577cb9">TestRun.h</a>
-</li>
-<li>CU_list_tests_to_file()
-: <a class="el" href="group___automated.html#ga4bf1c3a0b54cb2a12d634e7e022edf30">Automated.h</a>
-</li>
-<li>CU_number_width()
-: <a class="el" href="group___framework.html#ga645f6e889b0c3be2f6e0217f9bfef092">Util.h</a>
-</li>
-<li>CU_print_run_results()
-: <a class="el" href="group___framework.html#ga0eb46055f2b8a8ec90e3c24562e9b9fb">TestRun.h</a>
-</li>
-<li>CU_register_nsuites()
-: <a class="el" href="group___framework.html#gaef02c65058bfe9f3adc320d536428588">TestDB.h</a>
-</li>
-<li>CU_register_suites()
-: <a class="el" href="group___framework.html#ga331001da0a8bd8faececdb48e7ad3f96">TestDB.h</a>
-</li>
-<li>CU_registry_initialized()
-: <a class="el" href="group___framework.html#gab976af96105872cb082ff4835cac1696">TestDB.h</a>
-</li>
-<li>CU_run_all_tests()
-: <a class="el" href="group___framework.html#gada41915e7f9ae386ecc1bed20a79300b">TestRun.h</a>
-</li>
-<li>CU_run_suite()
-: <a class="el" href="group___framework.html#ga765ad6b90ec25090288ec10d34fc15c0">TestRun.h</a>
-</li>
-<li>CU_run_test()
-: <a class="el" href="group___framework.html#ga4469c032ef93be8169d4869b22ceabd1">TestRun.h</a>
-</li>
-<li>CU_set_all_test_complete_handler()
-: <a class="el" href="group___framework.html#ga875c98c7ec5df1a0450f1054a91506fb">TestRun.h</a>
-</li>
-<li>CU_set_error()
-: <a class="el" href="group___framework.html#ga2e817abf46a330a699fe5f472f5bfd64">CUError.h</a>
-</li>
-<li>CU_set_error_action()
-: <a class="el" href="group___framework.html#ga58f4bdc1a05802f89005a487768b3d75">CUError.h</a>
-</li>
-<li>CU_set_fail_on_inactive()
-: <a class="el" href="group___framework.html#ga39e01a31e7e84844f7cf5377d5cd8da2">TestRun.h</a>
-</li>
-<li>CU_set_output_filename()
-: <a class="el" href="group___automated.html#ga60583b154146b787f03267fc320f86e5">Automated.h</a>
-</li>
-<li>CU_set_registry()
-: <a class="el" href="group___framework.html#gaaec6d8893d61bfff165775385851562d">TestDB.h</a>
-</li>
-<li>CU_set_suite_active()
-: <a class="el" href="group___framework.html#ga4e93ba1b139239e674b733fbab37988e">TestDB.h</a>
-</li>
-<li>CU_set_suite_cleanup_failure_handler()
-: <a class="el" href="group___framework.html#gadd76507e33f51ce0c257593187524a37">TestRun.h</a>
-</li>
-<li>CU_set_suite_cleanupfunc()
-: <a class="el" href="group___framework.html#ga6f7d29b9c41b17005b4792e31bfe721f">TestDB.h</a>
-</li>
-<li>CU_set_suite_complete_handler()
-: <a class="el" href="group___framework.html#ga06f5a0d1ecfd98c65d3c2382e608aa43">TestRun.h</a>
-</li>
-<li>CU_set_suite_init_failure_handler()
-: <a class="el" href="group___framework.html#ga26036d28d4635ce2b87258d2dc328afa">TestRun.h</a>
-</li>
-<li>CU_set_suite_initfunc()
-: <a class="el" href="group___framework.html#ga5b46212acfeaa883a8afd69e8c02aff9">TestDB.h</a>
-</li>
-<li>CU_set_suite_name()
-: <a class="el" href="group___framework.html#gad5b331a1610c200c838243b37db681cc">TestDB.h</a>
-</li>
-<li>CU_set_suite_start_handler()
-: <a class="el" href="group___framework.html#ga1d9b994f4855362a026179d1ea6b1491">TestRun.h</a>
-</li>
-<li>CU_set_test_active()
-: <a class="el" href="group___framework.html#gae13d2e11720784d22aa15713be90ce72">TestDB.h</a>
-</li>
-<li>CU_set_test_complete_handler()
-: <a class="el" href="group___framework.html#gaefb891b295a40078428f38084a186588">TestRun.h</a>
-</li>
-<li>CU_set_test_func()
-: <a class="el" href="group___framework.html#ga95af0004c412611dc99472aa71c86c46">TestDB.h</a>
-</li>
-<li>CU_set_test_name()
-: <a class="el" href="group___framework.html#ga89cfc3a676106ec0d9e3792ff9afd474">TestDB.h</a>
-</li>
-<li>CU_set_test_start_handler()
-: <a class="el" href="group___framework.html#gae89d85d65b1eac85f9950485456748e5">TestRun.h</a>
-</li>
-<li>CU_translate_special_characters()
-: <a class="el" href="group___framework.html#ga24f4ea5ebafd70276bdc1bcdf1b89393">Util.h</a>
-</li>
-<li>CU_translated_strlen()
-: <a class="el" href="group___framework.html#gaed0d90c9fdd0c46b6043fb2b8ae570f4">Util.h</a>
-</li>
-<li>CU_trim()
-: <a class="el" href="group___framework.html#gab4f507101595640f759647d13f0e0a00">Util.h</a>
-</li>
-<li>CU_trim_left()
-: <a class="el" href="group___framework.html#gade303bc81f692aa882189eb14484be8f">Util.h</a>
-</li>
-<li>CU_trim_right()
-: <a class="el" href="group___framework.html#ga728a4e98bd73682b97cede1429547d6d">Util.h</a>
+<li>cmake_minimum_required()
+: <a class="el" href="_c_make_lists_8txt.html#af65c318bece1c36b7d29d500a6fbfcb9">CMakeLists.txt</a>
+, <a class="el" href="draw_2_c_make_lists_8txt.html#ab9c8e7247ab65542827f479c4e1b1845">draw/CMakeLists.txt</a>
+, <a class="el" href="game_2_c_make_lists_8txt.html#ae62fbc274dfdc6a9ad4649aa2944a1fe">game/CMakeLists.txt</a>
+</li>
+<li>copy_celllist_test()
+: <a class="el" href="game_2cunit__tests_8c.html#a406353d4a584eb5fea3eeb1a216f2d66">game/cunit_tests.c</a>
+</li>
+<li>copyCellList()
+: <a class="el" href="celllist_8c.html#ad3d0b9c448c1ec31433f57a169780719">celllist.c</a>
+, <a class="el" href="celllist_8h.html#ad3d0b9c448c1ec31433f57a169780719">celllist.h</a>
+</li>
+</ul>
+
+
+<h3><a id="index_d"></a>- d -</h3><ul>
+<li>draw()
+: <a class="el" href="sdl_8c.html#a58563a003be41a9fa91ddd7455b5f161">sdl.c</a>
+, <a class="el" href="sdl_8h.html#a58563a003be41a9fa91ddd7455b5f161">sdl.h</a>
+</li>
+<li>drawAnsi()
+: <a class="el" href="ansi_8c.html#a2fcc8485f7686a90dda96e13cf0d4554">ansi.c</a>
+, <a class="el" href="ansi_8h.html#a2fcc8485f7686a90dda96e13cf0d4554">ansi.h</a>
+</li>
+</ul>
+
+
+<h3><a id="index_e"></a>- e -</h3><ul>
+<li>empty_celllist_test()
+: <a class="el" href="game_2cunit__tests_8c.html#a0456cc019fac99244cee780783547918">game/cunit_tests.c</a>
+</li>
+<li>emptyCellList()
+: <a class="el" href="celllist_8h.html#a0a45ebc1fc8becbefa87ab996d775834">celllist.h</a>
+, <a class="el" href="celllist_8c.html#a0a45ebc1fc8becbefa87ab996d775834">celllist.c</a>
+</li>
+</ul>
+
+
+<h3><a id="index_g"></a>- g -</h3><ul>
+<li>generate_celllist_test()
+: <a class="el" href="game_2cunit__tests_8c.html#a3f84a9b20a6a793edf32bed1e3ca6f7e">game/cunit_tests.c</a>
+</li>
+<li>generateCellList()
+: <a class="el" href="celllist_8c.html#ac22167f2271cacc0d40ead05a1ee89a3">celllist.c</a>
+, <a class="el" href="celllist_8h.html#ac22167f2271cacc0d40ead05a1ee89a3">celllist.h</a>
+</li>
+<li>get_console_size()
+: <a class="el" href="ansi_8c.html#ab26c5ccc43b034e63b6182b431de8e44">ansi.c</a>
+, <a class="el" href="ansi_8h.html#ab26c5ccc43b034e63b6182b431de8e44">ansi.h</a>
+</li>
+<li>get_console_size_test()
+: <a class="el" href="draw_2cunit__tests_8c.html#a3afe7a0578176c40fd8095fd5df96a1e">draw/cunit_tests.c</a>
+</li>
+</ul>
+
+
+<h3><a id="index_h"></a>- h -</h3><ul>
+<li>hide_cursor()
+: <a class="el" href="ansi_8c.html#a42702791e6da9510e4f44f33d2dad8f1">ansi.c</a>
+, <a class="el" href="ansi_8h.html#a42702791e6da9510e4f44f33d2dad8f1">ansi.h</a>
+</li>
+</ul>
+
+
+<h3><a id="index_k"></a>- k -</h3><ul>
+<li>kill_cell_test()
+: <a class="el" href="game_2cunit__tests_8c.html#a955aaab405e4ebe3282273e43b314ad0">game/cunit_tests.c</a>
+</li>
+<li>killCell()
+: <a class="el" href="cell_8h.html#a879b2abae49691dd7678378289ede3ee">cell.h</a>
+, <a class="el" href="cell_8c.html#a879b2abae49691dd7678378289ede3ee">cell.c</a>
+</li>
+</ul>
+
+
+<h3><a id="index_m"></a>- m -</h3><ul>
+<li>main()
+: <a class="el" href="_c_make_c_compiler_id_013_8c.html#a0ddf1224851353fc92bfbff6f499fa97">CMakeCCompilerId 3.c</a>
+, <a class="el" href="mainsdl_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">mainsdl.c</a>
+, <a class="el" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main.c</a>
+, <a class="el" href="game_2cunit__tests_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">game/cunit_tests.c</a>
+, <a class="el" href="draw_2cunit__tests_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">draw/cunit_tests.c</a>
+, <a class="el" href="cunit__tests_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">cunit_tests.c</a>
+, <a class="el" href="_c_make_c_compiler_id_8c.html#a0ddf1224851353fc92bfbff6f499fa97">CMakeCCompilerId.c</a>
+</li>
+</ul>
+
+
+<h3><a id="index_n"></a>- n -</h3><ul>
+<li>nAlives()
+: <a class="el" href="celllist_8c.html#a4919fd3af3ef5a9e0bdc072b31454488">celllist.c</a>
+, <a class="el" href="celllist_8h.html#a4919fd3af3ef5a9e0bdc072b31454488">celllist.h</a>
+</li>
+<li>neighbours_test()
+: <a class="el" href="game_2cunit__tests_8c.html#a2d0ff67ac8e89fa4cb35e43d5aa63767">game/cunit_tests.c</a>
+</li>
+<li>new_cell_test()
+: <a class="el" href="game_2cunit__tests_8c.html#a0c74550be18416ef157defdcdadb7612">game/cunit_tests.c</a>
+</li>
+<li>new_celllist_test()
+: <a class="el" href="game_2cunit__tests_8c.html#a964d3c23ccf2c12224f4a19a6907e195">game/cunit_tests.c</a>
+</li>
+<li>newCell()
+: <a class="el" href="cell_8c.html#a62d5d69bbc81e8ce1b6b2ed5b24e215b">cell.c</a>
+, <a class="el" href="cell_8h.html#a62d5d69bbc81e8ce1b6b2ed5b24e215b">cell.h</a>
+</li>
+<li>newCellList()
+: <a class="el" href="celllist_8c.html#a8dd5a649ec2fa4d749aec22aaa2f942e">celllist.c</a>
+, <a class="el" href="celllist_8h.html#a8dd5a649ec2fa4d749aec22aaa2f942e">celllist.h</a>
+</li>
+<li>nNeighboursCircular()
+: <a class="el" href="celllist_8c.html#a336528c99fea18fdd31bd63916483def">celllist.c</a>
+, <a class="el" href="celllist_8h.html#a336528c99fea18fdd31bd63916483def">celllist.h</a>
+</li>
+<li>nNeighboursClipped()
+: <a class="el" href="celllist_8h.html#a5ae828b268819a7236fd4eeaecfc449e">celllist.h</a>
+, <a class="el" href="celllist_8c.html#a5ae828b268819a7236fd4eeaecfc449e">celllist.c</a>
+</li>
+<li>number_of_alives_test()
+: <a class="el" href="game_2cunit__tests_8c.html#a75a23643d8e4ebdcfbfc3b27d0252141">game/cunit_tests.c</a>
+</li>
+</ul>
+
+
+<h3><a id="index_p"></a>- p -</h3><ul>
+<li>print()
+: <a class="el" href="ansi_8c.html#a1b224cac72287e2ef2f91e00de1bba83">ansi.c</a>
+, <a class="el" href="ansi_8h.html#a1b224cac72287e2ef2f91e00de1bba83">ansi.h</a>
+</li>
+</ul>
+
+
+<h3><a id="index_r"></a>- r -</h3><ul>
+<li>reset_styles()
+: <a class="el" href="ansi_8c.html#ace03e272bd19884c4ed8cb4c07667ca3">ansi.c</a>
+, <a class="el" href="ansi_8h.html#ace03e272bd19884c4ed8cb4c07667ca3">ansi.h</a>
+</li>
+</ul>
+
+
+<h3><a id="index_s"></a>- s -</h3><ul>
+<li>same_celllist_test()
+: <a class="el" href="game_2cunit__tests_8c.html#a1db5d3b8c3142edd8dac517607975b1d">game/cunit_tests.c</a>
+</li>
+<li>sameCellList()
+: <a class="el" href="celllist_8c.html#a3c643ac3a15efd88fad720633c16a11a">celllist.c</a>
+, <a class="el" href="celllist_8h.html#a3c643ac3a15efd88fad720633c16a11a">celllist.h</a>
+</li>
+<li>set()
+: <a class="el" href="_c_make_lists_8txt.html#a74426b12f55a79a9b903ab57fefcb7ef">CMakeLists.txt</a>
+</li>
+<li>show_cursor()
+: <a class="el" href="ansi_8c.html#a1bdd62a6bef7cfd6522dc1412e162559">ansi.c</a>
+, <a class="el" href="ansi_8h.html#a1bdd62a6bef7cfd6522dc1412e162559">ansi.h</a>
+</li>
+</ul>
+
+
+<h3><a id="index_t"></a>- t -</h3><ul>
+<li>target_compile_options()
+: <a class="el" href="_c_make_lists_8txt.html#a2d8d9b60916b69b9dc67f13f231cb605">CMakeLists.txt</a>
+, <a class="el" href="draw_2_c_make_lists_8txt.html#a5bb2a56291a834dc63515451c1ac8346">draw/CMakeLists.txt</a>
+</li>
+<li>target_include_directories()
+: <a class="el" href="draw_2_c_make_lists_8txt.html#a07648dd1d97a8b174ce334d5907a1fd2">draw/CMakeLists.txt</a>
+</li>
+<li>target_link_libraries()
+: <a class="el" href="draw_2_c_make_lists_8txt.html#ac8d0901fa73c7497a94f187e3321b423">draw/CMakeLists.txt</a>
+</li>
+<li>target_sources()
+: <a class="el" href="game_2_c_make_lists_8txt.html#a2c1fa48f6c7f613c5c88bd3a1642a696">game/CMakeLists.txt</a>
+, <a class="el" href="draw_2_c_make_lists_8txt.html#a7f662d9635e51fa11e68eba1e9a81d22">draw/CMakeLists.txt</a>
+, <a class="el" href="_c_make_lists_8txt.html#a4d181224415cb4dea2f478872e1a47ce">CMakeLists.txt</a>
+</li>
+</ul>
+
+
+<h3><a id="index_u"></a>- u -</h3><ul>
+<li>update_celllist_test()
+: <a class="el" href="game_2cunit__tests_8c.html#a3ffd8d7f451aa85262484815e3b36869">game/cunit_tests.c</a>
+</li>
+<li>updateCellList()
+: <a class="el" href="celllist_8h.html#a8460df065cb51c573bc5c84c678a121a">celllist.h</a>
+, <a class="el" href="celllist_8c.html#a8460df065cb51c573bc5c84c678a121a">celllist.c</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.18
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
 </body>
 </html>

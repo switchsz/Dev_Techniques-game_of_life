@@ -1,0 +1,40 @@
+\hypertarget{_c_make_lists_8txt}{}\doxysection{C\+Make\+Lists.\+txt File Reference}
+\label{_c_make_lists_8txt}\index{CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_make_lists_8txt_af65c318bece1c36b7d29d500a6fbfcb9}{cmake\+\_\+minimum\+\_\+required}} (V\+E\+R\+S\+I\+ON 3.\+0) cmake\+\_\+policy(S\+ET C\+M\+P0076 N\+EW) project(mygame L\+A\+N\+G\+U\+A\+G\+ES C) add\+\_\+subdirectory(\mbox{\hyperlink{sdl_8h_a58563a003be41a9fa91ddd7455b5f161}{draw}}) add\+\_\+subdirectory(game) if(\char`\"{}\$
+\item 
+S\+T\+R\+E\+Q\+U\+AL S\+DL \mbox{\hyperlink{_c_make_lists_8txt_a74426b12f55a79a9b903ab57fefcb7ef}{set}} (S\+RC mainsdl.\+c) else() set(S\+RC main.\+c) endif() add\+\_\+executable(\$
+\item 
+\mbox{\hyperlink{_c_make_lists_8txt_a4d181224415cb4dea2f478872e1a47ce}{target\+\_\+sources}} (\$\{P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+ME\} P\+U\+B\+L\+IC \$\{S\+RC\}) \mbox{\hyperlink{draw_2_c_make_lists_8txt_ac8d0901fa73c7497a94f187e3321b423}{target\+\_\+link\+\_\+libraries}}(\$
+\item 
+P\+U\+B\+L\+IC \mbox{\hyperlink{sdl_8h_a58563a003be41a9fa91ddd7455b5f161}{draw}} game \mbox{\hyperlink{_c_make_lists_8txt_a2d8d9b60916b69b9dc67f13f231cb605}{target\+\_\+compile\+\_\+options}} (\$\{P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+ME\} P\+U\+B\+L\+IC \char`\"{}-\/-\/coverage\char`\"{}) target\+\_\+link\+\_\+libraries(\$
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_c_make_lists_8txt_af65c318bece1c36b7d29d500a6fbfcb9}\label{_c_make_lists_8txt_af65c318bece1c36b7d29d500a6fbfcb9}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!cmake\_minimum\_required@{cmake\_minimum\_required}}
+\index{cmake\_minimum\_required@{cmake\_minimum\_required}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{cmake\_minimum\_required()}{cmake\_minimum\_required()}}
+{\footnotesize\ttfamily cmake\+\_\+minimum\+\_\+required (\begin{DoxyParamCaption}\item[{V\+E\+R\+S\+I\+ON 3.}]{0 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_c_make_lists_8txt_a74426b12f55a79a9b903ab57fefcb7ef}\label{_c_make_lists_8txt_a74426b12f55a79a9b903ab57fefcb7ef}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!set@{set}}
+\index{set@{set}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily S\+T\+R\+E\+Q\+U\+AL S\+DL set (\begin{DoxyParamCaption}\item[{S\+RC mainsdl.}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_c_make_lists_8txt_a2d8d9b60916b69b9dc67f13f231cb605}\label{_c_make_lists_8txt_a2d8d9b60916b69b9dc67f13f231cb605}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!target\_compile\_options@{target\_compile\_options}}
+\index{target\_compile\_options@{target\_compile\_options}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{target\_compile\_options()}{target\_compile\_options()}}
+{\footnotesize\ttfamily P\+U\+B\+L\+IC \mbox{\hyperlink{sdl_8h_a58563a003be41a9fa91ddd7455b5f161}{draw}} game target\+\_\+compile\+\_\+options (\begin{DoxyParamCaption}\item[{}]{\$\{\+P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+M\+E\} P\+U\+B\+L\+I\+C \char`\"{}-\/-\/coverage\char`\"{} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_c_make_lists_8txt_a4d181224415cb4dea2f478872e1a47ce}\label{_c_make_lists_8txt_a4d181224415cb4dea2f478872e1a47ce}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!target\_sources@{target\_sources}}
+\index{target\_sources@{target\_sources}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{target\_sources()}{target\_sources()}}
+{\footnotesize\ttfamily target\+\_\+sources (\begin{DoxyParamCaption}\item[{}]{\$\{\+P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+M\+E\} P\+U\+B\+L\+I\+C \$\{\+S\+R\+C\} }\end{DoxyParamCaption})}
+
