@@ -1,19 +1,19 @@
 #include "ansi.h"
+#include <time.h>
 
 int main () {
-    // //Update funtion
-    // // TODO Draw 
-    // // TODO updateLoop
+    struct timespec ts;
+    ts.tv_nsec = 100000000;
     int h, w;
     get_console_size(&w, &h);
-    CellList *pCellList = generateCellList(h-2,w/2-2);
+    CellList *pCellList = generateCellList(h,w/2);
     drawAnsi(pCellList);
     CellList *pNewCellList;
     CellList *pOldCellList;
     
     while (nAlives(pCellList) > 0) {
-        printf("\n\n");
-        sleep(1);
+       
+        nanosleep(&ts, NULL);
         pNewCellList = updateCellList(pCellList);
         if(sameCellList(pCellList, pNewCellList) == 1 || sameCellList(pOldCellList, pNewCellList) == 1)
             break;

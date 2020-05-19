@@ -1,4 +1,3 @@
-#include<stdio.h>
 #include"celllist.h"
 
 #include<CUnit/Basic.h>
@@ -56,6 +55,14 @@ void update_celllist_test(void) {
 
 }
 
+void number_of_alives_test(void) {
+    int nbRows = 5;
+    int nbCols = 5;
+    CellList* pCellList = generateCellList (nbRows, nbCols);
+    CU_ASSERT_NOT_EQUAL(nAlives(pCellList), 0);
+    CU_ASSERT_NOT_EQUAL(nAlives(pCellList), 25);
+
+}
 
 void generate_celllist_test(void) {
     int nbRows = 5;
@@ -65,13 +72,6 @@ void generate_celllist_test(void) {
     CU_ASSERT_NOT_EQUAL(nAlives(pCellList), nbCols*nbRows);
 }
 
-// void number_of_alives_test(void) {
-//     int nbRows = 5;
-//     int nbCols = 5;
-//     CellList* pCellList = generateCellList (nbRows, nbCols);
-//     CU_ASSERT_NOT_EQUAL(nAlives(pCellList), )
-
-// }
 
 void same_celllist_test(void) {
     CellList* pCellList = generateCellList(5, 5);
@@ -171,6 +171,7 @@ CU_ADD_TEST(pS1, new_cell_test);
 CU_pSuite pS2 = CU_add_suite("Testing CellLists", NULL, NULL);
 CU_ADD_TEST(pS2, copy_celllist_test);
 CU_ADD_TEST(pS2, empty_celllist_test);
+CU_ADD_TEST(pS2, number_of_alives_test);
 CU_ADD_TEST(pS2, generate_celllist_test);
 CU_ADD_TEST(pS2, neighbours_test);
 CU_ADD_TEST(pS2, new_celllist_test);
