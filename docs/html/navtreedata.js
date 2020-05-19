@@ -29,8 +29,11 @@ var NAVTREE =
       [ "About Game", "index.html#subsytem1", null ],
       [ "Origins", "index.html#subsytem2", null ]
     ] ],
-    [ "How to Launch", "subsystem1.html", null ],
-    [ "Testing", "system2.html", null ],
+    [ "How to Launch", "system1.html", null ],
+    [ "Testing", "system2.html", [
+      [ "Ansi", "system2.html#s2", null ],
+      [ "SDL", "system2.html#s3", null ]
+    ] ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
